@@ -57,7 +57,7 @@ body { font-family: 'Open Sans'; font-size: 24px; line-height: 33px; }
 .social-link .tr3zor { background: url("../img/header/social-icons/etherscan-logo-fin.png"); }
 .social-link:hover { -webkit-transform: scale(1.1); transform: scale(1.1); }
 
-.about-product { max-height: 638.92px; display: -webkit-box; display: -ms-flexbox; display: flex; }
+.about-product { max-height: 633.92px; display: -webkit-box; display: -ms-flexbox; display: flex; }
 
 .about-product__video { width: 60%; }
 .about-product__video video { max-width: 100%; height: auto; }
@@ -73,20 +73,20 @@ body { font-family: 'Open Sans'; font-size: 24px; line-height: 33px; }
 
 .product__buy-block__animate__box { position: absolute; }
 
-.sofa-animate { top: 0; -webkit-animation: fade-right linear .7s; animation: fade-right linear .7s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+.sofa-animate { top: 0; -webkit-animation: fade-right linear .7s; animation: fade-right linear .7s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
 
 .inf-animate { position: absolute; -webkit-animation: fade-move infinite linear 1s; animation: fade-move infinite linear 1s; -webkit-animation-direction: alternate-reverse; animation-direction: alternate-reverse; z-index: 10; }
 .inf-animate img { z-index: 10; position: relative; }
 
-.table-animate { top: 300px; -webkit-animation: fade-right linear .7s; animation: fade-right linear .7s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+.table-animate { top: 300px; -webkit-animation: fade-right linear .7s; animation: fade-right linear .7s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
 
-.table__around-animate { left: 45%; -webkit-transform: translateX(-45%); transform: translateX(-45%); -webkit-animation: fade-bottom linear .7s; animation: fade-bottom linear .7s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+.table__around-animate { left: 45%; -webkit-transform: translateX(-45%); transform: translateX(-45%); -webkit-animation: fade-bottom linear .7s; animation: fade-bottom linear .7s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
 
-.coffee_table-animate { right: 164px; bottom: 300px; -webkit-animation: fade-left linear .7s; animation: fade-left linear .7s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+.coffee_table-animate { right: 164px; bottom: 300px; -webkit-animation: fade-left linear .7s; animation: fade-left linear .7s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
 
-.chair-animate { right: 450px; top: 0; -webkit-animation: fade-top linear .7s; animation: fade-top linear .7s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+.chair-animate { right: 450px; top: 0; -webkit-animation: fade-top linear .7s; animation: fade-top linear .7s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
 
-.decor-animate { top: 0; right: 150px; -webkit-animation: fade-top linear .7s; animation: fade-top linear .7s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+.decor-animate { top: 0; right: 150px; -webkit-animation: fade-top linear .7s; animation: fade-top linear .7s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
 
 @-webkit-keyframes fade-top { from { top: -200px; }
   to { top: 0px; } }
@@ -109,5 +109,30 @@ body { font-family: 'Open Sans'; font-size: 24px; line-height: 33px; }
   to { top: 2px; } }
 @keyframes fade-move { from { top: 20px; }
   to { top: 2px; } }
+.product-cards__row { display: -webkit-box; display: -ms-flexbox; display: flex; overflow: hidden; -webkit-animation: nudge 5s linear infinite; animation: nudge 5s linear infinite; }
+
+@-webkit-keyframes marquee { 0% { left: -100%; }
+  100% { left: 0%; } }
+@keyframes marquee { 0% { left: -100%; }
+  100% { left: 00%; } }
+@-webkit-keyframes marquee-2 { 0% { left: 0%; }
+  100% { left: -100%; } }
+@keyframes marquee-2 { 0% { left: 0%; }
+  100% { left: -100%; } }
+.b-marquee-line__flow { background: #f0f0f0; font-size: 0; line-height: 0; height: 240px; overflow: hidden; position: relative; width: 100%; }
+.b-marquee-line__flow-in { display: block; height: 240px; }
+.cssanimations .b-marquee-line__flow-in { width: 200%; position: absolute; overflow: hidden; -webkit-animation: marquee 10s linear infinite; animation: marquee 10s linear infinite; }
+.b-marquee-line__flow-block { white-space: nowrap; }
+.no-cssanimations .b-marquee-line__flow-block:last-child { display: none; }
+.cssanimations .b-marquee-line__flow-block { white-space: nowrap; float: left; width: 50%; }
+.b-marquee-line__flow-item { height: 240px; }
+
+.b-marquee-line-2__flow { background: #f0f0f0; font-size: 0; line-height: 0; height: 240px; overflow: hidden; position: relative; width: 100%; }
+.b-marquee-line-2__flow-in { display: block; height: 240px; }
+.cssanimations .b-marquee-line-2__flow-in { width: 200%; position: absolute; overflow: hidden; -webkit-animation: marquee-2 10s linear infinite; animation: marquee-2 10s linear infinite; }
+.b-marquee-line-2__flow-block { white-space: nowrap; }
+.no-cssanimations .b-marquee-line-2__flow-block:last-child { display: none; }
+.cssanimations .b-marquee-line-2__flow-block { white-space: nowrap; float: left; width: 50%; }
+.b-marquee-line-2__flow-item { height: 240px; }
 
 /*# sourceMappingURL=main.css.map */

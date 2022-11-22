@@ -1,0 +1,129 @@
+.product-cards__row {
+  display: flex;
+  overflow: hidden;
+  animation: nudge 5s linear infinite;
+}
+
+//@keyframes nudge {
+//  //0% { transform: translatex(0%); }
+//  //100% { transform: translatex(100vw); }
+//  0% {
+//    transform: translateX(0)
+//  }
+//  100% {
+//    transform: translateX(100%)
+//  }
+//}
+
+$blockHeight: 240px;
+
+@-webkit-keyframes marquee {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 00%;
+  }
+}
+
+@-webkit-keyframes marquee-2 {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+@keyframes marquee-2 {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+.b-marquee-line {
+  &__flow {
+    background: #f0f0f0;
+    font-size: 0;
+    line-height: 0;
+    height: $blockHeight;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    &-in {
+      display: block;
+      height: $blockHeight;
+      .cssanimations & {
+        width: 200%;
+        position: absolute;
+        overflow: hidden;
+        -webkit-animation: marquee 10s linear infinite;
+        animation: marquee 10s linear infinite;
+      }
+    }
+    &-block {
+      white-space: nowrap;
+      .no-cssanimations &:last-child {
+        display: none;
+      }
+      .cssanimations & {
+        white-space: nowrap;
+        float: left;
+        width: 50%;
+      }
+    }
+    &-item {
+      height: $blockHeight;
+    }
+  }
+}
+
+.b-marquee-line-2 {
+  &__flow {
+    background: #f0f0f0;
+    font-size: 0;
+    line-height: 0;
+    height: $blockHeight;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    &-in {
+      display: block;
+      height: $blockHeight;
+      .cssanimations & {
+        width: 200%;
+        position: absolute;
+        overflow: hidden;
+        -webkit-animation: marquee-2 10s linear infinite;
+        animation: marquee-2 10s linear infinite;
+      }
+    }
+    &-block {
+      white-space: nowrap;
+      .no-cssanimations &:last-child {
+        display: none;
+      }
+      .cssanimations & {
+        white-space: nowrap;
+        float: left;
+        width: 50%;
+      }
+    }
+    &-item {
+      height: $blockHeight;
+    }
+  }
+}
+
