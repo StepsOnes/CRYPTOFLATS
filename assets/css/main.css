@@ -57,18 +57,57 @@ body { font-family: 'Open Sans'; font-size: 24px; line-height: 33px; }
 .social-link .tr3zor { background: url("../img/header/social-icons/etherscan-logo-fin.png"); }
 .social-link:hover { -webkit-transform: scale(1.1); transform: scale(1.1); }
 
-.about-product { max-height: 634px; display: -webkit-box; display: -ms-flexbox; display: flex; }
+.about-product { max-height: 638.92px; display: -webkit-box; display: -ms-flexbox; display: flex; }
 
 .about-product__video { width: 60%; }
 .about-product__video video { max-width: 100%; height: auto; }
 
-.about-product__buy-block { width: 40%; background: #F4E9E9; padding-top: 200px; text-align: center; }
+.about-product__buy-block { width: 40%; height: auto; background: #F4E9E9; padding-top: 200px; text-align: center; overflow: hidden; position: relative; }
 
-.about-product__buy-block__title { font-weight: 700; font-size: 36px; line-height: 49px; margin-bottom: 13px; }
+.about-product__buy-block__title { font-weight: 700; font-size: 36px; line-height: 49px; margin-bottom: 13px; position: relative; z-index: 999; }
 
 .about-product__buy-block__about { font-weight: 400; font-size: 24px; line-height: 33px; margin-bottom: 33px; }
 
-.about-product__buy-block__btn { font-family: 'ColorTube'; display: inline-block; padding: 14px 43px; font-size: 20px; line-height: 32px; background: #0f6eb2; -webkit-box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.15); box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.15); border-radius: 50px; text-decoration: none; color: #FFF; -webkit-transition: transform .4s; -webkit-transition: -webkit-transform .4s; transition: -webkit-transform .4s; transition: transform .4s; transition: transform .4s, -webkit-transform .4s; will-change: transform; }
+.about-product__buy-block__btn { font-family: 'ColorTube'; display: inline-block; padding: 14px 43px; font-size: 20px; line-height: 32px; background: #0f6eb2; -webkit-box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.15); box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.15); border-radius: 50px; text-decoration: none; color: #FFF; -webkit-transition: transform .4s; -webkit-transition: -webkit-transform .4s; transition: -webkit-transform .4s; transition: transform .4s; transition: transform .4s, -webkit-transform .4s; will-change: transform; z-index: 999; position: relative; }
 .about-product__buy-block__btn:hover { -webkit-transform: scale(1.03); transform: scale(1.03); }
+
+.product__buy-block__animate__box { position: absolute; }
+
+.sofa-animate { top: 0; -webkit-animation: fade-right linear .7s; animation: fade-right linear .7s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+
+.inf-animate { position: absolute; -webkit-animation: fade-move infinite linear 1s; animation: fade-move infinite linear 1s; -webkit-animation-direction: alternate-reverse; animation-direction: alternate-reverse; z-index: 10; }
+.inf-animate img { z-index: 10; position: relative; }
+
+.table-animate { top: 300px; -webkit-animation: fade-right linear .7s; animation: fade-right linear .7s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+
+.table__around-animate { left: 45%; -webkit-transform: translateX(-45%); transform: translateX(-45%); -webkit-animation: fade-bottom linear .7s; animation: fade-bottom linear .7s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+
+.coffee_table-animate { right: 164px; bottom: 300px; -webkit-animation: fade-left linear .7s; animation: fade-left linear .7s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+
+.chair-animate { right: 450px; top: 0; -webkit-animation: fade-top linear .7s; animation: fade-top linear .7s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+
+.decor-animate { top: 0; right: 150px; -webkit-animation: fade-top linear .7s; animation: fade-top linear .7s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+
+@-webkit-keyframes fade-top { from { top: -200px; }
+  to { top: 0px; } }
+
+@keyframes fade-top { from { top: -200px; }
+  to { top: 0px; } }
+@-webkit-keyframes fade-left { from { right: -200px; }
+  to { right: 164px; } }
+@keyframes fade-left { from { right: -200px; }
+  to { right: 164px; } }
+@-webkit-keyframes fade-right { from { left: -200px; }
+  to { left: -100px; } }
+@keyframes fade-right { from { left: -200px; }
+  to { left: -100px; } }
+@-webkit-keyframes fade-bottom { from { bottom: -200px; }
+  to { bottom: 200px; } }
+@keyframes fade-bottom { from { bottom: -200px; }
+  to { bottom: 200px; } }
+@-webkit-keyframes fade-move { from { top: 20px; }
+  to { top: 2px; } }
+@keyframes fade-move { from { top: 20px; }
+  to { top: 2px; } }
 
 /*# sourceMappingURL=main.css.map */

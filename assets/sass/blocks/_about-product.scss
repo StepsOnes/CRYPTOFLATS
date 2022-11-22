@@ -1,5 +1,5 @@
 .about-product {
-  max-height: 634px;
+  max-height: 638.92px;
   display: flex;
 }
 
@@ -14,9 +14,12 @@
 
 .about-product__buy-block {
   width: 40%;
+  height: auto;
   background: #F4E9E9;
   padding-top: 200px;
   text-align: center;
+  overflow: hidden;
+  position: relative;
 }
 
 .about-product__buy-block__title {
@@ -24,6 +27,8 @@
   font-size: 36px;
   line-height: 49px;
   margin-bottom: 13px;
+  position: relative;
+  z-index: 999;
 }
 
 .about-product__buy-block__about {
@@ -50,6 +55,8 @@
     -o-transition: transform .4s;
     transition: transform .4s;
     will-change: transform;
+    z-index: 999;
+    position: relative;
 
   &:hover {
     -webkit-transform: scale(1.03);
@@ -57,8 +64,117 @@
     -ms-transform: scale(1.03);
     -o-transform: scale(1.03);
     transform: scale(1.03);
-
-    //box-shadow: 0 1px 3px rgb(0, 0, 0,35%);
   }
 
+}
+
+.product__buy-block__animate__box {
+  position: absolute;
+}
+
+.sofa-animate {
+  top: 0;
+  animation: fade-right linear .7s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.inf-animate {
+  position: absolute;
+  animation: fade-move infinite linear 1s;
+  animation-direction:  alternate-reverse;
+  z-index: 10;
+  & img {
+    z-index: 10;
+    position: relative;
+  }
+}
+
+.table-animate {
+  top: 300px;
+  animation: fade-right linear .7s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.table__around-animate {
+  left: 45%;
+  transform: translateX(-45%);
+  animation: fade-bottom linear .7s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.coffee_table-animate {
+  right: 164px;
+  bottom: 300px;
+  animation: fade-left linear .7s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.chair-animate {
+  right: 450px;
+  top: 0;
+  animation: fade-top linear .7s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.decor-animate {
+  top: 0;
+  right: 150px;
+  animation: fade-top linear .7s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-top {
+  from {
+    top: -200px;
+  }
+
+  to {
+    top: 0px;
+  }
+}
+
+@keyframes fade-left {
+  from {
+    right: -200px;
+  }
+
+  to {
+    right: 164px;
+  }
+}
+
+@keyframes fade-right  {
+  from {
+    left: -200px;
+  }
+
+  to {
+    left: -100px;
+  }
+}
+
+@keyframes fade-bottom {
+  from {
+    bottom: -200px;
+  }
+
+  to {
+    bottom: 200px;
+  }
+}
+
+@keyframes fade-move {
+  from {
+    top: 20px;
+  }
+
+  to {
+    top: 2px;
+  }
 }
