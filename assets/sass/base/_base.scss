@@ -1,0 +1,16 @@
+body {
+  font-family: 'Open Sans';
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.container {
+  max-width: 1068px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}

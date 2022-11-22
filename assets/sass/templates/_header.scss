@@ -1,0 +1,103 @@
+.header {
+  background: $grey;
+  padding: 79px 0 37px 0;
+}
+
+.header-row {
+  align-items: flex-start;
+}
+
+.header-nav {
+  display: flex;
+  column-gap: 45px;
+}
+
+.logo-group {
+  text-decoration: none;
+  color: #FFF;
+  position: relative;
+}
+
+.logo-title {
+  font-family: 'ColorTube';
+  font-size: 28px;
+  line-height: 45px;
+  position: relative;
+
+  &::before {
+    content: '';
+    background: url("../img/header/logo_white 1.svg");
+    width: 88px;
+    height: 84px;
+    position: absolute;
+    bottom: 11px;
+    left: -53px;
+    animation: move infinite linear .7s;
+    animation-direction: alternate;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: rotate(0);
+  }
+
+    100% {
+      transform: rotate(10deg);
+    }
+
+}
+
+.logo-about {
+  font-family: 'Open Sans';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.nav-list {
+  display: flex;
+  column-gap: 56px;
+}
+
+.nav-list__item {
+  color: #FFF;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.social-link {
+  width: 30px;
+  height: 30px;
+  transition: 0.4s;
+
+  &.houseoff {
+    background: url("../img/header/social-icons/Logomark-Transparent White 2.png");
+  }
+
+  &.inst {
+    background: url("../img/header/social-icons/insta_logo_fin.png");
+  }
+
+  &.tg {
+    background: url("../img/header/social-icons/telegram_logo_fin.png");
+  }
+
+  &.twit {
+    background: url("../img/header/social-icons/twitter_log_ fin 1.png");
+  }
+
+  .tr3zor {
+    background: url("../img/header/social-icons/etherscan-logo-fin.png");
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

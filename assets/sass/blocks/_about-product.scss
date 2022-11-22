@@ -1,0 +1,64 @@
+.about-product {
+  max-height: 634px;
+  display: flex;
+}
+
+.about-product__video {
+  width: 60%;
+
+  & video {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.about-product__buy-block {
+  width: 40%;
+  background: #F4E9E9;
+  padding-top: 200px;
+  text-align: center;
+}
+
+.about-product__buy-block__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  margin-bottom: 13px;
+}
+
+.about-product__buy-block__about {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  margin-bottom: 33px;
+}
+
+.about-product__buy-block__btn {
+    font-family: 'ColorTube';
+    display: inline-block;
+    padding: 14px 43px;
+    font-size: 20px;
+    line-height: 32px;
+    background: rgba(15, 110, 178, 1);
+    box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.15);
+    border-radius: 50px;
+    text-decoration: none;
+    color: #FFF;
+    -webkit-transition: transform .4s;
+    -moz-transition: transform .4s;
+    -ms-transition: transform .4s;
+    -o-transition: transform .4s;
+    transition: transform .4s;
+    will-change: transform;
+
+  &:hover {
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    transform: scale(1.03);
+
+    //box-shadow: 0 1px 3px rgb(0, 0, 0,35%);
+  }
+
+}
