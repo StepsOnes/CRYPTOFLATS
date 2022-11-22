@@ -1,0 +1,74 @@
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+*, *::after, *::before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body { font-family: 'Open Sans'; font-size: 24px; line-height: 33px; }
+
+.container { max-width: 1068px; margin: 0 auto; padding: 0 16px; }
+
+.row { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+.header { background: #2D2D2D; padding: 79px 0 37px 0; }
+
+.header-row { -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
+
+.header-nav { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-column-gap: 45px; column-gap: 45px; }
+
+.logo-group { text-decoration: none; color: #FFF; position: relative; }
+
+.logo-title { font-family: 'ColorTube'; font-size: 28px; line-height: 45px; position: relative; }
+.logo-title::before { content: ''; background: url("../img/header/logo_white 1.svg"); width: 88px; height: 84px; position: absolute; bottom: 11px; left: -53px; -webkit-animation: move infinite linear .7s; animation: move infinite linear .7s; -webkit-animation-direction: alternate; animation-direction: alternate; }
+
+@-webkit-keyframes move { 0% { -webkit-transform: rotate(0); transform: rotate(0); }
+  100% { -webkit-transform: rotate(10deg); transform: rotate(10deg); } }
+
+@keyframes move { 0% { -webkit-transform: rotate(0); transform: rotate(0); }
+  100% { -webkit-transform: rotate(10deg); transform: rotate(10deg); } }
+.logo-about { font-family: 'Open Sans'; font-weight: 500; font-size: 14px; line-height: 19px; }
+
+.nav-list { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-column-gap: 56px; column-gap: 56px; }
+
+.nav-list__item { color: #FFF; font-weight: 700; text-decoration: none; }
+
+.nav-links { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-column-gap: 10px; column-gap: 10px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.social-link { width: 30px; height: 30px; -webkit-transition: 0.4s; transition: 0.4s; }
+.social-link.houseoff { background: url("../img/header/social-icons/Logomark-Transparent White 2.png"); }
+.social-link.inst { background: url("../img/header/social-icons/insta_logo_fin.png"); }
+.social-link.tg { background: url("../img/header/social-icons/telegram_logo_fin.png"); }
+.social-link.twit { background: url("../img/header/social-icons/twitter_log_ fin 1.png"); }
+.social-link .tr3zor { background: url("../img/header/social-icons/etherscan-logo-fin.png"); }
+.social-link:hover { -webkit-transform: scale(1.1); transform: scale(1.1); }
+
+.about-product { max-height: 634px; display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.about-product__video { width: 60%; }
+.about-product__video video { max-width: 100%; height: auto; }
+
+.about-product__buy-block { width: 40%; background: #F4E9E9; padding-top: 200px; text-align: center; }
+
+.about-product__buy-block__title { font-weight: 700; font-size: 36px; line-height: 49px; margin-bottom: 13px; }
+
+.about-product__buy-block__about { font-weight: 400; font-size: 24px; line-height: 33px; margin-bottom: 33px; }
+
+.about-product__buy-block__btn { font-family: 'ColorTube'; display: inline-block; padding: 14px 43px; font-size: 20px; line-height: 32px; background: #0f6eb2; -webkit-box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.15); box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.15); border-radius: 50px; text-decoration: none; color: #FFF; -webkit-transition: transform .4s; -webkit-transition: -webkit-transform .4s; transition: -webkit-transform .4s; transition: transform .4s; transition: transform .4s, -webkit-transform .4s; will-change: transform; }
+.about-product__buy-block__btn:hover { -webkit-transform: scale(1.03); transform: scale(1.03); }
+
+/*# sourceMappingURL=main.css.map */
