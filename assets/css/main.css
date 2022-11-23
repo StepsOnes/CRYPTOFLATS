@@ -29,10 +29,10 @@ body { font-family: 'Open Sans'; font-size: 24px; line-height: 33px; }
 
 .about-product { max-height: 633.92px; display: -webkit-box; display: -ms-flexbox; display: flex; }
 
-.about-product__video { width: 60%; }
+.about-product__video { width: 65%; }
 .about-product__video video { max-width: 100%; height: auto; }
 
-.about-product__buy-block { width: 40%; height: auto; background: #F4E9E9; padding-top: 200px; text-align: center; overflow: hidden; position: relative; }
+.about-product__buy-block { width: 35%; height: auto; background: #F4E9E9; padding-top: 200px; text-align: center; overflow: hidden; position: relative; }
 
 .about-product__buy-block__title { font-weight: 700; font-size: 36px; line-height: 49px; margin-bottom: 13px; position: relative; z-index: 999; }
 
@@ -93,7 +93,7 @@ body { font-family: 'Open Sans'; font-size: 24px; line-height: 33px; }
   100% { left: -100%; } }
 .b-marquee-line__flow { background: #f0f0f0; font-size: 0; line-height: 0; height: 240px; overflow: hidden; position: relative; width: 100%; }
 .b-marquee-line__flow-in { display: block; height: 240px; }
-.cssanimations .b-marquee-line__flow-in { width: 200%; position: absolute; overflow: hidden; -webkit-animation: marquee 10s linear infinite; animation: marquee 10s linear infinite; }
+.cssanimations .b-marquee-line__flow-in { width: 200%; position: absolute; overflow: hidden; -webkit-animation: marquee 20s linear infinite; animation: marquee 20s linear infinite; }
 .b-marquee-line__flow-block { white-space: nowrap; }
 .no-cssanimations .b-marquee-line__flow-block:last-child { display: none; }
 .cssanimations .b-marquee-line__flow-block { white-space: nowrap; float: left; width: 50%; }
@@ -101,7 +101,7 @@ body { font-family: 'Open Sans'; font-size: 24px; line-height: 33px; }
 
 .b-marquee-line-2__flow { background: #f0f0f0; font-size: 0; line-height: 0; height: 240px; overflow: hidden; position: relative; width: 100%; }
 .b-marquee-line-2__flow-in { display: block; height: 240px; }
-.cssanimations .b-marquee-line-2__flow-in { width: 200%; position: absolute; overflow: hidden; -webkit-animation: marquee-2 10s linear infinite; animation: marquee-2 10s linear infinite; }
+.cssanimations .b-marquee-line-2__flow-in { width: 200%; position: absolute; overflow: hidden; -webkit-animation: marquee-2 20s linear infinite; animation: marquee-2 20s linear infinite; }
 .b-marquee-line-2__flow-block { white-space: nowrap; }
 .no-cssanimations .b-marquee-line-2__flow-block:last-child { display: none; }
 .cssanimations .b-marquee-line-2__flow-block { white-space: nowrap; float: left; width: 50%; }
@@ -111,10 +111,20 @@ body { font-family: 'Open Sans'; font-size: 24px; line-height: 33px; }
 
 .about-title { color: #ffc940; font-family: 'ColorTube'; font-size: 24px; line-height: 38px; margin-bottom: 48px; }
 
-.about-subtitle { color: #FFF; max-width: 980px; }
+.about-subtitle { color: #FFF; text-align: center; }
 
-.about-block-text { margin-bottom: 80px; }
+.about-block-text { max-width: 980px; margin: 0 auto 80px auto; }
 
+.group { position: relative; }
+
+.circle-animate-purple { width: 20px; height: 20px; background: #CA47D6; position: absolute; right: 0; border-radius: 50%; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+.circle-animate-purple.circle-animate::before { content: ''; position: absolute; top: 8px; width: 966px; height: 2px; background: #CA47D6; -webkit-transform: translateX(-100%); transform: translateX(-100%); -webkit-animation: draw 1s linear forwards; animation: draw 1s linear forwards; }
+
+@-webkit-keyframes draw { 0% { width: 100px; }
+  100% { width: 900px; } }
+
+@keyframes draw { 0% { width: 100px; }
+  100% { width: 900px; } }
 .about-company { background: #2D2D2D; padding: 120px 0; text-align: center; }
 
 .about-company__title { font-family: 'ColorTube'; margin-bottom: 70px; text-align: left; }
@@ -166,7 +176,7 @@ body { font-family: 'Open Sans'; font-size: 24px; line-height: 33px; }
 
 .nft-card__about__text { text-align: center; font-weight: 400; }
 
-.game-block__title { margin-bottom: 55px; }
+.game-block__title { margin-bottom: 55px; text-align: left; }
 
 .game-block__subtitle { margin-bottom: 40px; font-family: 'Open Sans'; text-align: left; }
 
@@ -184,6 +194,7 @@ body { font-family: 'Open Sans'; font-size: 24px; line-height: 33px; }
 .folding-plus span::after { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
 
 .faq__accordion__body { -webkit-transition: .6s; transition: .6s; overflow: hidden; max-height: 0; }
+.faq__accordion__body.faq__accordion__body--border { border-bottom: 1px solid #FFF; }
 
 .faq__accordion__body__content { color: #BDBDBD; padding-top: 40px; padding-bottom: 55px; }
 

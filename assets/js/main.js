@@ -1,4 +1,25 @@
 AOS.init();
+const circleAnimatePurple = document.querySelector('.circle-animate-purple');
+
+document.addEventListener('scroll', function () {
+    let pos = getCoords(circleAnimatePurple).top;
+    if (window.scrollY > 2000) {
+        circleAnimatePurple.classList.add('circle-animate');
+    }
+    console.log(window.scrollY);
+    console.log(pos);
+})
+
+function getCoords(elem) {
+    let box = elem.getBoundingClientRect();
+
+    return {
+        top: box.top + window.pageYOffset,
+        right: box.right + window.pageXOffset,
+        bottom: box.bottom + window.pageYOffset,
+        left: box.left + window.pageXOffset
+    };
+}
 
 const boxes2 = Array.from(document.querySelectorAll(".faq__accordion__header"));
 

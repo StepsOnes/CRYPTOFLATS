@@ -58,8 +58,8 @@ $blockHeight: 240px;
         width: 200%;
         position: absolute;
         overflow: hidden;
-        -webkit-animation: marquee 10s linear infinite;
-        animation: marquee 10s linear infinite;
+        -webkit-animation: marquee 20s linear infinite;
+        animation: marquee 20s linear infinite;
       }
     }
     &-block {
@@ -95,8 +95,8 @@ $blockHeight: 240px;
         width: 200%;
         position: absolute;
         overflow: hidden;
-        -webkit-animation: marquee-2 10s linear infinite;
-        animation: marquee-2 10s linear infinite;
+        -webkit-animation: marquee-2 20s linear infinite;
+        animation: marquee-2 20s linear infinite;
       }
     }
     &-block {

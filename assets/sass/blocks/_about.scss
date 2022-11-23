@@ -17,9 +17,51 @@
 
 .about-subtitle {
   color: #FFF;
-  max-width: 980px;
+  text-align: center;
 }
 
 .about-block-text {
-  margin-bottom: 80px;
+  max-width: 980px;
+  margin: 0 auto 80px auto;
 }
+
+.group {
+  position: relative;
+}
+
+.circle-animate-purple {
+  width: 20px;
+  height: 20px;
+  background: #CA47D6;
+  position: absolute;
+  right: 0;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+
+  &.circle-animate {
+    &::before {
+      content: '';
+      position: absolute;
+      top: 8px;
+      width: 966px;
+      height: 2px;
+      background: #CA47D6;
+      transform: translateX(-100%);
+      animation: draw 1s linear forwards;
+    }
+  }
+}
+
+@keyframes draw {
+  0% {
+    width: 100px;
+  }
+
+  100% {
+    width: 900px;
+  }
+
+}
+
+//

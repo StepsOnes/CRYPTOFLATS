@@ -44,7 +44,6 @@
     }
   }
 
-
 }
 
 .folding-plus {
@@ -58,6 +57,10 @@
   transition: .6s;
   overflow: hidden;
   max-height: 0;
+
+  &.faq__accordion__body--border {
+    border-bottom: 1px solid #FFF;
+  }
 }
 
 .faq__accordion__body__content {
