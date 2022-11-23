@@ -105,10 +105,6 @@ body { font-family: 'Open Sans'; font-size: 24px; line-height: 33px; }
   to { bottom: 200px; } }
 @keyframes fade-bottom { from { bottom: -200px; }
   to { bottom: 200px; } }
-@-webkit-keyframes fade-move { from { top: 20px; }
-  to { top: 2px; } }
-@keyframes fade-move { from { top: 20px; }
-  to { top: 2px; } }
 .product-cards__row { display: -webkit-box; display: -ms-flexbox; display: flex; overflow: hidden; -webkit-animation: nudge 5s linear infinite; animation: nudge 5s linear infinite; }
 
 @-webkit-keyframes marquee { 0% { left: -100%; }
@@ -134,5 +130,18 @@ body { font-family: 'Open Sans'; font-size: 24px; line-height: 33px; }
 .no-cssanimations .b-marquee-line-2__flow-block:last-child { display: none; }
 .cssanimations .b-marquee-line-2__flow-block { white-space: nowrap; float: left; width: 50%; }
 .b-marquee-line-2__flow-item { height: 240px; }
+
+.about { min-height: 784px; width: 100%; background: url("../img/about/bc_img.jpg"); padding-top: 120px; text-align: center; background-size: cover; }
+
+.about-title { color: #ffc940; font-family: 'ColorTube'; font-size: 24px; line-height: 38px; margin-bottom: 48px; }
+
+.about-subtitle { color: #FFF; }
+
+.about-block-text { margin-bottom: 177px; }
+
+.about-company { background: #2D2D2D; padding: 120px 0; }
+
+.about-company__title { font-family: 'ColorTube'; }
+.about-company__title.purple { color: #CA47D6; }
 
 /*# sourceMappingURL=main.css.map */

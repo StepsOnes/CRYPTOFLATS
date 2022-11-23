@@ -1,0 +1,24 @@
+.about {
+  min-height: 784px;
+  width: 100%;
+  background: url("../img/about/bc_img.jpg");
+  padding-top: 120px;
+  text-align: center;
+  background-size: cover;
+}
+
+.about-title {
+  color: $yellow;
+  font-family: 'ColorTube';
+  font-size: 24px;
+  line-height: 38px;
+  margin-bottom: 48px;
+}
+
+.about-subtitle {
+  color: #FFF;
+}
+
+.about-block-text {
+  margin-bottom: 177px;
+}
