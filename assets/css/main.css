@@ -21,7 +21,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 body { font-family: 'Open Sans'; font-size: 24px; line-height: 33px; }
 
-.container { max-width: 1110px; margin: 0 auto; padding: 0 16px; }
+.container { max-width: 1210px; margin: 0 auto; padding: 0 16px; }
 
 .row { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
@@ -151,7 +151,6 @@ body { font-family: 'Open Sans'; font-size: 24px; line-height: 33px; }
 .about-company__story-block__text { max-width: 541px; }
 .about-company__story-block__text p { color: #FFF; text-align: left; }
 
-.about-company__story-block__video { border: 1px solid #2D2D2D; }
-.about-company__story-block__video video { max-width: 100%; height: auto; border: none; }
+.about-company__story-block__video { height: 550px; width: 550px; }
 
 /*# sourceMappingURL=main.css.map */
