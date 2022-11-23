@@ -183,15 +183,12 @@
 }
 
 @keyframes fade-move {
-  //from {
-  //  top: 20px;
-  //}
-  //
-  //to {
-  //  top: 2px;
-  //}
-
-  0% {
-
+  from {
+    top: 20px;
   }
+
+  to {
+    top: 2px;
+  }
+
 }
