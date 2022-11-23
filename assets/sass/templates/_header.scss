@@ -75,7 +75,12 @@
 .social-link {
   width: 30px;
   height: 30px;
-  transition: 0.4s;
+  -webkit-transition: transform .4s;
+  -moz-transition: transform .4s;
+  -ms-transition: transform .4s;
+  -o-transition: transform .4s;
+  transition: transform .4s;
+  will-change: transform;
 
   &.houseoff {
     background: url("../img/header/social-icons/Logomark-Transparent White 2.png");
@@ -98,6 +103,10 @@
   }
 
   &:hover {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    transform: scale(1.03);
   }
 }

@@ -21,7 +21,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 body { font-family: 'Open Sans'; font-size: 24px; line-height: 33px; }
 
-.container { max-width: 1068px; margin: 0 auto; padding: 0 16px; }
+.container { max-width: 1110px; margin: 0 auto; padding: 0 16px; }
 
 .row { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
@@ -49,13 +49,13 @@ body { font-family: 'Open Sans'; font-size: 24px; line-height: 33px; }
 
 .nav-links { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-column-gap: 10px; column-gap: 10px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.social-link { width: 30px; height: 30px; -webkit-transition: 0.4s; transition: 0.4s; }
+.social-link { width: 30px; height: 30px; -webkit-transition: transform .4s; -webkit-transition: -webkit-transform .4s; transition: -webkit-transform .4s; transition: transform .4s; transition: transform .4s, -webkit-transform .4s; will-change: transform; }
 .social-link.houseoff { background: url("../img/header/social-icons/Logomark-Transparent White 2.png"); }
 .social-link.inst { background: url("../img/header/social-icons/insta_logo_fin.png"); }
 .social-link.tg { background: url("../img/header/social-icons/telegram_logo_fin.png"); }
 .social-link.twit { background: url("../img/header/social-icons/twitter_log_ fin 1.png"); }
 .social-link .tr3zor { background: url("../img/header/social-icons/etherscan-logo-fin.png"); }
-.social-link:hover { -webkit-transform: scale(1.1); transform: scale(1.1); }
+.social-link:hover { -webkit-transform: scale(1.03); transform: scale(1.03); }
 
 .about-product { max-height: 633.92px; display: -webkit-box; display: -ms-flexbox; display: flex; }
 
@@ -68,8 +68,9 @@ body { font-family: 'Open Sans'; font-size: 24px; line-height: 33px; }
 
 .about-product__buy-block__about { font-weight: 400; font-size: 24px; line-height: 33px; margin-bottom: 33px; }
 
-.about-product__buy-block__btn { font-family: 'ColorTube'; display: inline-block; padding: 14px 43px; font-size: 20px; line-height: 32px; background: #0f6eb2; -webkit-box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.15); box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.15); border-radius: 50px; text-decoration: none; color: #FFF; -webkit-transition: transform .4s; -webkit-transition: -webkit-transform .4s; transition: -webkit-transform .4s; transition: transform .4s; transition: transform .4s, -webkit-transform .4s; will-change: transform; z-index: 999; position: relative; }
+.about-product__buy-block__btn { font-family: 'ColorTube'; display: inline-block; padding: 14px 43px; font-size: 20px; line-height: 32px; background: #0f6eb2; -webkit-box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.15); box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.15); border-radius: 50px; text-decoration: none; color: #FFF; -webkit-transition: transform .4s; -webkit-transition: -webkit-transform .4s; transition: -webkit-transform .4s; transition: transform .4s; transition: transform .4s, -webkit-transform .4s; will-change: transform; z-index: 999; position: relative; text-align: center; }
 .about-product__buy-block__btn:hover { -webkit-transform: scale(1.03); transform: scale(1.03); }
+.about-product__buy-block__btn.about-product__buy-block__btn--margin { margin-top: 100px; margin-bottom: 120px; }
 
 .product__buy-block__animate__box { position: absolute; }
 
@@ -139,9 +140,18 @@ body { font-family: 'Open Sans'; font-size: 24px; line-height: 33px; }
 
 .about-block-text { margin-bottom: 177px; }
 
-.about-company { background: #2D2D2D; padding: 120px 0; }
+.about-company { background: #2D2D2D; padding: 120px 0; text-align: center; }
 
-.about-company__title { font-family: 'ColorTube'; }
+.about-company__title { font-family: 'ColorTube'; margin-bottom: 70px; text-align: left; }
 .about-company__title.purple { color: #CA47D6; }
+.about-company__title.green { color: #AEDC2D; }
+
+.about-company__story-block { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+.about-company__story-block__text { max-width: 541px; }
+.about-company__story-block__text p { color: #FFF; text-align: left; }
+
+.about-company__story-block__video { border: 1px solid #2D2D2D; }
+.about-company__story-block__video video { max-width: 100%; height: auto; border: none; }
 
 /*# sourceMappingURL=main.css.map */

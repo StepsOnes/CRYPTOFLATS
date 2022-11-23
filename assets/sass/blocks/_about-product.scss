@@ -57,6 +57,7 @@
     will-change: transform;
     z-index: 999;
     position: relative;
+    text-align: center;
 
   &:hover {
     -webkit-transform: scale(1.03);
@@ -64,6 +65,11 @@
     -ms-transform: scale(1.03);
     -o-transform: scale(1.03);
     transform: scale(1.03);
+  }
+
+  &.about-product__buy-block__btn--margin {
+    margin-top: 100px;
+    margin-bottom: 120px;
   }
 
 }

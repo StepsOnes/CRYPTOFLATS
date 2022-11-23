@@ -1,0 +1,48 @@
+.about-company {
+  background: $grey;
+  padding: 120px 0;
+  text-align: center;
+}
+
+.about-company-block {
+
+}
+
+.about-company__title {
+  font-family: 'ColorTube';
+  margin-bottom: 70px;
+  text-align: left;
+
+  &.purple {
+    color: #CA47D6;
+  }
+
+  &.green {
+    color: #AEDC2D;
+  }
+}
+
+.about-company__story-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-company__story-block__text {
+  max-width: 541px;
+
+  p {
+    color: #FFF;
+    text-align: left;
+  }
+}
+
+.about-company__story-block__video {
+  //max-height: 550px;
+  //max-width: 550px;
+  border: 1px solid $grey;
+  video {
+    max-width: 100%;
+    height: auto;
+    border: none;
+  }
+}
