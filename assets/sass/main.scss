@@ -6,15 +6,19 @@
 @import "base/base";
 @import "base/fonts";
 
-// Templates
-@import "templates/header";
-
 // Blocks
 @import "blocks/about-product";
 @import "blocks/product-cards";
 @import "blocks/about";
 @import "blocks/company";
 @import "blocks/nft-cards";
+@import "blocks/game-block";
+@import "blocks/FAQ-block";
+@import "blocks/footer-about";
+
+// Templates
+@import "templates/header";
+@import "templates/footer";
 
 
 

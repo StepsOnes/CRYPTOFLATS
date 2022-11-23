@@ -21,41 +21,11 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 body { font-family: 'Open Sans'; font-size: 24px; line-height: 33px; }
 
-.container { max-width: 1210px; margin: 0 auto; padding: 0 16px; }
+.container { max-width: 1168px; margin: 0 auto; padding: 0 16px; }
 
 .row { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
-.header { background: #2D2D2D; padding: 79px 0 37px 0; }
-
-.header-row { -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
-
-.header-nav { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-column-gap: 45px; column-gap: 45px; }
-
-.logo-group { text-decoration: none; color: #FFF; position: relative; }
-
-.logo-title { font-family: 'ColorTube'; font-size: 28px; line-height: 45px; position: relative; }
-.logo-title::before { content: ''; background: url("../img/header/logo_white 1.svg"); width: 88px; height: 84px; position: absolute; bottom: 11px; left: -53px; -webkit-animation: move infinite linear .7s; animation: move infinite linear .7s; -webkit-animation-direction: alternate; animation-direction: alternate; }
-
-@-webkit-keyframes move { 0% { -webkit-transform: rotate(0); transform: rotate(0); }
-  100% { -webkit-transform: rotate(10deg); transform: rotate(10deg); } }
-
-@keyframes move { 0% { -webkit-transform: rotate(0); transform: rotate(0); }
-  100% { -webkit-transform: rotate(10deg); transform: rotate(10deg); } }
-.logo-about { font-family: 'Open Sans'; font-weight: 500; font-size: 14px; line-height: 19px; }
-
-.nav-list { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-column-gap: 56px; column-gap: 56px; }
-
-.nav-list__item { color: #FFF; font-weight: 700; text-decoration: none; }
-
-.nav-links { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-column-gap: 10px; column-gap: 10px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-
-.social-link { width: 30px; height: 30px; -webkit-transition: transform .4s; -webkit-transition: -webkit-transform .4s; transition: -webkit-transform .4s; transition: transform .4s; transition: transform .4s, -webkit-transform .4s; will-change: transform; }
-.social-link.houseoff { background: url("../img/header/social-icons/Logomark-Transparent White 2.png"); }
-.social-link.inst { background: url("../img/header/social-icons/insta_logo_fin.png"); }
-.social-link.tg { background: url("../img/header/social-icons/telegram_logo_fin.png"); }
-.social-link.twit { background: url("../img/header/social-icons/twitter_log_ fin 1.png"); }
-.social-link .tr3zor { background: url("../img/header/social-icons/etherscan-logo-fin.png"); }
-.social-link:hover { -webkit-transform: scale(1.03); transform: scale(1.03); }
+.title { font-family: 'ColorTube'; font-style: normal; font-weight: 400; font-size: 24px; line-height: 38px; }
 
 .about-product { max-height: 633.92px; display: -webkit-box; display: -ms-flexbox; display: flex; }
 
@@ -71,6 +41,7 @@ body { font-family: 'Open Sans'; font-size: 24px; line-height: 33px; }
 .about-product__buy-block__btn { font-family: 'ColorTube'; display: inline-block; padding: 14px 43px; font-size: 20px; line-height: 32px; background: #0f6eb2; -webkit-box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.15); box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.15); border-radius: 50px; text-decoration: none; color: #FFF; -webkit-transition: transform .4s; -webkit-transition: -webkit-transform .4s; transition: -webkit-transform .4s; transition: transform .4s; transition: transform .4s, -webkit-transform .4s; will-change: transform; z-index: 999; position: relative; text-align: center; }
 .about-product__buy-block__btn:hover { -webkit-transform: scale(1.03); transform: scale(1.03); }
 .about-product__buy-block__btn.about-product__buy-block__btn--margin { margin-top: 100px; margin-bottom: 120px; }
+.about-product__buy-block__btn.about-product__buy-block__btn--margin-02 { margin-top: 120px; margin-bottom: 100px; }
 
 .product__buy-block__animate__box { position: absolute; }
 
@@ -140,9 +111,9 @@ body { font-family: 'Open Sans'; font-size: 24px; line-height: 33px; }
 
 .about-title { color: #ffc940; font-family: 'ColorTube'; font-size: 24px; line-height: 38px; margin-bottom: 48px; }
 
-.about-subtitle { color: #FFF; }
+.about-subtitle { color: #FFF; max-width: 980px; }
 
-.about-block-text { margin-bottom: 177px; }
+.about-block-text { margin-bottom: 80px; }
 
 .about-company { background: #2D2D2D; padding: 120px 0; text-align: center; }
 
@@ -194,5 +165,69 @@ body { font-family: 'Open Sans'; font-size: 24px; line-height: 33px; }
 .nft-card__about__name { font-weight: 700; text-align: center; }
 
 .nft-card__about__text { text-align: center; font-weight: 400; }
+
+.game-block__title { margin-bottom: 55px; }
+
+.game-block__subtitle { margin-bottom: 40px; font-family: 'Open Sans'; text-align: left; }
+
+.FAQ-block { margin-bottom: 323px; }
+
+.faq-title { text-align: left; margin-bottom: 50px; }
+
+.faq__according { text-align: left; }
+
+.faq__accordion__header { border-top: 1px solid #FFF; font-weight: 700; padding: 7px 0 17px 0; cursor: pointer; position: relative; }
+.faq__accordion__header span { position: absolute; right: 80px; top: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+.faq__accordion__header span::before { content: ''; width: 30px; height: 2px; background: #FFF; position: absolute; -webkit-transition: .5s; transition: .5s; }
+.faq__accordion__header span::after { content: ''; width: 30px; height: 2px; background: #FFF; position: absolute; -webkit-transform: rotate(90deg); transform: rotate(90deg); -webkit-transition: .5s; transition: .5s; }
+
+.folding-plus span::after { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+
+.faq__accordion__body { -webkit-transition: .6s; transition: .6s; overflow: hidden; max-height: 0; }
+
+.faq__accordion__body__content { color: #BDBDBD; padding-top: 40px; padding-bottom: 55px; }
+
+.footer-about { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
+
+.footer-terms a { text-decoration: none; color: #FFF; font-size: 16px; line-height: 22px; }
+.footer-terms a span { font-weight: 700; }
+
+.footer-disclaimer { font-size: 16px; line-height: 22px; }
+.footer-disclaimer span { font-weight: 700; position: relative; margin-right: 16px; }
+.footer-disclaimer span::before { content: ''; position: absolute; width: 3px; height: 3px; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); background: #FFF; right: -10px; border-radius: 50%; }
+
+.header { background: #2D2D2D; padding: 79px 0 37px 0; }
+
+.header-row { -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
+
+.header-nav { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-column-gap: 45px; column-gap: 45px; }
+
+.logo-group { text-decoration: none; color: #FFF; position: relative; }
+
+.logo-title { font-family: 'ColorTube'; font-size: 28px; line-height: 45px; position: relative; }
+.logo-title::before { content: ''; background: url("../img/header/logo_white 1.svg"); width: 88px; height: 84px; position: absolute; bottom: 11px; left: -53px; -webkit-animation: move infinite linear .7s; animation: move infinite linear .7s; -webkit-animation-direction: alternate; animation-direction: alternate; }
+
+@-webkit-keyframes move { 0% { -webkit-transform: rotate(0); transform: rotate(0); }
+  100% { -webkit-transform: rotate(10deg); transform: rotate(10deg); } }
+
+@keyframes move { 0% { -webkit-transform: rotate(0); transform: rotate(0); }
+  100% { -webkit-transform: rotate(10deg); transform: rotate(10deg); } }
+.logo-about { font-family: 'Open Sans'; font-weight: 500; font-size: 14px; line-height: 19px; }
+
+.nav-list { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-column-gap: 56px; column-gap: 56px; }
+
+.nav-list__item { color: #FFF; font-weight: 700; text-decoration: none; }
+
+.nav-links { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-column-gap: 10px; column-gap: 10px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.social-link { width: 30px; height: 30px; -webkit-transition: transform .4s; -webkit-transition: -webkit-transform .4s; transition: -webkit-transform .4s; transition: transform .4s; transition: transform .4s, -webkit-transform .4s; will-change: transform; }
+.social-link.houseoff { background: url("../img/header/social-icons/Logomark-Transparent White 2.png"); }
+.social-link.inst { background: url("../img/header/social-icons/insta_logo_fin.png"); }
+.social-link.tg { background: url("../img/header/social-icons/telegram_logo_fin.png"); }
+.social-link.twit { background: url("../img/header/social-icons/twitter_log_ fin 1.png"); }
+.social-link .tr3zor { background: url("../img/header/social-icons/etherscan-logo-fin.png"); }
+.social-link:hover { -webkit-transform: scale(1.03); transform: scale(1.03); }
+
+.footer { background: #194A5F; padding: 120px 0 156px 0; color: #FFF; text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
