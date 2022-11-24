@@ -246,7 +246,7 @@ body { font-family: 'Open Sans'; font-size: 24px; line-height: 33px; }
 
 .faq__accordion__body__content { color: #BDBDBD; padding-top: 40px; padding-bottom: 55px; }
 
-.footer-about { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
+.footer-about { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
 .footer-terms a { text-decoration: none; color: #FFF; font-size: 16px; line-height: 22px; }
 .footer-terms a span { font-weight: 700; }
