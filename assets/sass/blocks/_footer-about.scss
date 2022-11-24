@@ -2,7 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  flex-wrap: wrap;
+
+
+  @media (max-width: 1250px) {
+    flex-wrap: wrap;
+  }
 }
 
 .footer-terms {
