@@ -27,14 +27,19 @@ body { font-family: 'Open Sans'; font-size: 24px; line-height: 33px; }
 
 .title { font-family: 'ColorTube'; font-style: normal; font-weight: 400; font-size: 24px; line-height: 38px; }
 
+@media (max-width: 1250px) { .mobile-none { display: none; } }
+
 .about-product { max-height: 733px; display: -webkit-box; display: -ms-flexbox; display: flex; }
 @media (max-width: 1440px) { .about-product { max-height: 633.92px; } }
 @media (max-width: 1250px) { .about-product { display: block; max-height: 100%; } }
 
 .about-product__video { width: 65%; overflow: hidden; padding-bottom: 42%; /*942/1894*100%*/ position: relative; height: 0; }
 .about-product__video video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+@media (max-width: 1250px) { .about-product__video { width: 100%; padding-bottom: 75%; }
+  .about-product__video video { max-width: 100%; height: auto; } }
 
 .about-product__buy-block { width: 51%; height: auto; background: #F4E9E9; padding-top: 200px; text-align: center; overflow: hidden; position: relative; }
+@media (max-width: 1250px) { .about-product__buy-block { width: 100%; } }
 
 .about-product__buy-block__title { font-weight: 700; font-size: 36px; line-height: 49px; margin-bottom: 13px; position: relative; z-index: 999; }
 
@@ -121,9 +126,11 @@ body { font-family: 'Open Sans'; font-size: 24px; line-height: 33px; }
 
 .circle-animate-purple { width: 20px; height: 20px; background: #CA47D6; position: absolute; right: 0; border-radius: 50%; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
 .circle-animate-purple.circle-animate::before { content: ''; position: absolute; top: 8px; width: 966px; height: 2px; background: #CA47D6; -webkit-transform: translateX(-100%); transform: translateX(-100%); -webkit-animation: draw 0.5s linear forwards; animation: draw 0.5s linear forwards; }
+@media (max-width: 1250px) { .circle-animate-purple { display: none; } }
 
 .circle-animate-green { width: 20px; height: 20px; background: #AEDC2D; position: absolute; right: 0; border-radius: 50%; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
 .circle-animate-green.circle-animate::before { content: ''; position: absolute; top: 8px; width: 966px; height: 2px; background: #AEDC2D; -webkit-transform: translateX(-100%); transform: translateX(-100%); -webkit-animation: draw 0.5s linear forwards; animation: draw 0.5s linear forwards; }
+@media (max-width: 1250px) { .circle-animate-green { display: none; } }
 
 @-webkit-keyframes draw { 0% { width: 100px; }
   100% { width: 900px; } }
@@ -137,16 +144,18 @@ body { font-family: 'Open Sans'; font-size: 24px; line-height: 33px; }
 .about-company__title.green { color: #AEDC2D; }
 
 .about-company__story-block { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+@media (max-width: 1250px) { .about-company__story-block { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; } }
 
 .about-company__story-block__text { max-width: 541px; }
 .about-company__story-block__text p { color: #FFF; text-align: left; }
 
-.about-company__story-block__video { height: 550px; width: 550px; }
+.about-company__story-block__video { max-height: 550px; max-width: 550px; }
 .about-company__story-block__video img { max-width: 100%; }
 
 .about-company__story-block__story__text { color: #FFF; text-align: left; max-width: 1100px; margin-bottom: 70px; }
 
 .nft-cards { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; gap: 200px; }
+@media (max-width: 1250px) { .nft-cards { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; gap: 65px; } }
 
 .nft-card { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
@@ -247,15 +256,19 @@ body { font-family: 'Open Sans'; font-size: 24px; line-height: 33px; }
 .footer-disclaimer span::before { content: ''; position: absolute; width: 3px; height: 3px; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); background: #FFF; right: -10px; border-radius: 50%; }
 
 .header { background: #2D2D2D; padding: 79px 0 37px 0; }
+@media (max-width: 1250px) { .header { padding: 40px 0 15px 0; } }
 
 .header-row { -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
 
 .header-nav { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-column-gap: 45px; column-gap: 45px; }
+@media (max-width: 1250px) { .header-nav { display: none; } }
 
 .logo-group { text-decoration: none; color: #FFF; position: relative; }
 
 .logo-title { font-family: 'ColorTube'; font-size: 28px; line-height: 45px; position: relative; }
-.logo-title::before { content: ''; background: url("../img/header/logo_white 1.svg"); width: 88px; height: 84px; position: absolute; bottom: 11px; left: -53px; -webkit-animation: move infinite linear .7s; animation: move infinite linear .7s; -webkit-animation-direction: alternate; animation-direction: alternate; }
+.logo-title::before { content: ''; background: url("../img/header/logo_white 1.svg"); width: 88px; height: 84px; position: absolute; bottom: 11px; left: -53px; -webkit-animation: move infinite linear .7s; animation: move infinite linear .7s; -webkit-animation-direction: alternate; animation-direction: alternate; background-size: cover; }
+@media (max-width: 1250px) { .logo-title { margin-left: 23px; font-size: 14px; }
+  .logo-title::before { width: 46px; height: 44px; bottom: 18px; left: -30px; } }
 
 @-webkit-keyframes move { 0% { -webkit-transform: rotate(0); transform: rotate(0); }
   100% { -webkit-transform: rotate(10deg); transform: rotate(10deg); } }
@@ -263,6 +276,7 @@ body { font-family: 'Open Sans'; font-size: 24px; line-height: 33px; }
 @keyframes move { 0% { -webkit-transform: rotate(0); transform: rotate(0); }
   100% { -webkit-transform: rotate(10deg); transform: rotate(10deg); } }
 .logo-about { font-family: 'Open Sans'; font-weight: 500; font-size: 14px; line-height: 19px; }
+@media (max-width: 1250px) { .logo-about { display: none; } }
 
 .nav-list { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-column-gap: 56px; column-gap: 56px; }
 

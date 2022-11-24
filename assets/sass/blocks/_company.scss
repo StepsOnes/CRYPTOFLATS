@@ -25,6 +25,10 @@
 .about-company__story-block {
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 1250px) {
+    flex-direction: column;
+  }
 }
 
 .about-company__story-block__text {
@@ -37,8 +41,8 @@
 }
 
 .about-company__story-block__video {
-  height: 550px;
-  width: 550px;
+  max-height: 550px;
+  max-width: 550px;
 
   & img {
     max-width: 100%;

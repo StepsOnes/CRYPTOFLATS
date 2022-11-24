@@ -1,7 +1,12 @@
 .nft-cards {
-display: flex;
+  display: flex;
   justify-content: center;
   gap: 200px;
+
+  @media (max-width: 1250px) {
+    flex-direction: column;
+    gap: 65px;
+  }
 }
 
 .nft-card {
