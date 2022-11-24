@@ -39,6 +39,10 @@
 .about-company__story-block__video {
   height: 550px;
   width: 550px;
+
+  & img {
+    max-width: 100%;
+  }
 }
 
 .about-company__story-block__story__text {

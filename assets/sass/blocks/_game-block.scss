@@ -10,5 +10,112 @@
 }
 
 .game-place {
+  position: relative;
+}
 
+.room {
+  position: absolute;
+}
+
+.drop5 {
+  bottom: 28px;
+  left: 364px;
+  opacity: 0;
+  transition: 1s;
+  z-index: 10;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.drop4 {
+  bottom: 135px;
+  left: 571px;
+  opacity: 0;
+  transition: 1s;
+  z-index: 7;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.drop3 {
+  bottom: 155px;
+  left: 120px;
+  opacity: 0;
+  transition: 1s;
+
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.drop2 {
+  bottom: 240px;
+  left: 772px;
+  opacity: 0;
+  transition: 1s;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.drop1 {
+  bottom: 369px;
+  left: 529px;
+  opacity: 0;
+  transition: 1s;
+  z-index: 5;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.drop-text {
+  position: absolute;
+}
+
+.about-drop5 {
+  top: 58%;
+  left: 53%;
+  transform: translate(-58%, -53%);
+}
+
+.name-drop5 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.about-drop3 {
+  top: 57%;
+  left: 53%;
+  transform: translate(-57%, -53%);
+}
+
+.name-drop3 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.name-drop {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.about-drop {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
 }

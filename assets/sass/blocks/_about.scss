@@ -48,7 +48,31 @@
       height: 2px;
       background: #CA47D6;
       transform: translateX(-100%);
-      animation: draw 1s linear forwards;
+      animation: draw 0.5s linear forwards;
+    }
+  }
+}
+
+.circle-animate-green {
+  width: 20px;
+  height: 20px;
+  background: #AEDC2D;;
+  position: absolute;
+  right: 0;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+
+  &.circle-animate {
+    &::before {
+      content: '';
+      position: absolute;
+      top: 8px;
+      width: 966px;
+      height: 2px;
+      background: #AEDC2D;;
+      transform: translateX(-100%);
+      animation: draw 0.5s linear forwards;
     }
   }
 }
