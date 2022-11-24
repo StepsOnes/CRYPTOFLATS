@@ -246,7 +246,8 @@ body { font-family: 'Open Sans'; font-size: 24px; line-height: 33px; }
 
 .faq__accordion__body__content { color: #BDBDBD; padding-top: 40px; padding-bottom: 55px; }
 
-.footer-about { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+.footer-about { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
+@media (max-width: 1250px) { .footer-about { -ms-flex-wrap: wrap; flex-wrap: wrap; } }
 
 .footer-terms a { text-decoration: none; color: #FFF; font-size: 16px; line-height: 22px; }
 .footer-terms a span { font-weight: 700; }
@@ -292,6 +293,6 @@ body { font-family: 'Open Sans'; font-size: 24px; line-height: 33px; }
 .social-link .tr3zor { background: url("../img/header/social-icons/etherscan-logo-fin.png"); }
 .social-link:hover { -webkit-transform: scale(1.03); transform: scale(1.03); }
 
-.footer { background: #194A5F; padding: 120px 0 156px 0; color: #FFF; text-align: center; }
+.footer { background: #194A5F; padding: 120px 0 156px 0; color: #FFF; text-align: center; overflow: hidden; }
 
 /*# sourceMappingURL=main.css.map */
