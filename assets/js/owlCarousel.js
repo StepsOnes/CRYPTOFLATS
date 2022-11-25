@@ -10,7 +10,9 @@ $(document).ready(function(){
         autoplayTimeout: 1000,
         autoplaySpeed: 1000,
         autoplayHoverPause: false,
-        autoWidth: true
+        autoWidth: true,
+        mouseDrag: false,
+        touchDrag: false
     });
 
     $('.owl-carousel-2').owlCarousel({
@@ -22,6 +24,8 @@ $(document).ready(function(){
         autoplayTimeout: 1000,
         autoplaySpeed: 1000,
         autoplayHoverPause: false,
-        autoWidth: true
+        autoWidth: true,
+        mouseDrag: false,
+        touchDrag: false
     });
 });
