@@ -13,11 +13,20 @@
   font-size: 24px;
   line-height: 38px;
   margin-bottom: 48px;
+
+  @media (max-width: 1250px) {
+    margin-bottom: 24px;
+  }
 }
 
 .about-subtitle {
   color: #FFF;
   text-align: center;
+
+  @media (max-width: 1250px) {
+    font-size: 17px;
+    line-height: 23px;
+  }
 }
 
 .about-block-text {

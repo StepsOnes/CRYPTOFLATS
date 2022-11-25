@@ -51,6 +51,8 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 .about-product__buy-block__btn:hover { -webkit-transform: scale(1.03); transform: scale(1.03); }
 .about-product__buy-block__btn.about-product__buy-block__btn--margin { margin-top: 100px; margin-bottom: 120px; }
 .about-product__buy-block__btn.about-product__buy-block__btn--margin-02 { margin-top: 120px; margin-bottom: 100px; }
+@media (max-width: 1250px) { .about-product__buy-block__btn { font-size: 18px; line-height: 29px; padding: 15px 46px; }
+  .about-product__buy-block__btn.about-product__buy-block__btn--margin { margin-top: 40px; } }
 
 .product__buy-block__animate__box { position: absolute; }
 
@@ -101,26 +103,38 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 @keyframes marquee-2 { 0% { left: 0%; }
   100% { left: -100%; } }
 .b-marquee-line__flow { background: #f0f0f0; font-size: 0; line-height: 0; height: 240px; overflow: hidden; position: relative; width: 100%; }
-.b-marquee-line__flow-in { display: block; height: 240px; }
-.cssanimations .b-marquee-line__flow-in { width: 200%; position: absolute; overflow: hidden; -webkit-animation: marquee 20s linear infinite; animation: marquee 20s linear infinite; }
-.b-marquee-line__flow-block { white-space: nowrap; }
+.b-marquee-line__flow-in { display: -webkit-box; display: -ms-flexbox; display: flex; height: 240px; }
+.cssanimations .b-marquee-line__flow-in { width: 200%; position: absolute; overflow: hidden; -webkit-animation: marquee 15s linear infinite; animation: marquee 15s linear infinite; }
+.b-marquee-line__flow-block { display: -webkit-box; display: -ms-flexbox; display: flex; }
 .no-cssanimations .b-marquee-line__flow-block:last-child { display: none; }
 .cssanimations .b-marquee-line__flow-block { white-space: nowrap; float: left; width: 50%; }
 .b-marquee-line__flow-item { height: 240px; }
 
 .b-marquee-line-2__flow { background: #f0f0f0; font-size: 0; line-height: 0; height: 240px; overflow: hidden; position: relative; width: 100%; }
 .b-marquee-line-2__flow-in { display: block; height: 240px; }
-.cssanimations .b-marquee-line-2__flow-in { width: 200%; position: absolute; overflow: hidden; -webkit-animation: marquee-2 20s linear infinite; animation: marquee-2 20s linear infinite; }
+.cssanimations .b-marquee-line-2__flow-in { width: 200%; position: absolute; overflow: hidden; -webkit-animation: marquee-2 15s linear infinite; animation: marquee-2 15s linear infinite; }
 .b-marquee-line-2__flow-block { white-space: nowrap; }
 .no-cssanimations .b-marquee-line-2__flow-block:last-child { display: none; }
 .cssanimations .b-marquee-line-2__flow-block { white-space: nowrap; float: left; width: 50%; }
 .b-marquee-line-2__flow-item { height: 240px; }
 
+@media screen and (max-width: 1440px) { .b-marquee-line__flow-item { height: 203px; }
+  .b-marquee-line__flow { height: 203px; }
+  .b-marquee-line__flow-in { height: 203px; }
+  .b-marquee-line-2__flow { height: 203px; }
+  .b-marquee-line-2__flow-in { height: 203px; } }
+@media screen and (max-width: 1250px) { .b-marquee-line__flow-item { height: 130px; }
+  .b-marquee-line__flow { height: 130px; }
+  .b-marquee-line__flow-in { height: 130px; }
+  .b-marquee-line-2__flow { height: 130px; }
+  .b-marquee-line-2__flow-in { height: 130px; } }
 .about { min-height: 784px; width: 100%; background: url("../img/about/bc_img.jpg"); padding-top: 120px; text-align: center; background-size: cover; }
 
 .about-title { color: #ffc940; font-family: 'ColorTube'; font-size: 24px; line-height: 38px; margin-bottom: 48px; }
+@media (max-width: 1250px) { .about-title { margin-bottom: 24px; } }
 
 .about-subtitle { color: #FFF; text-align: center; }
+@media (max-width: 1250px) { .about-subtitle { font-size: 17px; line-height: 23px; } }
 
 .about-block-text { max-width: 980px; margin: 0 auto 80px auto; }
 
@@ -140,21 +154,25 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 @keyframes draw { 0% { width: 100px; }
   100% { width: 900px; } }
 .about-company { background: #2D2D2D; padding: 120px 0; text-align: center; }
+@media (max-width: 1250px) { .about-company { padding: 100px 0 65px 0; } }
 
 .about-company__title { font-family: 'ColorTube'; margin-bottom: 70px; text-align: left; }
 .about-company__title.purple { color: #CA47D6; }
 .about-company__title.green { color: #AEDC2D; }
+@media (max-width: 1250px) { .about-company__title { text-align: center; margin-bottom: 40px; } }
 
 .about-company__story-block { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 @media (max-width: 1250px) { .about-company__story-block { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; } }
 
 .about-company__story-block__text { max-width: 541px; }
 .about-company__story-block__text p { color: #FFF; text-align: left; }
+@media (max-width: 1250px) { .about-company__story-block__text p { font-size: 17px; line-height: 23px; } }
 
 .about-company__story-block__video { max-height: 550px; max-width: 550px; }
 .about-company__story-block__video img { max-width: 100%; }
 
 .about-company__story-block__story__text { color: #FFF; text-align: left; max-width: 1100px; margin-bottom: 70px; }
+@media (max-width: 1250px) { .about-company__story-block__story__text { font-size: 17px; line-height: 23px; } }
 
 .nft-cards { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; gap: 200px; }
 @media (max-width: 1250px) { .nft-cards { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; gap: 65px; } }
@@ -165,6 +183,7 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 .nft-card__img.nft-card__img__01 { -webkit-animation: change_color_01 infinite 8s linear; animation: change_color_01 infinite 8s linear; -webkit-animation-fill-mode: both; animation-fill-mode: both; -webkit-animation-direction: alternate; animation-direction: alternate; }
 .nft-card__img.nft-card__img__02 { -webkit-animation: change_color_02 infinite 8s linear; animation: change_color_02 infinite 8s linear; -webkit-animation-fill-mode: both; animation-fill-mode: both; -webkit-animation-direction: alternate; animation-direction: alternate; }
 .nft-card__img img { max-width: 100%; height: auto; border-radius: 50%; }
+@media (max-width: 1250px) { .nft-card__img { max-width: 200px; max-height: 200px; } }
 
 @-webkit-keyframes change_color_01 { 0% { border: 4px solid yellow; }
   25% { border: 4px solid #00ff22; }
@@ -188,10 +207,13 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
   75% { border: 4px solid #f60505; }
   100% { border: 4px solid #ffffff; } }
 .nft-card__about { margin-top: 58px; max-width: 252px; color: #FFF; text-align: center; }
+@media (max-width: 1250px) { .nft-card__about { margin-top: 33px; } }
 
 .nft-card__about__name { font-weight: 700; text-align: center; }
+@media (max-width: 1250px) { .nft-card__about__name { font-size: 17px; line-height: 23px; } }
 
 .nft-card__about__text { text-align: center; font-weight: 400; }
+@media (max-width: 1250px) { .nft-card__about__text { font-size: 17px; line-height: 23px; } }
 
 .game-block__title { margin-bottom: 55px; text-align: left; }
 

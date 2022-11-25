@@ -38,6 +38,11 @@
     height: auto;
     border-radius: 50%;
   }
+
+  @media (max-width: 1250px) {
+    max-width: 200px;
+    max-height: 200px;
+  }
 }
 
 @keyframes change_color_01 {
@@ -89,14 +94,27 @@
   max-width: 252px;
   color: #FFF;
   text-align: center;
+
+  @media (max-width: 1250px) {
+    margin-top: 33px;
+  }
 }
 
 .nft-card__about__name {
   font-weight: 700;
   text-align: center;
+  @media (max-width: 1250px) {
+    font-size: 17px;
+    line-height: 23px;
+  }
 }
 
 .nft-card__about__text {
   text-align: center;
   font-weight: 400;
+
+  @media (max-width: 1250px) {
+    font-size: 17px;
+    line-height: 23px;
+  }
 }

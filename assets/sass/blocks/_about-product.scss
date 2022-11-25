@@ -105,6 +105,17 @@
     margin-bottom: 100px;
   }
 
+  @media (max-width: 1250px) {
+    font-size: 18px;
+    line-height: 29px;
+    padding: 15px 46px;
+
+    &.about-product__buy-block__btn--margin {
+      margin-top: 40px;
+
+    }
+  }
+
 }
 
 .product__buy-block__animate__box {
