@@ -1,4 +1,4 @@
-
+AOS.init();
 const circleAnimatePurple = document.querySelector('.circle-animate-purple');
 const circleAnimateGreen = document.querySelector('.circle-animate-green');
 const storyAnimate = document.querySelector('#story-animate');
