@@ -237,12 +237,12 @@
   }
 
 }
-//
-//.animate-carousel-item {
-//  //max-height: 205px;
-//  width: 205px;
-//  img {
-//    width: 100%;
-//    height: auto;
-//  }
-//}
+
+.animate-carousel-item {
+  max-height: 205px;
+  width: 205px;
+  h4 img {
+    width: 100%;
+    height: auto;
+  }
+}
