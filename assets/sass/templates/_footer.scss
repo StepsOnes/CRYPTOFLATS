@@ -4,4 +4,8 @@
   color: #FFF;
   text-align: center;
   overflow: hidden;
+
+  @media (max-width: 1250px) {
+    padding: 100px 0;
+  }
 }

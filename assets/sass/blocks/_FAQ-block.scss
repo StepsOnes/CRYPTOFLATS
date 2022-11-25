@@ -1,10 +1,19 @@
 .FAQ-block {
   margin-bottom: 323px;
+
+  @media (max-width: 1250px) {
+    margin-bottom: 100px;
+  }
 }
 
 .faq-title {
   text-align: left;
   margin-bottom: 50px;
+
+  @media (max-width: 1250px) {
+    margin-bottom: 33px;
+    text-align: center;
+  }
 }
 
 .faq__according {
@@ -44,6 +53,25 @@
     }
   }
 
+  @media (max-width: 1250px) {
+    font-size: 17px;
+    line-height: 23px;
+    padding-right: 80px;
+
+    span {
+      right: 40px;
+
+      &::before {
+        width: 20px;
+        height: 1px;
+      }
+
+      &::after {
+        width: 20px;
+        height: 1px;
+      }
+    }
+  }
 }
 
 .folding-plus {
@@ -67,4 +95,11 @@
   color: #BDBDBD;
   padding-top: 40px;
   padding-bottom: 55px;
+
+  @media (max-width: 1250px) {
+    font-size: 17px;
+    line-height: 23px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
 }

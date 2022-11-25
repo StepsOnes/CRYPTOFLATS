@@ -5,7 +5,16 @@
 
 
   @media (max-width: 1250px) {
-    flex-wrap: wrap;
+    display: none;
+  }
+}
+
+.footer-about-mobile {
+  display: none;
+  @media (max-width: 1250px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 

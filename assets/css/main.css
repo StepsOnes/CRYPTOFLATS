@@ -169,10 +169,12 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 
 .about-company__story-block__text { max-width: 541px; }
 .about-company__story-block__text p { color: #FFF; text-align: left; }
-@media (max-width: 1250px) { .about-company__story-block__text p { font-size: 17px; line-height: 23px; } }
+@media (max-width: 1250px) { .about-company__story-block__text { margin: 0 auto; }
+  .about-company__story-block__text p { font-size: 17px; line-height: 23px; } }
 
 .about-company__story-block__video { max-height: 550px; max-width: 550px; }
 .about-company__story-block__video img { max-width: 100%; }
+@media (max-width: 1250px) { .about-company__story-block__video { margin: 0 auto; } }
 
 .about-company__story-block__story__text { color: #FFF; text-align: left; max-width: 1100px; margin-bottom: 70px; }
 @media (max-width: 1250px) { .about-company__story-block__story__text { font-size: 17px; line-height: 23px; } }
@@ -219,8 +221,10 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 @media (max-width: 1250px) { .nft-card__about__text { font-size: 17px; line-height: 23px; } }
 
 .game-block__title { margin-bottom: 55px; text-align: left; }
+@media (max-width: 1250px) { .game-block__title { text-align: center; margin-bottom: 33px; } }
 
 .game-block__subtitle { margin-bottom: 40px; font-family: 'Open Sans'; text-align: left; }
+@media (max-width: 1250px) { .game-block__subtitle { font-size: 17px; line-height: 23px; } }
 
 .game-place { position: relative; }
 
@@ -256,8 +260,10 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 .about-drop { font-family: 'Open Sans'; font-style: normal; font-weight: 400; font-size: 24px; line-height: 33px; }
 
 .FAQ-block { margin-bottom: 323px; }
+@media (max-width: 1250px) { .FAQ-block { margin-bottom: 100px; } }
 
 .faq-title { text-align: left; margin-bottom: 50px; }
+@media (max-width: 1250px) { .faq-title { margin-bottom: 33px; text-align: center; } }
 
 .faq__according { text-align: left; }
 
@@ -265,6 +271,10 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 .faq__accordion__header span { position: absolute; right: 80px; top: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
 .faq__accordion__header span::before { content: ''; width: 30px; height: 2px; background: #FFF; position: absolute; -webkit-transition: .5s; transition: .5s; }
 .faq__accordion__header span::after { content: ''; width: 30px; height: 2px; background: #FFF; position: absolute; -webkit-transform: rotate(90deg); transform: rotate(90deg); -webkit-transition: .5s; transition: .5s; }
+@media (max-width: 1250px) { .faq__accordion__header { font-size: 17px; line-height: 23px; padding-right: 80px; }
+  .faq__accordion__header span { right: 40px; }
+  .faq__accordion__header span::before { width: 20px; height: 1px; }
+  .faq__accordion__header span::after { width: 20px; height: 1px; } }
 
 .folding-plus span::after { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
 
@@ -272,9 +282,13 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 .faq__accordion__body.faq__accordion__body--border { border-bottom: 1px solid #FFF; }
 
 .faq__accordion__body__content { color: #BDBDBD; padding-top: 40px; padding-bottom: 55px; }
+@media (max-width: 1250px) { .faq__accordion__body__content { font-size: 17px; line-height: 23px; padding-top: 15px; padding-bottom: 30px; } }
 
 .footer-about { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
-@media (max-width: 1250px) { .footer-about { -ms-flex-wrap: wrap; flex-wrap: wrap; } }
+@media (max-width: 1250px) { .footer-about { display: none; } }
+
+.footer-about-mobile { display: none; }
+@media (max-width: 1250px) { .footer-about-mobile { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; } }
 
 .footer-terms a { text-decoration: none; color: #FFF; font-size: 16px; line-height: 22px; }
 .footer-terms a span { font-weight: 700; }
@@ -321,5 +335,6 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 .social-link:hover { -webkit-transform: scale(1.03); transform: scale(1.03); }
 
 .footer { background: #194A5F; padding: 120px 0 156px 0; color: #FFF; text-align: center; overflow: hidden; }
+@media (max-width: 1250px) { .footer { padding: 100px 0; } }
 
 /*# sourceMappingURL=main.css.map */

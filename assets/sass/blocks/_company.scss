@@ -42,11 +42,14 @@
   p {
     color: #FFF;
     text-align: left;
+  }
 
-    @media (max-width: 1250px) {
+  @media (max-width: 1250px) {
+    p {
       font-size: 17px;
       line-height: 23px;
     }
+    margin: 0 auto;
   }
 }
 
@@ -56,6 +59,10 @@
 
   & img {
     max-width: 100%;
+  }
+
+  @media (max-width: 1250px) {
+    margin: 0 auto;
   }
 }
 
