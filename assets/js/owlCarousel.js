@@ -4,7 +4,7 @@
 
 $(document).ready(function(){
     $('.owl-carousel').owlCarousel({
-                items: 8,
+        items: 8,
         dots: false,
         loop: true,
         autoplay: true,
