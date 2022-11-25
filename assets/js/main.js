@@ -1,19 +1,22 @@
 AOS.init();
 const circleAnimatePurple = document.querySelector('.circle-animate-purple');
 const circleAnimateGreen = document.querySelector('.circle-animate-green');
-const storyAnimate = document.querySelector('#story-animate');
-const animateImg = ['1.png', '2.png', '3.png', '4.png', '5.png', '6.png', '7.png', '8.png'];
 
-let i = 0;
+const menu = document.getElementById('mobile-menu');
+const closeMenu = document.getElementById('close');
+const openMenu = document.getElementById('open');
+const body = document.querySelector('body');
 
-setInterval(toggle, 400);
-function toggle() {
-    storyAnimate.src = `assets/img/animation/${animateImg[i++]}`;
-    if (i >8) {
-        i = 0;
-        storyAnimate.src = `assets/img/animation/${animateImg[0]}`;
-    }
-}
+openMenu.addEventListener('click', function () {
+    body.classList.toggle('no-scroll');
+    menu.classList.toggle('not-visible');
+});
+
+closeMenu.addEventListener('click', function () {
+    body.classList.toggle('no-scroll');
+    menu.classList.toggle('not-visible');
+})
+
 
 document.addEventListener('scroll', function () {
     if (window.scrollY > 2000) {
@@ -45,4 +48,19 @@ function boxHandler2(e){
     }
 }
 
+
+const storyAnimate = document.querySelector('#story-animate');
+const animateImg = ['1.png', '2.png', '3.png', '4.png', '5.png', '6.png', '7.png', '8.png'];
+
+let i = 0;
+
+setInterval(toggle, 400);
+
+function toggle() {
+    storyAnimate.src = `assets/img/animation/${animateImg[i++]}`;
+    if (i >8) {
+        i = 0;
+        storyAnimate.src = `assets/img/animation/${animateImg[0]}`;
+    }
+}
 

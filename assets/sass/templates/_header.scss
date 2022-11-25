@@ -135,3 +135,52 @@
     transform: scale(1.03);
   }
 }
+
+.burger {
+  display: none;
+  gap: 8px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    height: 2px;
+    width: 30px;
+    background: #FFF;
+  }
+
+  &.burger-close {
+    position: relative;
+    top: 10px;
+    & span:nth-child(1) {
+      display: none;
+    }
+
+    & span:nth-child(2) {
+      transform: rotate(133deg);
+      position: relative;
+      top: 10px;
+    }
+
+    & span:nth-child(3) {
+      transform: rotate(50deg);
+    }
+  }
+
+  @media (max-width: 1250px) {
+    display: flex;
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+  background: #2D2D2D;
+  top: 0;
+  z-index: 9999;
+}
+
+.mobile-menu-header {
+  padding-top: 40px;
+}

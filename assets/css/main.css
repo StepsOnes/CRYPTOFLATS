@@ -31,6 +31,10 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 
 @media (max-width: 1250px) { .mobile-none { display: none; } }
 
+.no-scroll { overflow: hidden; }
+
+.not-visible { display: none; }
+
 .about-product { max-height: 733px; display: -webkit-box; display: -ms-flexbox; display: flex; }
 @media (max-width: 1440px) { .about-product { max-height: 633.92px; } }
 @media (max-width: 1250px) { .about-product { display: block; max-height: 100%; } }
@@ -333,6 +337,18 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 .social-link.twit { background: url("../img/header/social-icons/twitter_log_ fin 1.png"); }
 .social-link .tr3zor { background: url("../img/header/social-icons/etherscan-logo-fin.png"); }
 .social-link:hover { -webkit-transform: scale(1.03); transform: scale(1.03); }
+
+.burger { display: none; gap: 8px; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.burger span { height: 2px; width: 30px; background: #FFF; }
+.burger.burger-close { position: relative; top: 10px; }
+.burger.burger-close span:nth-child(1) { display: none; }
+.burger.burger-close span:nth-child(2) { -webkit-transform: rotate(133deg); transform: rotate(133deg); position: relative; top: 10px; }
+.burger.burger-close span:nth-child(3) { -webkit-transform: rotate(50deg); transform: rotate(50deg); }
+@media (max-width: 1250px) { .burger { display: -webkit-box; display: -ms-flexbox; display: flex; } }
+
+.mobile-menu { position: fixed; width: 100%; min-height: 100vh; background: #2D2D2D; top: 0; z-index: 9999; }
+
+.mobile-menu-header { padding-top: 40px; }
 
 .footer { background: #194A5F; padding: 120px 0 156px 0; color: #FFF; text-align: center; overflow: hidden; }
 @media (max-width: 1250px) { .footer { padding: 100px 0; } }
