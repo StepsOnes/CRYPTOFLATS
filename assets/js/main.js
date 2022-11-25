@@ -17,7 +17,6 @@ closeMenu.addEventListener('click', function () {
     menu.classList.toggle('not-visible');
 })
 
-
 document.addEventListener('scroll', function () {
     if (window.scrollY > 2000) {
         circleAnimatePurple.classList.add('circle-animate');
