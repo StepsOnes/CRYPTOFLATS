@@ -1,0 +1,22 @@
+.owl-theme .owl-dots .owl-dot span{
+    border: none;
+    padding: 0;
+    background: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    border: none;
+    padding: 0;
+    background: #FFC940;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}

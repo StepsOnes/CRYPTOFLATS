@@ -28,14 +28,6 @@ $(document).ready(function(){
         mouseDrag: false,
         touchDrag: false
     });
-
-
-    $('.theGame-carousel').owlCarousel({
-        items: 1,
-        dots: true,
-        autoWidth: true,
-    });
-
 });
 
 $(function () {
@@ -59,4 +51,21 @@ $(function () {
             owlCarousel && owlCarousel.destroy();
         }
     }).trigger('resize');
-})
+});
+
+
+
+$(function () {
+    $(window).on('resize', function () {
+        var owlCarousel = $('.theGame-carousel').data('owlCarousel');
+        if ($(window).width() <= 767) {
+            !owlCarousel && $('.theGame-carousel').owlCarousel({
+                items: 1,
+                dots: true,
+                autoWidth: true,
+            });
+        } else {
+            owlCarousel && owlCarousel.destroy();
+        }
+    }).trigger('resize');
+});
