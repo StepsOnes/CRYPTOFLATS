@@ -29,6 +29,13 @@ $(document).ready(function(){
         touchDrag: false
     });
 
+
+    $('.theGame-carousel').owlCarousel({
+        items: 1,
+        dots: true,
+        autoWidth: true,
+    });
+
 });
 
 $(function () {
