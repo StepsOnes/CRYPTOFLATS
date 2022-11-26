@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'Polly';
-    src: local('Polly Rounded Regular'), local('Polly-Rounded-Regular'),
-        url('PollyRounded-Regular.woff2') format('woff2'),
-        url('PollyRounded-Regular.woff') format('woff'),
-        url('PollyRounded-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-  }

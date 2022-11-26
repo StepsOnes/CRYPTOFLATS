@@ -27,7 +27,7 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 
 .row { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
-.title { font-family: 'Polly'; font-style: normal; font-weight: 400; font-size: 24px; line-height: 38px; }
+.title { font-family: 'Polly'; font-style: normal; font-weight: bold; font-size: 30px; line-height: 38px; }
 
 @media (max-width: 1250px) { .mobile-none { display: none; } }
 
@@ -44,6 +44,7 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 
 .about-product__video { width: 65%; overflow: hidden; padding-bottom: 42%; /*942/1894*100%*/ position: relative; height: 0; }
 .about-product__video video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.about-product__video img { max-width: 100%; }
 @media (max-width: 1250px) { .about-product__video { width: 100%; padding-bottom: 75%; }
   .about-product__video video { max-width: 100%; height: auto; } }
 
@@ -52,14 +53,16 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 
 .about-product__buy-block__title { font-weight: 700; font-size: 36px; line-height: 49px; margin-bottom: 13px; position: relative; z-index: 999; }
 
-.about-product__buy-block__about { font-weight: 400; font-size: 24px; line-height: 33px; margin-bottom: 33px; }
+.about-product__buy-block__about { font-weight: 400; font-size: 36px; line-height: 49px; margin-bottom: 33px; color: #626262; }
+@media (max-width: 1250px) { .about-product__buy-block__about { font-weight: 500; font-size: 18px; line-height: 25px; color: #626262; } }
 
-.about-product__buy-block__btn { font-family: 'Polly'; display: inline-block; padding: 14px 43px; font-size: 20px; line-height: 32px; background: #0f6eb2; -webkit-box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.15); box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.15); border-radius: 50px; text-decoration: none; color: #FFF; -webkit-transition: transform .4s; -webkit-transition: -webkit-transform .4s; transition: -webkit-transform .4s; transition: transform .4s; transition: transform .4s, -webkit-transform .4s; will-change: transform; z-index: 999; position: relative; text-align: center; }
+.about-product__buy-block__btn { font-family: 'Polly'; font-weight: bold; display: inline-block; padding: 14px 43px; font-size: 24px; line-height: 32px; background: #0f6eb2; -webkit-box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.15); box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.15); border-radius: 50px; text-decoration: none; color: #FFF; -webkit-transition: transform .4s; -webkit-transition: -webkit-transform .4s; transition: -webkit-transform .4s; transition: transform .4s; transition: transform .4s, -webkit-transform .4s; will-change: transform; z-index: 999; position: relative; text-align: center; }
 .about-product__buy-block__btn:hover { -webkit-transform: scale(1.03); transform: scale(1.03); }
 .about-product__buy-block__btn.about-product__buy-block__btn--margin { margin-top: 100px; margin-bottom: 120px; }
 .about-product__buy-block__btn.about-product__buy-block__btn--margin-02 { margin-top: 120px; margin-bottom: 100px; }
 @media (max-width: 1250px) { .about-product__buy-block__btn { font-size: 20px; line-height: 29px; padding: 15px 46px; }
-  .about-product__buy-block__btn.about-product__buy-block__btn--margin { margin-top: 40px; } }
+  .about-product__buy-block__btn.about-product__buy-block__btn--margin { margin-top: 40px; }
+  .about-product__buy-block__btn.about-product__buy-block__btn--margin-02 { margin-top: 40px; } }
 
 .product__buy-block__animate__box { position: absolute; }
 
@@ -154,7 +157,7 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
   .b-marquee-line-2__flow-in { height: 130px; } }
 .about { min-height: 784px; width: 100%; background: url("../img/about/bc_img.jpg"); padding-top: 120px; text-align: center; background-size: cover; }
 
-.about-title { color: #ffc940; font-family: 'Polly'; font-size: 24px; line-height: 38px; margin-bottom: 48px; }
+.about-title { color: #ffc940; font-family: 'Polly'; font-weight: bold; font-size: 30px; line-height: 38px; margin-bottom: 48px; }
 @media (max-width: 1250px) { .about-title { margin-bottom: 24px; } }
 
 .about-subtitle { color: #FFF; text-align: center; }
@@ -180,7 +183,7 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 .about-company { background: #2D2D2D; padding: 120px 0; text-align: center; }
 @media (max-width: 1250px) { .about-company { padding: 100px 0 65px 0; } }
 
-.about-company__title { font-family: 'Polly'; margin-bottom: 70px; text-align: left; }
+.about-company__title { font-family: 'Polly'; margin-bottom: 70px; text-align: left; font-size: 30px; font-weight: bold; }
 .about-company__title.purple { color: #CA47D6; }
 .about-company__title.green { color: #AEDC2D; }
 @media (max-width: 1250px) { .about-company__title { text-align: center; margin-bottom: 40px; } }
@@ -241,11 +244,11 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 .nft-card__about__text { text-align: center; font-weight: 400; }
 @media (max-width: 1250px) { .nft-card__about__text { font-size: 17px; line-height: 23px; } }
 
-.game-block__title { margin-bottom: 55px; text-align: left; }
+.game-block__title { margin-bottom: 55px; text-align: left; font-size: 30px; }
 @media (max-width: 1250px) { .game-block__title { text-align: center; margin-bottom: 33px; } }
 
-.game-block__subtitle { margin-bottom: 40px; font-family: 'Open Sans'; text-align: left; }
-@media (max-width: 1250px) { .game-block__subtitle { font-size: 17px; line-height: 23px; margin-bottom: 120px; } }
+.game-block__subtitle { margin-bottom: 40px; font-family: 'Open Sans'; text-align: left; font-size: 24px; }
+@media (max-width: 1250px) { .game-block__subtitle { font-size: 17px; line-height: 23px; margin-bottom: 40px; } }
 
 .game-place { position: relative; }
 
