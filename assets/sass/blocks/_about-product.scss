@@ -47,6 +47,8 @@
 
   @media (max-width: 1250px) {
     width: 100%;
+    min-width: 390px;
+    padding: 100px 0 120px 0;
   }
 }
 
@@ -128,6 +130,10 @@
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
+
+  @media (max-width: 1250px) {
+    top: -83px;
+  }
 }
 
 .inf-animate {
@@ -147,6 +153,10 @@
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
+
+  @media (max-width: 1250px) {
+    top: 250px;
+  }
 }
 
 .table__around-animate {
@@ -158,6 +168,10 @@
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
 
+  @medai (max-width: 1250px) {
+    transform: translateX(-40%);
+    left: 40%;
+  }
 }
 
 .coffee_table-animate {
@@ -167,6 +181,10 @@
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
+
+  @media (max-width: 1250px) {
+    bottom: 171px;
+  }
 }
 
 .chair-animate {
@@ -176,6 +194,11 @@
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
+
+  @media (max-width: 1250px) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .decor-animate {
@@ -185,6 +208,10 @@
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
+
+  @media (max-width: 1250px) {
+    right: 61px;
+  }
 }
 
 @keyframes fade-top {
@@ -199,21 +226,22 @@
 
 @keyframes fade-left {
   from {
-    right: -200px;
+    right: -100%;
   }
 
   to {
-    right: 164px;
+    right: 30%;
   }
 }
 
 @keyframes fade-right  {
   from {
-    left: -200px;
+    left: -200%;
   }
 
   to {
-    left: -100px;
+    left: -20%;
+
   }
 }
 
@@ -248,5 +276,39 @@
 
   @media (max-width: 1250px) {
     max-width: 130px;
+  }
+}
+
+.inf-animate {
+  @media (max-width: 1250px) {
+    &.chair img {
+      width: 118px;
+      height: 124px;
+    }
+
+    &.sofa img {
+      width: 243px;
+      height: 194px;
+    }
+
+    &.table img {
+      width: 187px;
+      height: 177px;
+    }
+
+    &.decor img {
+      width: 94.85px;
+      height: 122.79px;
+    }
+
+    &.coffee-table img {
+      width: 134px;
+      height: 172px;
+    }
+
+    &.table-around img {
+      width: 126px;
+      height: 158px;
+    }
   }
 }

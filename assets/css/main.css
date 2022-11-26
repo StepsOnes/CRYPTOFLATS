@@ -45,7 +45,7 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
   .about-product__video video { max-width: 100%; height: auto; } }
 
 .about-product__buy-block { width: 51%; height: auto; background: #F4E9E9; padding-top: 200px; text-align: center; overflow: hidden; position: relative; }
-@media (max-width: 1250px) { .about-product__buy-block { width: 100%; } }
+@media (max-width: 1250px) { .about-product__buy-block { width: 100%; min-width: 390px; padding: 100px 0 120px 0; } }
 
 .about-product__buy-block__title { font-weight: 700; font-size: 36px; line-height: 49px; margin-bottom: 13px; position: relative; z-index: 999; }
 
@@ -61,33 +61,38 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 .product__buy-block__animate__box { position: absolute; }
 
 .sofa-animate { top: 0; -webkit-animation: fade-right linear .7s; animation: fade-right linear .7s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
+@media (max-width: 1250px) { .sofa-animate { top: -83px; } }
 
 .inf-animate { position: absolute; -webkit-animation: fade-move infinite linear 1s; animation: fade-move infinite linear 1s; -webkit-animation-direction: alternate-reverse; animation-direction: alternate-reverse; z-index: 10; }
 .inf-animate img { z-index: 10; position: relative; }
 
 .table-animate { top: 300px; -webkit-animation: fade-right linear .7s; animation: fade-right linear .7s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
+@media (max-width: 1250px) { .table-animate { top: 250px; } }
 
 .table__around-animate { left: 45%; bottom: 0; -webkit-transform: translateX(-45%); transform: translateX(-45%); -webkit-animation: fade-bottom linear .7s; animation: fade-bottom linear .7s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
-
+@medai (max-width: 1250px) { .table__around-animate { -webkit-transform: translateX(-40%); transform: translateX(-40%); left: 40%; } }
 .coffee_table-animate { right: 164px; bottom: 300px; -webkit-animation: fade-left linear .7s; animation: fade-left linear .7s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
+@media (max-width: 1250px) { .coffee_table-animate { bottom: 171px; } }
 
 .chair-animate { right: 450px; top: 0; -webkit-animation: fade-top linear .7s; animation: fade-top linear .7s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
+@media (max-width: 1250px) { .chair-animate { left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); } }
 
 .decor-animate { top: 0; right: 150px; -webkit-animation: fade-top linear .7s; animation: fade-top linear .7s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
+@media (max-width: 1250px) { .decor-animate { right: 61px; } }
 
 @-webkit-keyframes fade-top { from { top: -200px; }
   to { top: 0px; } }
 
 @keyframes fade-top { from { top: -200px; }
   to { top: 0px; } }
-@-webkit-keyframes fade-left { from { right: -200px; }
-  to { right: 164px; } }
-@keyframes fade-left { from { right: -200px; }
-  to { right: 164px; } }
-@-webkit-keyframes fade-right { from { left: -200px; }
-  to { left: -100px; } }
-@keyframes fade-right { from { left: -200px; }
-  to { left: -100px; } }
+@-webkit-keyframes fade-left { from { right: -100%; }
+  to { right: 30%; } }
+@keyframes fade-left { from { right: -100%; }
+  to { right: 30%; } }
+@-webkit-keyframes fade-right { from { left: -200%; }
+  to { left: -20%; } }
+@keyframes fade-right { from { left: -200%; }
+  to { left: -20%; } }
 @-webkit-keyframes fade-bottom { from { bottom: -200px; }
   to { bottom: 150px; } }
 @keyframes fade-bottom { from { bottom: -200px; }
@@ -99,6 +104,13 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 .animate-carousel-item { max-height: 205px; width: 205px; }
 .animate-carousel-item h4 img { width: 100%; height: auto; }
 @media (max-width: 1250px) { .animate-carousel-item { max-width: 130px; } }
+
+@media (max-width: 1250px) { .inf-animate.chair img { width: 118px; height: 124px; }
+  .inf-animate.sofa img { width: 243px; height: 194px; }
+  .inf-animate.table img { width: 187px; height: 177px; }
+  .inf-animate.decor img { width: 94.85px; height: 122.79px; }
+  .inf-animate.coffee-table img { width: 134px; height: 172px; }
+  .inf-animate.table-around img { width: 126px; height: 158px; } }
 
 .product-cards__row { display: -webkit-box; display: -ms-flexbox; display: flex; overflow: hidden; -webkit-animation: nudge 5s linear infinite; animation: nudge 5s linear infinite; }
 
