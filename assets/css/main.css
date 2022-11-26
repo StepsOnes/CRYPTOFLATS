@@ -27,7 +27,7 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 
 .row { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
-.title { font-family: 'Polly'; font-style: normal; font-weight: bold; font-size: 30px; line-height: 38px; }
+.title { font-family: 'Polly Rounded'; font-style: normal; font-weight: bold; font-size: 30px; line-height: 38px; }
 
 @media (max-width: 1250px) { .mobile-none { display: none; } }
 
@@ -157,7 +157,7 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
   .b-marquee-line-2__flow-in { height: 130px; } }
 .about { min-height: 784px; width: 100%; background: url("../img/about/bc_img.jpg"); padding-top: 120px; text-align: center; background-size: cover; }
 
-.about-title { color: #ffc940; font-family: 'Polly'; font-weight: bold; font-size: 30px; line-height: 38px; margin-bottom: 48px; }
+.about-title { color: #ffc940; font-family: 'Polly Rounded'; font-weight: bold; font-size: 30px; line-height: 38px; margin-bottom: 48px; }
 @media (max-width: 1250px) { .about-title { margin-bottom: 24px; } }
 
 .about-subtitle { color: #FFF; text-align: center; }
@@ -183,7 +183,7 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 .about-company { background: #2D2D2D; padding: 120px 0; text-align: center; }
 @media (max-width: 1250px) { .about-company { padding: 100px 0 65px 0; } }
 
-.about-company__title { font-family: 'Polly'; margin-bottom: 70px; text-align: left; font-size: 30px; font-weight: bold; }
+.about-company__title { font-family: 'Polly Rounded'; margin-bottom: 70px; text-align: left; font-size: 30px; font-weight: bold; }
 .about-company__title.purple { color: #CA47D6; }
 .about-company__title.green { color: #AEDC2D; }
 @media (max-width: 1250px) { .about-company__title { text-align: center; margin-bottom: 40px; } }
@@ -340,7 +340,7 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 
 .logo-group { text-decoration: none; color: #FFF; position: relative; }
 
-.logo-title { font-family: 'Polly'; font-size: 28px; line-height: 45px; position: relative; }
+.logo-title { font-family: 'Polly Rounded'; font-weight: bold; font-size: 28px; line-height: 45px; position: relative; }
 .logo-title::before { content: ''; background: url("../img/header/logo_white 1.svg"); width: 88px; height: 84px; position: absolute; bottom: 11px; left: -53px; -webkit-animation: move infinite linear .7s; animation: move infinite linear .7s; -webkit-animation-direction: alternate; animation-direction: alternate; background-size: cover; }
 @media (max-width: 1250px) { .logo-title { margin-left: 23px; font-size: 18px; }
   .logo-title::before { width: 46px; height: 44px; bottom: 18px; left: -30px; } }
@@ -390,5 +390,4 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 
 .footer { background: #194A5F; padding: 120px 0 156px 0; color: #FFF; text-align: center; overflow: hidden; }
 @media (max-width: 1250px) { .footer { padding: 100px 0; } }
-
 /*# sourceMappingURL=main.css.map */
