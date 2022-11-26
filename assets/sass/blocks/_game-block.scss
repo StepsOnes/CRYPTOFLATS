@@ -142,20 +142,16 @@
   }
 }
 
-.theGame-carousel button.owl-dots.owl-dot {
+.game-block-mobile {
+  img {
+    width: 100%;
+  }
 
-      width: 30px;
-      height: 30px;
-      background: #0537f6;
-
+  margin-bottom: 50px;
 }
 
-.owl-dots .owl-dot button {
-  background: none;
-  border: none;
-  padding: 0;
-  color: #e70101;
-  font-size: 14px;
-  font-weight: bold;
-  cursor: pointer;
+.game-animation {
+  img {
+    width: 100%;
+  }
 }
