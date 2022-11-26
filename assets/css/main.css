@@ -70,7 +70,8 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 @media (max-width: 1250px) { .table-animate { top: 250px; } }
 
 .table__around-animate { left: 45%; bottom: 0; -webkit-transform: translateX(-45%); transform: translateX(-45%); -webkit-animation: fade-bottom linear .7s; animation: fade-bottom linear .7s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
-@medai (max-width: 1250px) { .table__around-animate { -webkit-transform: translateX(-40%); transform: translateX(-40%); left: 40%; } }
+@media (max-width: 1250px) { .table__around-animate { -webkit-transform: translateX(-35%); transform: translateX(-35%); left: 35%; } }
+
 .coffee_table-animate { right: 164px; bottom: 300px; -webkit-animation: fade-left linear .7s; animation: fade-left linear .7s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
 @media (max-width: 1250px) { .coffee_table-animate { bottom: 171px; } }
 
