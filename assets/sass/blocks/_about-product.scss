@@ -168,7 +168,7 @@
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
 
-  @medai (max-width: 1250px) {
+  @media (max-width: 1250px) {
     transform: translateX(-40%);
     left: 40%;
   }
