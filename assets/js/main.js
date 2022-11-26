@@ -8,12 +8,10 @@ const openMenu = document.getElementById('open');
 const body = document.querySelector('body');
 
 openMenu.addEventListener('click', function () {
-    body.classList.toggle('no-scroll');
     menu.classList.toggle('not-visible');
 });
 
 closeMenu.addEventListener('click', function () {
-    body.classList.toggle('no-scroll');
     menu.classList.toggle('not-visible');
 })
 

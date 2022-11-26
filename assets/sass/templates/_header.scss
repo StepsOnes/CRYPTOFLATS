@@ -176,20 +176,46 @@
   position: fixed;
   width: 100%;
   min-height: 100vh;
-  background: #2D2D2D;
   top: 0;
   z-index: 9999;
 }
 
 .mobile-menu-header {
   padding-top: 40px;
+  background: #2D2D2D;
 }
 
 .mobile-menu-content {
-  margin-top: 70px;
+  height: 400px;
+  background: rgba(45, 45, 45, 0.97);
+  width: 100%;
+}
+
+
+.mobile-nav {
+  margin-left: 10%;
+  padding-top: 45px;
+
+  li {
+    a {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 44px;
+      color: #FFF;
+      text-decoration: none;
+    }
+  }
+}
+
+.mobile-menu-footer {
+  height: 400px;
+  background: rgba(45, 45, 45, 0.95);
+  width: 100%;
+  padding-top: 40px;
 }
 
 .mobile-menu-content__nav-links {
-  flex-direction: column;
-  gap: 10px;
+  margin-left: 10%;
 }

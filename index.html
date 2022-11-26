@@ -29,10 +29,10 @@
 
                 <nav class="header-nav">
                     <ul class="nav-list">
-                        <li><a href="#" class="nav-list__item">ABOUT</a></li>
-                        <li><a href="#" class="nav-list__item">STORY</a></li>
-                        <li><a href="#" class="nav-list__item">TEAM</a></li>
-                        <li><a href="#" class="nav-list__item">FAQ</a></li>
+                        <li><a href="#about" class="nav-list__item">ABOUT</a></li>
+                        <li><a href="#story" class="nav-list__item">STORY</a></li>
+                        <li><a href="#team" class="nav-list__item">TEAM</a></li>
+                        <li><a href="#FAQ" class="nav-list__item">FAQ</a></li>
                     </ul>
 
                     <div class="nav-links">
@@ -54,36 +54,50 @@
     </header>
 
     <div id="mobile-menu" class="mobile-menu not-visible">
-        <div class="container">
             <div class="mobile-menu-header">
-                <div class="row header-row">
-                    <div class="logo-group">
-                        <p class="logo-title">CRYPTOFLATS</p>
-                        <p class="logo-about">
-                            Generated nft apartments
-                            <br>
-                            Made by interior designers
-                        </p>
-                    </div>
+                <div class="container">
+                    <div class="row header-row">
+                        <div class="logo-group">
+                            <p class="logo-title">CRYPTOFLATS</p>
+                            <p class="logo-about">
+                                Generated nft apartments
+                                <br>
+                                Made by interior designers
+                            </p>
+                        </div>
 
-                    <div id="close" class="burger burger-close">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                        <div id="close" class="burger burger-close">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="mobile-menu-content">
-                <div class="nav-links mobile-menu-content__nav-links">
-                    <a href="#" class="social-link houseoff"></a>
-                    <a href="#" class="social-link inst"></a>
-                    <a href="#" class="social-link tg"></a>
-                    <a href="#" class="social-link twit"></a>
-                    <a href="#" class="social-link tr3zor"></a>
+                <div class="container">
+                    <ul class="mobile-nav">
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#story">STORY</a></li>
+                        <li><a href="#team">TEAM</a></li>
+                        <li><a href="#FAQ">FAQ</a></li>
+                    </ul>
                 </div>
             </div>
-        </div>
+
+            <div class="mobile-menu-footer">
+                <div class="container">
+                    <div class="nav-links mobile-menu-content__nav-links ">
+                        <a href="#" class="social-link houseoff"></a>
+                        <a href="#" class="social-link inst"></a>
+                        <a href="#" class="social-link tg"></a>
+                        <a href="#" class="social-link twit"></a>
+                        <a href="#" class="social-link tr3zor"></a>
+                    </div>
+                </div>
+            </div>
+
     </div>
 
     <main class="main">
@@ -271,7 +285,7 @@
             </div>
         </section>
 
-        <section class="about">
+        <section  id="about" class="about">
             <div class="container">
                 <div class="about-block-text">
                         <h1 class="about-title" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
@@ -297,7 +311,7 @@
 
         <section class="about-company">
             <div class="container">
-                <div class="about-company-block">
+                <div  id="story" class="about-company-block">
                     <div class="group">
                         <h1 class="about-company__title purple" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                             STORY
@@ -327,7 +341,7 @@
                 </a>
 
                 <div class="about-company-block">
-                    <div class="group">
+                    <div id="team" class="group">
                         <h1 class="about-company__title green" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                             TEAM
                         </h1>
@@ -440,11 +454,7 @@
                     </div>
                 </div>
 
-                <div class="game-block-mobile">
-                    <img src="assets/img/game_img/game_box.png" alt="game">
-                </div>
-
-                <div class="game-animation">
+                <div class="game-animation mobile-active">
                     <img class="game-animation_img" src="assets/img/game_animation/THE%20GAME%201.png" alt="game">
                 </div>
             </div>
@@ -453,7 +463,7 @@
                 OPEN COLLECTION
             </a>
 
-            <div class="FAQ-block">
+            <div id="FAQ" class="FAQ-block">
                 <h1 class="title faq-title">
                     FAQ
                 </h1>

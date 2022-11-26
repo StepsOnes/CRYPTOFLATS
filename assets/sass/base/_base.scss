@@ -35,6 +35,13 @@ footer.footer {
   }
 }
 
+.mobile-active {
+  display: none;
+  @media (max-width: 1250px) {
+    display: block;
+  }
+}
+
 .no-scroll {
   overflow: hidden;
 }

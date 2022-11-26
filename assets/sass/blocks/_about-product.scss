@@ -210,7 +210,7 @@
   animation-timing-function: ease-out;
 
   @media (max-width: 1250px) {
-    right: 61px;
+    right: 100px;
   }
 }
 
@@ -282,13 +282,13 @@
 .inf-animate {
   @media (max-width: 1250px) {
     &.chair img {
-      width: 118px;
-      height: 124px;
+      width: 161px;
+      height: 150px;
     }
 
     &.sofa img {
-      width: 243px;
-      height: 194px;
+      width: 265px;
+      height: 221px;
     }
 
     &.table img {
@@ -297,8 +297,8 @@
     }
 
     &.decor img {
-      width: 94.85px;
-      height: 122.79px;
+      width: 146.85px;
+      height: 162.79px;
     }
 
     &.coffee-table img {
