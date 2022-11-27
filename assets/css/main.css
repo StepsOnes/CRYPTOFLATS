@@ -103,7 +103,7 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 .inf-animate6 img { z-index: 10; position: relative; }
 
 .table-animate { left: -50%; bottom: 305px; -webkit-animation: fade-right linear .7s; animation: fade-right linear .7s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
-@media (max-width: 2550px) { .table-animate { bottom: 503px; left: -172px; } }
+@media (max-width: 2560px) { .table-animate { bottom: 503px; left: -172px; } }
 @media (max-width: 1980px) { .table-animate { bottom: 300px; left: -100px; } }
 @media (max-width: 1250px) { .table-animate { bottom: 150px; left: -75px; } }
 
