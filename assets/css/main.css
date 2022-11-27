@@ -53,7 +53,7 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
   .about-product__video video { max-width: 100%; height: auto; } }
 
 .about-product__buy-block { width: 51%; height: auto; background: #F4E9E9; text-align: center; overflow: hidden; position: relative; }
-@media (max-width: 2560px) { .about-product__buy-block { padding-top: 300px; } }
+@media (max-width: 2560px) { .about-product__buy-block { padding-top: 400px; } }
 @media (max-width: 1440px) { .about-product__buy-block { padding-top: 200px; } }
 @media (max-width: 1250px) { .about-product__buy-block { width: 100%; min-width: 390px; padding: 100px 0 120px 0; } }
 
@@ -78,6 +78,7 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 .product__buy-block__animate__box { position: absolute; }
 
 .sofa-animate { top: 0; -webkit-animation: fade-right linear .7s; animation: fade-right linear .7s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
+@media (max-width: 2560px) { .sofa-animate { left: -100px; } }
 @media (max-width: 1250px) { .sofa-animate { top: -83px; } }
 
 .inf-animate { position: absolute; z-index: 10; }
@@ -101,40 +102,29 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 .inf-animate6 { position: absolute; -webkit-animation: fade-move6 infinite linear 6s; animation: fade-move6 infinite linear 6s; -webkit-animation-direction: alternate-reverse; animation-direction: alternate-reverse; z-index: 10; }
 .inf-animate6 img { z-index: 10; position: relative; }
 
-.table-animate { bottom: 305px; -webkit-animation: fade-right linear .7s; animation: fade-right linear .7s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
+.table-animate { left: -50%; bottom: 305px; -webkit-animation: fade-right linear .7s; animation: fade-right linear .7s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
+@media (max-width: 2550px) { .table-animate { bottom: 503px; left: -172px; } }
 @media (max-width: 1250px) { .table-animate { top: 250px; } }
 
 .table__around-animate { left: 45%; bottom: 30px; -webkit-transform: translateX(-45%); transform: translateX(-45%); -webkit-animation: fade-bottom linear .7s; animation: fade-bottom linear .7s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
+@media (max-width: 2560px) { .table__around-animate { left: 45%; bottom: 302px; } }
 @media (max-width: 1250px) { .table__around-animate { -webkit-transform: translateX(-35%); transform: translateX(-35%); left: 35%; bottom: 0; } }
 
-.coffee_table-animate { right: 64px; bottom: 300px; -webkit-animation: fade-left linear .7s; animation: fade-left linear .7s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
+.coffee_table-animate { right: 64px; bottom: 100px; -webkit-animation: fade-left linear .7s; animation: fade-left linear .7s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
+@media (max-width: 2560px) { .coffee_table-animate { right: 293px; bottom: 433px; } }
 @media (max-width: 1250px) { .coffee_table-animate { bottom: 171px; } }
 
 .chair-animate { right: 55%; top: 0; -webkit-animation: fade-top linear .7s; animation: fade-top linear .7s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
+@media (max-width: 2560px) { .chair-animate { top: 40px; right: 60%; } }
 @media (max-width: 1250px) { .chair-animate { left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); } }
 
-.decor-animate { top: 0; right: 16%; -webkit-animation: fade-top linear .7s; animation: fade-top linear .7s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
+.decor-animate { top: 0; right: 16%; }
+@media (max-width: 2560px) { .decor-animate { top: 0px; right: 30%; } }
 @media (max-width: 1250px) { .decor-animate { right: 100px; } }
 
-@-webkit-keyframes fade-top { from { top: -200px; }
-  to { top: 0px; } }
-
-@keyframes fade-top { from { top: -200px; }
-  to { top: 0px; } }
-@-webkit-keyframes fade-left { from { right: -100%; }
-  to { right: 17%; } }
-@keyframes fade-left { from { right: -100%; }
-  to { right: 17%; } }
-@-webkit-keyframes fade-right { from { left: -200%; }
-  to { left: -10%; } }
-@keyframes fade-right { from { left: -200%; }
-  to { left: -10%; } }
-@-webkit-keyframes fade-bottom { from { bottom: -200px; }
-  to { bottom: 20%; } }
-@keyframes fade-bottom { from { bottom: -200px; }
-  to { bottom: 20%; } }
 @-webkit-keyframes fade-move1 { 0% { -webkit-transform: rotate(10deg); transform: rotate(10deg); }
   100% { -webkit-transform: rotate(-20deg); transform: rotate(-20deg); } }
+
 @keyframes fade-move1 { 0% { -webkit-transform: rotate(10deg); transform: rotate(10deg); }
   100% { -webkit-transform: rotate(-20deg); transform: rotate(-20deg); } }
 @-webkit-keyframes fade-move2 { 0% { -webkit-transform: rotate(-10deg); transform: rotate(-10deg); }
@@ -161,11 +151,11 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 .animate-carousel-item h4 img { width: 100%; height: auto; }
 @media (max-width: 1250px) { .animate-carousel-item { max-width: 130px; } }
 
-@media (max-width: 2560px) { .inf-animate.chair img { width: 361px; height: 350px; }
-  .inf-animate.sofa img { width: 365px; height: 321px; }
-  .inf-animate.table img { width: 387px; height: 377px; }
-  .inf-animate.decor img { width: 246.85px; height: 262.79px; }
-  .inf-animate.coffee-table img { width: 234px; height: 272px; }
+@media (max-width: 2560px) { .inf-animate.chair img { width: 461px; height: 450px; }
+  .inf-animate.sofa img { width: 465px; height: 421px; }
+  .inf-animate.table img { width: 587px; height: 577px; }
+  .inf-animate.decor img { width: 346.85px; height: 362.79px; }
+  .inf-animate.coffee-table img { width: 334px; height: 372px; }
   .inf-animate.table-around img { width: 226px; height: 258px; } }
 @media (max-width: 1250px) { .inf-animate.chair img { width: 161px; height: 150px; }
   .inf-animate.sofa img { width: 265px; height: 221px; }

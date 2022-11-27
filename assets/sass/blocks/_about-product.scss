@@ -54,7 +54,7 @@
 
 
   @media (max-width: 2560px) {
-    padding-top: 300px;
+    padding-top: 400px;
   }
 
   @media (max-width: 1440px) {
@@ -183,6 +183,10 @@
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
 
+  @media (max-width: 2560px) {
+    left: -100px;
+  }
+
   @media (max-width: 1250px) {
     top: -83px;
   }
@@ -265,11 +269,17 @@
 
 .table-animate {
   //top: 300px;
+  left: -50%;
   bottom: 305px;
   animation: fade-right linear .7s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
+
+  @media (max-width: 2550px) {
+    bottom: 503px;
+    left: -172px;
+  }
 
   @media (max-width: 1250px) {
     top: 250px;
@@ -285,6 +295,11 @@
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
 
+  @media (max-width: 2560px)  {
+    left: 45%;
+    bottom: 302px;
+  }
+
   @media (max-width: 1250px) {
     transform: translateX(-35%);
     left: 35%;
@@ -294,11 +309,16 @@
 
 .coffee_table-animate {
   right: 64px;
-  bottom: 300px;
+  bottom: 100px;
   animation: fade-left linear .7s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
+
+  @media (max-width: 2560px) {
+    right: 293px;
+    bottom: 433px;
+  }
 
   @media (max-width: 1250px) {
     bottom: 171px;
@@ -313,6 +333,11 @@
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
 
+  @media (max-width: 2560px) {
+    top: 40px;
+    right: 60%;
+  }
+
   @media (max-width: 1250px) {
     left: 50%;
     transform: translateX(-50%);
@@ -322,56 +347,57 @@
 .decor-animate {
   top: 0;
   right: 16%;
-  animation: fade-top linear .7s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-out;
+
+  @media (max-width: 2560px) {
+    top: 0px;
+    right: 30%;
+  }
 
   @media (max-width: 1250px) {
     right: 100px;
   }
 }
 
-@keyframes fade-top {
-  from {
-    top: -200px;
-  }
-
-  to {
-    top: 0px;
-  }
-}
-
-@keyframes fade-left {
-  from {
-    right: -100%;
-  }
-
-  to {
-    right: 17%;
-  }
-}
-
-@keyframes fade-right  {
-  from {
-    left: -200%;
-  }
-
-  to {
-    left: -10%;
-
-  }
-}
-
-@keyframes fade-bottom {
-  from {
-    bottom: -200px;
-  }
-
-  to {
-    bottom: 20%;
-  }
-}
+//@keyframes fade-top {
+//  from {
+//    top: -200px;
+//  }
+//
+//  to {
+//    top: 0px;
+//  }
+//}
+//
+//@keyframes fade-left {
+//  from {
+//    right: -100%;
+//  }
+//
+//  to {
+//    right: 17%;
+//  }
+//}
+//
+//@keyframes fade-right  {
+//  from {
+//    left: -200%;
+//  }
+//
+//  to {
+//    left: -10%;
+//
+//  }
+//}
+//
+//@keyframes fade-bottom {
+//  from {
+//    bottom: -200px;
+//  }
+//
+//  to {
+//    bottom: 20%;
+//  }
+//}
 
 @keyframes fade-move1 {
  0% {
@@ -449,28 +475,28 @@
 .inf-animate {
   @media (max-width: 2560px) {
     &.chair img {
-      width: 361px;
-      height: 350px;
+      width: 461px;
+      height: 450px;
     }
 
     &.sofa img {
-      width: 365px;
-      height: 321px;
+      width: 465px;
+      height: 421px;
     }
 
     &.table img {
-      width: 387px;
-      height: 377px;
+      width: 587px;
+      height: 577px;
     }
 
     &.decor img {
-      width: 246.85px;
-      height: 262.79px;
+      width: 346.85px;
+      height: 362.79px;
     }
 
     &.coffee-table img {
-      width: 234px;
-      height: 272px;
+      width: 334px;
+      height: 372px;
     }
 
     &.table-around img {
