@@ -38,8 +38,6 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 
 .not-visible { display: none; }
 
-.m-none { margin: 0; }
-
 .about-product { max-height: 733px; display: -webkit-box; display: -ms-flexbox; display: flex; }
 @media (max-width: 1440px) { .about-product { max-height: 633.92px; } }
 @media (max-width: 1250px) { .about-product { display: block; max-height: 100%; } }
