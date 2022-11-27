@@ -5,7 +5,14 @@ const circleAnimateGreen = document.querySelector('.circle-animate-green');
 const menu = document.getElementById('mobile-menu');
 const closeMenu = document.getElementById('close');
 const openMenu = document.getElementById('open');
-const body = document.querySelector('body');
+
+const navLinks = document.querySelectorAll('.mobile-nav__item');
+
+navLinks.forEach((item) => {
+    item.addEventListener('click', function () {
+        menu.classList.toggle('not-visible');
+    })
+})
 
 openMenu.addEventListener('click', function () {
     menu.classList.toggle('not-visible');
