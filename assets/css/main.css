@@ -204,6 +204,7 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 @media (max-width: 1250px) { .about-subtitle { font-size: 17px; line-height: 23px; } }
 
 .about-block-text { max-width: 980px; margin: 0 auto 80px auto; }
+.about-block-text.m-none { margin-bottom: 0; }
 
 .group { position: relative; }
 
