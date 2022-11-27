@@ -56,11 +56,11 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 .about-product__buy-block__about { font-weight: 400; font-size: 36px; line-height: 49px; margin-bottom: 33px; color: #626262; }
 @media (max-width: 1250px) { .about-product__buy-block__about { font-weight: 500; font-size: 18px; line-height: 25px; color: #626262; } }
 
-.about-product__buy-block__btn { font-family: 'Polly'; font-weight: bold; display: inline-block; padding: 14px 43px; font-size: 24px; line-height: 32px; background: #0f6eb2; -webkit-box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.15); box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.15); border-radius: 50px; text-decoration: none; color: #FFF; -webkit-transition: transform .4s; -webkit-transition: -webkit-transform .4s; transition: -webkit-transform .4s; transition: transform .4s; transition: transform .4s, -webkit-transform .4s; will-change: transform; z-index: 999; position: relative; text-align: center; }
+.about-product__buy-block__btn { font-family: 'Polly'; font-weight: bold; display: inline-block; padding: 14px 43px; font-size: 30px; line-height: 32px; background: #0f6eb2; -webkit-box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.15); box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.15); border-radius: 50px; text-decoration: none; color: #FFF; -webkit-transition: transform .4s; -webkit-transition: -webkit-transform .4s; transition: -webkit-transform .4s; transition: transform .4s; transition: transform .4s, -webkit-transform .4s; will-change: transform; z-index: 999; position: relative; text-align: center; }
 .about-product__buy-block__btn:hover { -webkit-transform: scale(1.03); transform: scale(1.03); }
 .about-product__buy-block__btn.about-product__buy-block__btn--margin { margin-top: 100px; margin-bottom: 120px; }
 .about-product__buy-block__btn.about-product__buy-block__btn--margin-02 { margin-top: 120px; margin-bottom: 100px; }
-@media (max-width: 1250px) { .about-product__buy-block__btn { font-size: 20px; line-height: 29px; padding: 15px 46px; }
+@media (max-width: 1250px) { .about-product__buy-block__btn { font-size: 24px; line-height: 29px; padding: 15px 46px; }
   .about-product__buy-block__btn.about-product__buy-block__btn--margin { margin-top: 40px; }
   .about-product__buy-block__btn.about-product__buy-block__btn--margin-02 { margin-top: 40px; } }
 
@@ -69,8 +69,26 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 .sofa-animate { top: 0; -webkit-animation: fade-right linear .7s; animation: fade-right linear .7s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
 @media (max-width: 1250px) { .sofa-animate { top: -83px; } }
 
-.inf-animate { position: absolute; -webkit-animation: fade-move infinite linear 1s; animation: fade-move infinite linear 1s; -webkit-animation-direction: alternate-reverse; animation-direction: alternate-reverse; z-index: 10; }
+.inf-animate { position: absolute; z-index: 10; }
 .inf-animate img { z-index: 10; position: relative; }
+
+.inf-animate1 { position: absolute; -webkit-animation: fade-move1 infinite linear 5s; animation: fade-move1 infinite linear 5s; -webkit-animation-direction: alternate-reverse; animation-direction: alternate-reverse; z-index: 10; }
+.inf-animate1 img { z-index: 10; position: relative; }
+
+.inf-animate2 { position: absolute; -webkit-animation: fade-move2 infinite linear 5s; animation: fade-move2 infinite linear 5s; -webkit-animation-direction: alternate-reverse; animation-direction: alternate-reverse; z-index: 10; }
+.inf-animate2 img { z-index: 10; position: relative; }
+
+.inf-animate3 { position: absolute; -webkit-animation: fade-move3 infinite linear 2s; animation: fade-move3 infinite linear 2s; -webkit-animation-direction: alternate-reverse; animation-direction: alternate-reverse; z-index: 10; }
+.inf-animate3 img { z-index: 10; position: relative; }
+
+.inf-animate4 { position: absolute; -webkit-animation: fade-move4 infinite linear 5s; animation: fade-move4 infinite linear 5s; -webkit-animation-direction: alternate-reverse; animation-direction: alternate-reverse; z-index: 10; }
+.inf-animate4 img { z-index: 10; position: relative; }
+
+.inf-animate5 { position: absolute; -webkit-animation: fade-move5 infinite linear 7s; animation: fade-move5 infinite linear 7s; -webkit-animation-direction: alternate-reverse; animation-direction: alternate-reverse; z-index: 10; }
+.inf-animate5 img { z-index: 10; position: relative; }
+
+.inf-animate6 { position: absolute; -webkit-animation: fade-move6 infinite linear 6s; animation: fade-move6 infinite linear 6s; -webkit-animation-direction: alternate-reverse; animation-direction: alternate-reverse; z-index: 10; }
+.inf-animate6 img { z-index: 10; position: relative; }
 
 .table-animate { top: 300px; -webkit-animation: fade-right linear .7s; animation: fade-right linear .7s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
 @media (max-width: 1250px) { .table-animate { top: 250px; } }
@@ -104,10 +122,30 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
   to { bottom: 150px; } }
 @keyframes fade-bottom { from { bottom: -200px; }
   to { bottom: 150px; } }
-@-webkit-keyframes fade-move { from { top: 20px; }
-  to { top: 2px; } }
-@keyframes fade-move { from { top: 20px; }
-  to { top: 2px; } }
+@-webkit-keyframes fade-move1 { 0% { -webkit-transform: rotate(10deg); transform: rotate(10deg); }
+  100% { -webkit-transform: rotate(-20deg); transform: rotate(-20deg); } }
+@keyframes fade-move1 { 0% { -webkit-transform: rotate(10deg); transform: rotate(10deg); }
+  100% { -webkit-transform: rotate(-20deg); transform: rotate(-20deg); } }
+@-webkit-keyframes fade-move2 { 0% { -webkit-transform: rotate(-10deg); transform: rotate(-10deg); }
+  100% { -webkit-transform: rotate(20deg); transform: rotate(20deg); } }
+@keyframes fade-move2 { 0% { -webkit-transform: rotate(-10deg); transform: rotate(-10deg); }
+  100% { -webkit-transform: rotate(20deg); transform: rotate(20deg); } }
+@-webkit-keyframes fade-move3 { 0% { -webkit-transform: rotate(-10deg); transform: rotate(-10deg); }
+  100% { -webkit-transform: rotate(10deg); transform: rotate(10deg); } }
+@keyframes fade-move3 { 0% { -webkit-transform: rotate(-10deg); transform: rotate(-10deg); }
+  100% { -webkit-transform: rotate(10deg); transform: rotate(10deg); } }
+@-webkit-keyframes fade-move4 { 0% { -webkit-transform: rotate(-10deg); transform: rotate(-10deg); }
+  100% { -webkit-transform: rotate(10deg); transform: rotate(10deg); } }
+@keyframes fade-move4 { 0% { -webkit-transform: rotate(-10deg); transform: rotate(-10deg); }
+  100% { -webkit-transform: rotate(10deg); transform: rotate(10deg); } }
+@-webkit-keyframes fade-move5 { 0% { -webkit-transform: rotate(16deg); transform: rotate(16deg); }
+  100% { -webkit-transform: rotate(-10deg); transform: rotate(-10deg); } }
+@keyframes fade-move5 { 0% { -webkit-transform: rotate(16deg); transform: rotate(16deg); }
+  100% { -webkit-transform: rotate(-10deg); transform: rotate(-10deg); } }
+@-webkit-keyframes fade-move6 { 0% { -webkit-transform: rotate(-20deg); transform: rotate(-20deg); }
+  100% { -webkit-transform: rotate(10deg); transform: rotate(10deg); } }
+@keyframes fade-move6 { 0% { -webkit-transform: rotate(-20deg); transform: rotate(-20deg); }
+  100% { -webkit-transform: rotate(10deg); transform: rotate(10deg); } }
 .animate-carousel-item { max-height: 205px; width: 205px; }
 .animate-carousel-item h4 img { width: 100%; height: auto; }
 @media (max-width: 1250px) { .animate-carousel-item { max-width: 130px; } }

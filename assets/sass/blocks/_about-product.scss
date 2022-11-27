@@ -82,10 +82,10 @@
 
 .about-product__buy-block__btn {
     font-family: 'Polly';
-  font-weight: bold;
+    font-weight: bold;
     display: inline-block;
     padding: 14px 43px;
-    font-size: 24px;
+    font-size: 30px;
     line-height: 32px;
     background: rgba(15, 110, 178, 1);
     box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.15);
@@ -121,7 +121,7 @@
   }
 
   @media (max-width: 1250px) {
-    font-size: 20px;
+    font-size: 24px;
     line-height: 29px;
     padding: 15px 46px;
 
@@ -155,7 +155,71 @@
 
 .inf-animate {
   position: absolute;
-  animation: fade-move infinite linear 1s;
+  z-index: 10;
+  & img {
+    z-index: 10;
+    position: relative;
+  }
+}
+
+.inf-animate1 {
+  position: absolute;
+  animation: fade-move1 infinite linear 5s;
+  animation-direction:  alternate-reverse;
+  z-index: 10;
+  & img {
+    z-index: 10;
+    position: relative;
+  }
+}
+
+.inf-animate2 {
+  position: absolute;
+  animation: fade-move2 infinite linear 5s;
+  animation-direction:  alternate-reverse;
+  z-index: 10;
+  & img {
+    z-index: 10;
+    position: relative;
+  }
+}
+
+.inf-animate3 {
+  position: absolute;
+  animation: fade-move3 infinite linear 2s;
+  animation-direction:  alternate-reverse;
+  z-index: 10;
+  & img {
+    z-index: 10;
+    position: relative;
+  }
+}
+
+.inf-animate4 {
+  position: absolute;
+  animation: fade-move4 infinite linear 5s;
+  animation-direction:  alternate-reverse;
+  z-index: 10;
+  & img {
+    z-index: 10;
+    position: relative;
+  }
+}
+
+.inf-animate5 {
+  position: absolute;
+  animation: fade-move5 infinite linear 7s;
+  animation-direction:  alternate-reverse;
+  z-index: 10;
+  & img {
+    z-index: 10;
+    position: relative;
+  }
+}
+
+.inf-animate6 {
+  position: absolute;
+  animation: fade-move6 infinite linear 6s;
   animation-direction:  alternate-reverse;
   z-index: 10;
   & img {
@@ -272,15 +336,64 @@
   }
 }
 
-@keyframes fade-move {
-  from {
-    top: 20px;
+@keyframes fade-move1 {
+ 0% {
+   transform: rotate(10deg);
+ }
+
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+
+@keyframes fade-move2 {
+  0% {
+    transform: rotate(-10deg);
   }
 
-  to {
-    top: 2px;
+  100% {
+    transform: rotate(20deg);
+  }
+}
+
+@keyframes fade-move3 {
+  0% {
+    transform: rotate(-10deg);
   }
 
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes fade-move4 {
+  0% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes fade-move5 {
+  0% {
+    transform: rotate(16deg);
+  }
+
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+@keyframes fade-move6 {
+  0% {
+    transform: rotate(-20deg);
+  }
+
+  100% {
+    transform: rotate(10deg);
+  }
 }
 
 .animate-carousel-item {
