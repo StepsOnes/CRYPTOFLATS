@@ -71,8 +71,15 @@
 .about-company__story-block__story__text {
   color: #FFF;
   text-align: left;
-  max-width: 1100px;
   margin-bottom: 70px;
+
+  @media (max-width: 2560px) {
+    max-width: 1314px;
+  }
+
+  @media (max-width: 1440px) {
+    max-width: 1100px;
+  }
 
   @media (max-width: 1250px) {
     font-size: 17px;

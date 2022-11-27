@@ -7,6 +7,18 @@
   }
 }
 
+.header-container {
+  margin: 0 auto;
+  padding: 0 16px;
+  @media (max-width: 2560px) {
+    max-width: 1950px;
+  }
+
+  @media (max-width: 1980px) {
+    max-width: 1250px;
+  }
+}
+
 .header-row {
   align-items: flex-start;
 }

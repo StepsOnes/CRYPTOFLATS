@@ -7,6 +7,7 @@ body {
   font-family: 'Open Sans';
   font-size: 24px;
   line-height: 33px;
+  font-weight: 400;
 }
 header.header,
 main.main,
@@ -16,9 +17,13 @@ footer.footer {
 }
 
 .container {
-  max-width: 1168px;
+  max-width: 1324px;
   margin: 0 auto;
   padding: 0 20px;
+
+  @media (1440px) {
+    max-width: 1168px;
+  }
 }
 
 .row {

@@ -31,11 +31,18 @@
 }
 
 .about-block-text {
-  max-width: 980px;
   margin: 0 auto 80px auto;
 
   &.m-none {
     margin-bottom: 0;
+  }
+  
+  @media (max-width: 2560px) {
+    max-width: 1313px;
+  }
+
+  @media (max-width: 1440px) {
+    max-width: 980px;
   }
 }
 
