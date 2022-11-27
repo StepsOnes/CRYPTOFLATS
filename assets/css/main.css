@@ -23,7 +23,7 @@ body { font-family: 'Open Sans'; font-size: 24px; line-height: 33px; }
 
 header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 
-.container { max-width: 1168px; margin: 0 auto; padding: 0 16px; }
+.container { max-width: 1168px; margin: 0 auto; padding: 0 20px; }
 
 .row { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
@@ -54,7 +54,7 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 .about-product__buy-block__title { font-weight: 700; font-size: 36px; line-height: 49px; margin-bottom: 13px; position: relative; z-index: 999; }
 
 .about-product__buy-block__about { font-weight: 400; font-size: 36px; line-height: 49px; margin-bottom: 33px; color: #626262; }
-@media (max-width: 1250px) { .about-product__buy-block__about { font-weight: 500; font-size: 18px; line-height: 25px; color: #626262; } }
+@media (max-width: 1250px) { .about-product__buy-block__about { font-weight: 500; font-size: 18px; line-height: 25px; color: #626262; margin-bottom: 15px; } }
 
 .about-product__buy-block__btn { font-family: 'Polly'; font-weight: bold; display: inline-block; padding: 14px 43px; font-size: 30px; line-height: 32px; background: #0f6eb2; -webkit-box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.15); box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.15); border-radius: 50px; text-decoration: none; color: #FFF; -webkit-transition: transform .4s; -webkit-transition: -webkit-transform .4s; transition: -webkit-transform .4s; transition: transform .4s; transition: transform .4s, -webkit-transform .4s; will-change: transform; z-index: 999; position: relative; text-align: center; }
 .about-product__buy-block__btn:hover { -webkit-transform: scale(1.03); transform: scale(1.03); }
@@ -119,9 +119,9 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 @keyframes fade-right { from { left: -200%; }
   to { left: -20%; } }
 @-webkit-keyframes fade-bottom { from { bottom: -200px; }
-  to { bottom: 150px; } }
+  to { bottom: 120px; } }
 @keyframes fade-bottom { from { bottom: -200px; }
-  to { bottom: 150px; } }
+  to { bottom: 120px; } }
 @-webkit-keyframes fade-move1 { 0% { -webkit-transform: rotate(10deg); transform: rotate(10deg); }
   100% { -webkit-transform: rotate(-20deg); transform: rotate(-20deg); } }
 @keyframes fade-move1 { 0% { -webkit-transform: rotate(10deg); transform: rotate(10deg); }
