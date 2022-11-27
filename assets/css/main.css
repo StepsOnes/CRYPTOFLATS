@@ -225,11 +225,15 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 .group { position: relative; }
 
 .circle-animate-purple { width: 20px; height: 20px; background: #CA47D6; position: absolute; right: 0; border-radius: 50%; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
-.circle-animate-purple.circle-animate::before { content: ''; position: absolute; top: 8px; width: 966px; height: 2px; background: #CA47D6; -webkit-transform: translateX(-100%); transform: translateX(-100%); -webkit-animation: draw 0.5s linear forwards; animation: draw 0.5s linear forwards; }
+.circle-animate-purple.circle-animate::before { content: ''; position: absolute; top: 8px; width: 966px; height: 2px; background: #CA47D6; -webkit-transform: translateX(-100%); transform: translateX(-100%); }
+@media (max-width: 2560px) { .circle-animate-purple.circle-animate::before { -webkit-animation: draw-big 0.5s linear forwards; animation: draw-big 0.5s linear forwards; } }
+@media (max-width: 1980px) { .circle-animate-purple.circle-animate::before { -webkit-animation: draw 0.5s linear forwards; animation: draw 0.5s linear forwards; } }
 @media (max-width: 1250px) { .circle-animate-purple { display: none; } }
 
 .circle-animate-green { width: 20px; height: 20px; background: #AEDC2D; position: absolute; right: 0; border-radius: 50%; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
-.circle-animate-green.circle-animate::before { content: ''; position: absolute; top: 8px; width: 966px; height: 2px; background: #AEDC2D; -webkit-transform: translateX(-100%); transform: translateX(-100%); -webkit-animation: draw 0.5s linear forwards; animation: draw 0.5s linear forwards; }
+.circle-animate-green.circle-animate::before { content: ''; position: absolute; top: 8px; width: 966px; height: 2px; background: #AEDC2D; -webkit-transform: translateX(-100%); transform: translateX(-100%); }
+@media (max-width: 2560px) { .circle-animate-green.circle-animate::before { -webkit-animation: draw-big 0.5s linear forwards; animation: draw-big 0.5s linear forwards; } }
+@media (max-width: 1980px) { .circle-animate-green.circle-animate::before { -webkit-animation: draw 0.5s linear forwards; animation: draw 0.5s linear forwards; } }
 @media (max-width: 1250px) { .circle-animate-green { display: none; } }
 
 @-webkit-keyframes draw { 0% { width: 100px; }
@@ -237,6 +241,10 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 
 @keyframes draw { 0% { width: 100px; }
   100% { width: 900px; } }
+@-webkit-keyframes draw-big { 0% { width: 100px; }
+  100% { width: 1100px; } }
+@keyframes draw-big { 0% { width: 100px; }
+  100% { width: 1100px; } }
 .about-company { background: #2D2D2D; padding: 120px 0; text-align: center; }
 @media (max-width: 1250px) { .about-company { padding: 100px 0 65px 0; } }
 
