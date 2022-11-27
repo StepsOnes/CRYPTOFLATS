@@ -19,6 +19,8 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 *, *::after, *::before { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+* { -webkit-tap-highlight-color: rgba(255, 255, 255, 0); -webkit-tap-highlight-color: transparent; }
+
 body { font-family: 'Open Sans'; font-size: 24px; line-height: 33px; }
 
 header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
@@ -368,6 +370,10 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 .footer-disclaimer { font-size: 16px; line-height: 22px; }
 .footer-disclaimer span { font-weight: 700; position: relative; margin-right: 16px; }
 .footer-disclaimer span::before { content: ''; position: absolute; width: 3px; height: 3px; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); background: #FFF; right: -10px; border-radius: 50%; }
+
+.scroll-top { width: 40px; height: 40px; position: fixed; bottom: 19px; right: 10px; background: #527da0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; border-radius: 50%; cursor: pointer; opacity: 0; -webkit-transition: 0.6s; transition: 0.6s; z-index: 9999; -webkit-transform: translateX(-100%); transform: translateX(-100%); }
+.scroll-top img { width: 20px; height: 20px; }
+.scroll-top.visible { opacity: 1; -webkit-transform: translateX(0%); transform: translateX(0%); }
 
 .header { background: #2D2D2D; padding: 79px 0 37px 0; }
 @media (max-width: 1250px) { .header { padding: 40px 0 15px 0; } }

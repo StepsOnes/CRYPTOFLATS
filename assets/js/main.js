@@ -8,6 +8,23 @@ const openMenu = document.getElementById('open');
 
 const navLinks = document.querySelectorAll('.mobile-nav__item');
 
+const scrollBtn = document.getElementById('scroll-top');
+
+document.addEventListener('scroll', function (e) {
+    if (window.scrollY > 100) {
+        scrollBtn.classList.add('visible');
+    } else {
+        scrollBtn.classList.remove('visible');
+    }
+});
+
+scrollBtn.addEventListener('click', function(){
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
+})
+
 navLinks.forEach((item) => {
     item.addEventListener('click', function () {
         menu.classList.toggle('not-visible');
