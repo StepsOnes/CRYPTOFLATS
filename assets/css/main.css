@@ -96,7 +96,7 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 .table__around-animate { left: 45%; bottom: 0; -webkit-transform: translateX(-45%); transform: translateX(-45%); -webkit-animation: fade-bottom linear .7s; animation: fade-bottom linear .7s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
 @media (max-width: 1250px) { .table__around-animate { -webkit-transform: translateX(-35%); transform: translateX(-35%); left: 35%; } }
 
-.coffee_table-animate { right: 164px; bottom: 300px; -webkit-animation: fade-left linear .7s; animation: fade-left linear .7s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
+.coffee_table-animate { right: 64px; bottom: 300px; -webkit-animation: fade-left linear .7s; animation: fade-left linear .7s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
 @media (max-width: 1250px) { .coffee_table-animate { bottom: 171px; } }
 
 .chair-animate { right: 450px; top: 0; -webkit-animation: fade-top linear .7s; animation: fade-top linear .7s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
@@ -111,9 +111,9 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 @keyframes fade-top { from { top: -200px; }
   to { top: 0px; } }
 @-webkit-keyframes fade-left { from { right: -100%; }
-  to { right: 30%; } }
+  to { right: 100px; } }
 @keyframes fade-left { from { right: -100%; }
-  to { right: 30%; } }
+  to { right: 100px; } }
 @-webkit-keyframes fade-right { from { left: -200%; }
   to { left: -20%; } }
 @keyframes fade-right { from { left: -200%; }
@@ -282,8 +282,8 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 .nft-card__about__text { text-align: center; font-weight: 400; }
 @media (max-width: 1250px) { .nft-card__about__text { font-size: 17px; line-height: 23px; } }
 
-.game-block__title { margin-bottom: 55px; text-align: left; font-size: 30px; }
-@media (max-width: 1250px) { .game-block__title { text-align: center; margin-bottom: 33px; } }
+.game-block__title { margin-bottom: 55px; text-align: left; font-size: 30px; padding-top: 120px; }
+@media (max-width: 1250px) { .game-block__title { text-align: center; margin-bottom: 33px; padding-top: 100px; } }
 
 .game-block__subtitle { margin-bottom: 40px; font-family: 'Open Sans'; text-align: left; font-size: 24px; }
 @media (max-width: 1250px) { .game-block__subtitle { font-size: 17px; line-height: 23px; margin-bottom: 40px; } }
@@ -426,7 +426,5 @@ header.header, main.main, footer.footer { overflow: hidden; width: 100vw; }
 
 .mobile-menu-content__nav-links { margin-left: 10%; }
 
-.footer { background: #194A5F; padding: 120px 0 156px 0; color: #FFF; text-align: center; overflow: hidden; }
-@media (max-width: 1250px) { .footer { padding: 100px 0; } }
-
+.footer { background: #194A5F; padding: 0px 0 156px 0; color: #FFF; text-align: center; overflow: hidden; }
 /*# sourceMappingURL=main.css.map */
