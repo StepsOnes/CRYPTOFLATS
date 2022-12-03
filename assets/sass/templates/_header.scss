@@ -108,11 +108,17 @@
   display: flex;
   column-gap: 10px;
   align-items: center;
+
+  li {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .social-link {
   width: 30px;
   height: 30px;
+  display: block;
   -webkit-transition: transform .4s;
   -moz-transition: transform .4s;
   -ms-transition: transform .4s;
