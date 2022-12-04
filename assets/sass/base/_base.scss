@@ -26,6 +26,15 @@ footer.footer {
   }
 }
 
+.roadmap-container {
+  max-width: 1324px;
+  margin: 0 auto;
+
+  @media (1440px) {
+    max-width: 1168px;
+  }
+}
+
 .row {
   display: flex;
   justify-content: space-between;

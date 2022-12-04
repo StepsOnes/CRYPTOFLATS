@@ -1,0 +1,11 @@
+.wallet-group {
+  display: flex;
+  gap: 60px;
+}
+
+.wallet-icon {
+  background: url("../img/wallet/wallet.svg");
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+}

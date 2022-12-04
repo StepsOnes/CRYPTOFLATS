@@ -1,0 +1,39 @@
+.modal-window {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  min-width: 100%;
+  background: #2D2D2D;
+  opacity: 0.9;
+  z-index: 9999;
+  transform: translateY(60%) scale(0);
+  transition: transform .3s cubic-bezier(.4, 0, .2, 1);
+
+  &.visible {
+    transform: translateY(0) scale(1);
+  }
+}
+
+.message-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid #FFFFFF;
+  border-radius: 50px;
+  color: #FFF;
+  max-width: 730px;
+  padding: 21px 90px;
+}
+
+.close-modal {
+  position: absolute;
+  background: url("../img/wallet/close.svg");
+  width: 30px;
+  height: 30px;
+  border: none;
+  top: -80px;
+  right: 7px;
+  cursor: pointer;
+}

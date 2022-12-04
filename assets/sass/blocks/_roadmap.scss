@@ -1,0 +1,226 @@
+.roadmap {
+  background: url("../img/roadmap/roadmap.jpg");
+  width: 100%;
+  min-height: 1000px;
+  background-size: cover;
+}
+
+.roadmap__cards {
+  @media (max-width: 2560px) {
+    margin-top: 100px;
+  }
+
+  @media (max-width: 1250px) {
+    margin-top: 50px;
+  }
+}
+
+.roadmap__title {
+  color: #FFF;
+  margin-bottom: 93px;
+  position: relative;
+  z-index: 10;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2800px;
+    background:#0F6EB2;
+    z-index: 2;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    @media (max-width: 1250px) {
+      height: 2500px;
+    }
+  }
+}
+
+.roadmap__card  {
+  margin: 0 auto 212px auto;
+  border-radius: 20px;
+  position: relative;
+  z-index: 100;
+
+  &.turquoise {
+    background: #66DBBF;
+  }
+
+  &.blue {
+    background: #66CDDB;
+  }
+
+  &.yellow {
+    background: #DBC166;
+  }
+
+  &.pink {
+    background: #F48FD8;
+  }
+
+  &.purple {
+    background: #B998FF;
+  }
+
+  @media (max-width: 2560px) {
+    max-width: 934px;
+    padding: 40px 150px 40px 150px;
+  }
+
+  @media (max-width: 1440px) {
+    max-width: 790px;
+    padding: 40px 125px 40px 125px;
+  }
+
+  @media (max-width: 1250px) {
+    padding: 40px 16px 20px 16px;
+    margin-bottom: 90px;
+  }
+}
+
+.roadmap__card__title {
+  color: #FFF;
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  margin-bottom: 32px;
+
+  @media (max-width: 1250px) {
+    margin-bottom: 17px;
+  }
+}
+
+.roadmap__card__about {
+  padding: 12px 27px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: #2D2D2D;
+  position: absolute;
+  background: #FFF;
+  border-radius: 50px;
+  top: -23px;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 25%;
+
+  &.min-566 {
+    @media (max-width: 1250px) {
+      min-width: 284px;
+    }
+  }
+
+  &.min-490 {
+    min-width: 490px;
+    @media (max-width: 1250px) {
+      min-width: 367px;
+    }
+  }
+
+  &.min-272 {
+    @media (max-width: 1250px) {
+      min-width: 273px;
+    }
+  }
+  @media (max-width: 1250px) {
+    font-size: 17px;
+    line-height: 23px;
+  }
+}
+
+.roadmap__card-list {
+  li {
+    color: #0A5845;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: left;
+    margin-bottom: 15px;
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: #FFF;
+      left: -20px;
+      top: 9px;
+      position: absolute;
+      border-radius: 50%;
+      @media (max-width: 1250px) {
+        display: none;
+      }
+    }
+
+    span {
+      font-weight: 700;
+    }
+
+    @media (max-width: 1250px) {
+      font-size: 17px;
+      line-height: 23px;
+    }
+  }
+
+  &.roadmap__card-list--yellow {
+    li {
+      color: #5E4B0A;
+    }
+  }
+
+  &.roadmap__card-list--pink {
+    li {
+      color: #722F5F;
+    }
+  }
+
+  &.roadmap__card-list--purple {
+    li {
+      color: #362066;
+    }
+  }
+
+  @media (max-width: 2560px) {
+    max-width: 500px;
+  }
+
+  @media (max-width: 1440px) {
+    max-width: 540px;
+  }
+}
+
+.roadmap__card-shadow {
+  background: rgba(219, 193, 102, 0.1);
+  border: 2px solid #FFFFFF;
+  border-radius: 20px;
+  position: absolute;
+  height: 100%;
+  z-index: 0;
+  top: 10%;
+
+  &.roadmap__card-shadow--right {
+    right: 100px;
+  }
+
+  &.roadmap__card-shadow--left {
+    left: 100px;
+  }
+
+  @media (max-width: 2560px) {
+    width: 934px;
+  }
+
+  @media (max-width: 1440px) {
+    width: 790px;
+  }
+
+  @media (max-width: 1250px) {
+    display: none;
+  }
+}
+
+.roadmap__card-wrapper {
+  position: relative;
+  z-index: 100;
+}

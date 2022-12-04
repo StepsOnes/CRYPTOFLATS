@@ -9,10 +9,10 @@
     <link rel="shortcut icon" href="favicon/favicon.png"  type="image/vnd.microsoft.icon">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/fonts/stylesheet.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/owlDots.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -30,16 +30,20 @@
                 <nav class="header-nav">
                     <ul class="nav-list">
                         <li><a href="#about" class="nav-list__item">ABOUT</a></li>
-                        <li><a href="#story" class="nav-list__item">STORY</a></li>
+                        <li><a href="#roadmap" class="nav-list__item">ROADMAP</a></li>
                         <li><a href="#team" class="nav-list__item">TEAM</a></li>
                         <li><a href="#FAQ" class="nav-list__item">FAQ</a></li>
                     </ul>
 
-                    <ul class="nav-links">
-                        <li><a target="_blank" href="https://t.me/cryptoflatsnft" class="social-link tg"></a></li>
-                        <li><a target="_blank" href="https://twitter.com/CryptoflatsNFT" class="social-link twit"></a></li>
-                        <li><a target="_blank" href="https://etherscan.io/address/0x1d6b3e373b947319a4b76a851bb17c1deccadb1d" class="social-link tr3zor"></a></li>
-                    </ul>
+                    <div class="wallet-group">
+                        <ul class="nav-links">
+                            <li><a target="_blank" href="https://t.me/cryptoflatsnft" class="social-link tg"></a></li>
+                            <li><a target="_blank" href="https://twitter.com/CryptoflatsNFT" class="social-link twit"></a></li>
+                            <li><a target="_blank" href="https://etherscan.io/address/0x1d6b3e373b947319a4b76a851bb17c1deccadb1d" class="social-link tr3zor"></a></li>
+                        </ul>
+
+                        <a href="#" class="wallet-icon"></a>
+                    </div>
                 </nav>
 
                 <div id="open" class="burger">
@@ -77,7 +81,7 @@
                 <div class="container">
                     <ul class="mobile-nav">
                         <li><a class="mobile-nav__item" href="#about">ABOUT</a></li>
-                        <li><a class="mobile-nav__item" href="#story">STORY</a></li>
+                        <li><a class="mobile-nav__item" href="#roadmap">ROADMAP</a></li>
                         <li><a class="mobile-nav__item" href="#team">TEAM</a></li>
                         <li><a class="mobile-nav__item" href="#FAQ">FAQ</a></li>
                     </ul>
@@ -87,11 +91,9 @@
             <div class="mobile-menu-footer">
                 <div class="container">
                     <ul class="nav-links">
-                        <li><a href="#" class="social-link houseoff"></a></li>
-                        <li><a href="#" class="social-link inst"></a></li>
-                        <li><a href="#" class="social-link tg"></a></li>
-                        <li><a href="#" class="social-link twit"></a></li>
-                        <li><a href="#" class="social-link tr3zor"></a></li>
+                        <li><a target="_blank" href="https://t.me/cryptoflatsnft" class="social-link tg"></a></li>
+                        <li><a target="_blank" href="https://twitter.com/CryptoflatsNFT" class="social-link twit"></a></li>
+                        <li><a target="_blank" href="https://etherscan.io/address/0x1d6b3e373b947319a4b76a851bb17c1deccadb1d" class="social-link tr3zor"></a></li>
                     </ul>
                 </div>
             </div>
@@ -113,9 +115,9 @@
                     5555 NFT Living rooms
                 </p>
 
-                <a href="https://opensea.io/collection/nftlivingrooms" class="about-product__buy-block__btn">
-                    OPEN COLLECTION
-                </a>
+                <div class="about-product__buy-block__btn">
+                    JOIN WHITELIST
+                </div>
 
                 <div class="product__buy-block__animate__box sofa-animate">
                     <div class="inf-animate inf-animate1 sofa">
@@ -302,16 +304,131 @@
                         </div>
                     </div>
 
-                    <a href="https://opensea.io/collection/nftlivingrooms" class="about-product__buy-block__btn about-product__buy-block__btn--margin">
-                        OPEN COLLECTION
-                    </a>
+                    <div class="about-product__buy-block__btn about-product__buy-block__btn--margin">
+                        JOIN WHITELIST
+                    </div>
                 </div>
 
-            <div class="container">
                 <div class="roadmap">
+                    <div class="roadmap-container">
+                        <div id="roadmap" class="group">
+                            <h1 class="about-company__title yellow" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                                ROADMAP
+                            </h1>
 
+                            <div class="circle-animate-yellow"></div>
+                        </div>
+
+                        <div class="roadmap__cards">
+                            <h1 class="roadmap__title title">
+                                START
+                            </h1>
+
+                            <div data-aos="fade-up" class="roadmap__card-wrapper">
+                                <div class="roadmap__card turquoise">
+                                    <div class="roadmap__card__about min-566">
+                                        CREATING OF 3D CONTENT
+                                    </div>
+
+                                    <h2 class="roadmap__card__title">
+                                        Q4 2022 - Q2 2023
+                                    </h2>
+
+                                    <ul class="roadmap__card-list">
+                                        <li><span>DROP #1 -</span> 5555 NFT isometric Living Rooms</li>
+                                        <li><span>DROP #2 -</span>  4444 NFT isometric Bedrooms</li>
+                                        <li><span>DROP #3 -</span> 3333 NFT isometric Kitchen and Dining rooms</li>
+                                        <li><span>DROP #4 -</span> 2222 NFT isometric Playrooms</li>
+                                        <li><span>DROP #5 - 1111</span>  NFT isometric Secret rooms</li>
+                                    </ul>
+                                </div>
+                                <div class="roadmap__card-shadow roadmap__card-shadow--right"></div>
+                            </div>
+
+                            <div data-aos="fade-up" class="roadmap__card-wrapper">
+                                <div class="roadmap__card blue">
+                                    <div class="roadmap__card__about">
+                                        TOKENSALE
+                                    </div>
+
+                                    <h2 class="roadmap__card__title">
+                                        Q2 2023
+                                    </h2>
+
+                                    <ul class="roadmap__card-list">
+                                        <li><span>CFLAT</span> token will be the internal game currency with a lot of advantages</li>
+                                        <li>We will provide you the project of Tokenomics where you can see all the benefits</li>
+                                        <li>We will hold private and public token sales and create pool of liquidity</li>
+                                    </ul>
+                                </div>
+                                <div class="roadmap__card-shadow roadmap__card-shadow--left"></div>
+                            </div>
+
+                            <div data-aos="fade-up" class="roadmap__card-wrapper">
+                                <div class="roadmap__card yellow">
+                                <div class="roadmap__card__about min-490">
+                                    FULL APARTMENT FROM NFT ROOMS
+                                </div>
+
+                                <h2 class="roadmap__card__title">
+                                    Q2 2023 - Q3 2023
+                                </h2>
+
+                                <ul class="roadmap__card-list roadmap__card-list--yellow">
+                                    <li>Based on the metadata of NFT tokens of Cryptoflats you can create full apartment</li>
+                                    <li>Created apartment turns to your individual p2e item</li>
+                                    <li>This stage gives you an opportunity to earn CFLAT tokens by holding your virtual apartment</li>
+                                    <li>You can mint your full apartment to sell it on Opensea</li>
+                                </ul>
+                            </div>
+                                <div class="roadmap__card-shadow roadmap__card-shadow--right"></div>
+                            </div>
+
+                            <div data-aos="fade-up" class="roadmap__card-wrapper">
+                                <div class="roadmap__card pink">
+                                <div class="roadmap__card__about min-272">
+                                    INTERNAL MARKETPLACE
+                                </div>
+
+                                <h2 class="roadmap__card__title">
+                                    Q3 2023
+                                </h2>
+
+                                <ul class="roadmap__card-list roadmap__card-list--pink">
+                                    <li>You can use marketplace to buy interior items and then replacing it into you rooms</li>
+                                    <li>Interior designers can post their items to sell it to the apartment owners</li>
+                                    <li>You can offer your services to create individual content</li>
+                                    <li>Marketplace offers game mechanics improving your apartment properties</li>
+                                </ul>
+                            </div>
+                                <div class="roadmap__card-shadow roadmap__card-shadow--left"></div>
+                            </div>
+
+                            <div data-aos="fade-up" class="roadmap__card-wrapper">
+                                <div class="roadmap__card purple">
+                                <div class="roadmap__card__about">
+                                    THE GAME
+                                </div>
+
+                                <h2 class="roadmap__card__title">
+                                    Q4 2023 - Q1 2024
+                                </h2>
+
+                                <ul class="roadmap__card-list roadmap__card-list--purple">
+                                    <li>Web game that allows you to spend fun and easy time with friends and make money on it</li>
+                                    <li>Your crypto apartment will be turned to 3D model using metadata of nft tokens in your wallet</li>
+                                    <li>You can invite anyone in your apartment as a 3d avatar  who has a minimum CFLAT tokens in his wallet</li>
+                                    <li>You will be able to interract with interior items, making a mess not only in your Cryptoflat :)</li>
+                                    <li>The abililty of having NPC pets, robots and other characters</li>
+                                    <li>Rating system and different scenarios of social behaving and reputation (kind neiborgh, crusher, thief)</li>
+                                    <li>Internal economy built on the p2p model between game participants</li>
+                                </ul>
+                            </div>
+                                <div class="roadmap__card-shadow roadmap__card-shadow--right"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
             <div class="container">
                 <div class="about-company-block">
@@ -433,9 +550,9 @@
                 </div>
             </div>
 
-            <a href="https://opensea.io/collection/nftlivingrooms" class="about-product__buy-block__btn about-product__buy-block__btn--margin-02">
-                OPEN COLLECTION
-            </a>
+            <div class="about-product__buy-block__btn about-product__buy-block__btn--margin-02">
+                JOIN WHITELIST
+            </div>
 
             <div id="FAQ" class="FAQ-block">
                 <h1 class="title faq-title">
@@ -539,6 +656,31 @@
                 </div>
             </div>
 
+            <div class="contact-us">
+                <h1 class="contact-us__title title">
+                    CONTACT US
+                </h1>
+
+                <p class="contact-us__subtitle">
+                    We always stay in touch and open to suggestions
+                </p>
+
+                <form method="POST">
+                    <div class="contacts-form">
+                        <div class="form-group">
+                            <label><input class="form-inp" type="text" name="user_name" placeholder="Name"></label>
+                            <label><input class="form-inp" type="text" name="user_email" placeholder="E-mail*"></label>
+                        </div>
+
+                        <div class="form-group__textarea">
+                            <label><textarea class="form-textarea" name="user_message" placeholder="Message..."></textarea></label>
+                        </div>
+                    </div>
+
+                    <input class="submit-form__btn" type="submit" value="Send message">
+                </form>
+            </div>
+
             <div class="footer-about">
                 <div class="footer-terms">
                     <a href="#">
@@ -551,21 +693,17 @@
                 </div>
 
                 <ul class="nav-links">
-                    <li><a href="#" class="social-link houseoff"></a></li>
-                    <li><a href="#" class="social-link inst"></a></li>
-                    <li><a href="#" class="social-link tg"></a></li>
-                    <li><a href="#" class="social-link twit"></a></li>
-                    <li><a href="#" class="social-link tr3zor"></a></li>
+                    <li><a target="_blank" href="https://t.me/cryptoflatsnft" class="social-link tg"></a></li>
+                    <li><a target="_blank" href="https://twitter.com/CryptoflatsNFT" class="social-link twit"></a></li>
+                    <li><a target="_blank" href="https://etherscan.io/address/0x1d6b3e373b947319a4b76a851bb17c1deccadb1d" class="social-link tr3zor"></a></li>
                 </ul>
             </div>
 
             <div class="footer-about-mobile">
                 <ul class="nav-links">
-                    <li><a href="#" class="social-link houseoff">0</a></li>
-                    <li><a href="#" class="social-link inst"></a></li>
-                    <li><a href="#" class="social-link tg"></a></li>
-                    <li><a href="#" class="social-link twit"></a></li>
-                    <li><a href="#" class="social-link tr3zor"></a></li>
+                    <li><a target="_blank" href="https://t.me/cryptoflatsnft" class="social-link tg"></a></li>
+                    <li><a target="_blank" href="https://twitter.com/CryptoflatsNFT" class="social-link twit"></a></li>
+                    <li><a target="_blank" href="https://etherscan.io/address/0x1d6b3e373b947319a4b76a851bb17c1deccadb1d" class="social-link tr3zor"></a></li>
                 </ul>
 
                 <div class="footer-terms">
@@ -582,6 +720,16 @@
         </div>
     </footer>
 
+    <div id="modal-window" class="modal-window">
+        <div class="modal-window__body">
+            <div class="message-box">
+                We really appreciate your interest in our project.
+                Join whitelist function will be avaliable very soon
+                <button class="close-modal"></button>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -592,3 +740,4 @@
     <script>AOS.init();</script>
 </body>
 </html>
+

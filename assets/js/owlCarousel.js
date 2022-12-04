@@ -12,7 +12,6 @@ $(document).ready(function(){
         autoplayHoverPause: false,
         autoWidth: true,
         mouseDrag: false,
-        touchDrag: false
     });
 
     $('.owl-carousel-2').owlCarousel({
@@ -26,7 +25,6 @@ $(document).ready(function(){
         autoplayHoverPause: false,
         autoWidth: true,
         mouseDrag: false,
-        touchDrag: false
     });
 });
 
