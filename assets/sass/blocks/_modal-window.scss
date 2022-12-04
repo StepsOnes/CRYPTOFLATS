@@ -25,6 +25,11 @@
   color: #FFF;
   max-width: 730px;
   padding: 21px 90px;
+
+  @media (max-width: 1250px) {
+    padding: 10px 15px;
+    font-size: 17px;
+  }
 }
 
 .close-modal {

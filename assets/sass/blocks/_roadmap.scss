@@ -3,6 +3,7 @@
   width: 100%;
   min-height: 1000px;
   background-size: cover;
+  display: none;
 }
 
 .roadmap__cards {
@@ -32,7 +33,7 @@
     left: 50%;
     transform: translateX(-50%);
     @media (max-width: 1250px) {
-      height: 2500px;
+      height: 2100px;
     }
   }
 }
@@ -131,6 +132,7 @@
 }
 
 .roadmap__card-list {
+  margin: 0 auto;
   li {
     color: #0A5845;
     font-size: 18px;
@@ -182,7 +184,7 @@
   }
 
   @media (max-width: 2560px) {
-    max-width: 500px;
+    max-width: 800px;
   }
 
   @media (max-width: 1440px) {

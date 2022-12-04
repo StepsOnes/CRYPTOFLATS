@@ -1,4 +1,3 @@
-AOS.init();
 const circleAnimatePurple = document.querySelector('.circle-animate-purple');
 const circleAnimateGreen = document.querySelector('.circle-animate-green');
 const circleAnimateYellow = document.querySelector('.circle-animate-yellow');
@@ -24,37 +23,33 @@ document.addEventListener('keydown', function (event) {
     if (event.keyCode === 27) {
         modalWindow.classList.remove('visible');
     }
-    // console.log(event.code)
-})
+});
 
 openModalWindow.forEach((item) => {
     item.addEventListener('click', function () {
         modalWindow.classList.add('visible');
-    })
-})
+    });
+});
 
 navLinks.forEach((item) => {
     item.addEventListener('click', function () {
         menu.classList.toggle('not-visible');
-    })
+    });
 })
-
+;
 openMenu.addEventListener('click', function () {
     menu.classList.toggle('not-visible');
 });
 
 closeMenu.addEventListener('click', function () {
     menu.classList.toggle('not-visible');
-})
+});
 
 document.addEventListener('scroll', function () {
     if (window.scrollY > 2000) {
         circleAnimatePurple.classList.add('circle-animate');
     }
     if (window.scrollY > 2600) {
-        circleAnimateYellow.classList.add('circle-animate');
-    }
-    if (window.scrollY > 6400) {
         circleAnimateGreen.classList.add('circle-animate');
     }
 });

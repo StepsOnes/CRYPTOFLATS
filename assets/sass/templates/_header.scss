@@ -106,7 +106,7 @@
 
 .nav-links {
   display: flex;
-  column-gap: 10px;
+  column-gap: 18px;
   align-items: center;
 
   li {
@@ -142,8 +142,9 @@
     background: url("../img/header/social-icons/twitter_log_ fin 1.png");
   }
 
-  &.tr3zor {
-    background: url("../img/header/social-icons/etherscan-logo-fin.png");
+  &.discord{
+    //background: url("../img/header/social-icons/etherscan-logo-fin.png");
+    background: url("../img/social_icons/discord.svg");
   }
 
   &:hover {
