@@ -106,7 +106,7 @@
 }
 
 .about-product__buy-block__btn {
-    font-family: 'Polly';
+    font-family: 'Polly Rounded';
     font-weight: bold;
     display: inline-block;
     padding: 14px 43px;
@@ -125,7 +125,6 @@
     z-index: 999;
     position: relative;
     text-align: center;
-    cursor: pointer;
     text-transform: uppercase;
 
   &:hover {
