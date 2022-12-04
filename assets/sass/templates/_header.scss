@@ -41,15 +41,15 @@
 .logo-title {
   font-family: 'Polly Rounded';
   font-weight: bold;
-  font-size: 28px;
+  font-size: 36px;
   line-height: 45px;
   position: relative;
 
   &::before {
     content: '';
     background: url("../img/header/logo.svg");
-    width: 88px;
-    height: 84px;
+    width: 68px;
+    height: 64px;
     position: absolute;
     bottom: 11px;
     left: -53px;
@@ -59,7 +59,7 @@
   }
 
   @media (max-width: 1250px) {
-    margin-left: 23px;
+    margin-left: 30px;
     font-size: 18px;
 
     &::before {
