@@ -25,7 +25,7 @@
 
 .header-nav {
   display: flex;
-  column-gap: 55px;
+  column-gap: 75px;
 
   @media (max-width: 1250px) {
     display: none;
@@ -113,6 +113,10 @@
     width: 30px;
     height: 30px;
   }
+
+  &.mobile-menu-footer__nav-links {
+    justify-content: center;
+  }
 }
 
 .social-link {
@@ -125,6 +129,8 @@
   -o-transition: transform .4s;
   transition: transform .4s;
   will-change: transform;
+  background-size: cover;
+  background-repeat: no-repeat;
 
   &.houseoff {
     background: url("../img/header/social-icons/Logomark-Transparent White 2.png");
@@ -135,11 +141,13 @@
   }
 
   &.tg {
-    background: url("../img/header/social-icons/telegram_logo_fin.png");
+    //background: url("../img/header/social-icons/telegram_logo_fin.png");
+    background: url("../img/social_icons/telegram.svg");
   }
 
   &.twit {
-    background: url("../img/header/social-icons/twitter_log_ fin 1.png");
+    //background: url("../img/header/social-icons/twitter_log_ fin 1.png");
+    background: url("../img/social_icons/twitter.svg");
   }
 
   &.discord{
@@ -153,6 +161,13 @@
     -ms-transform: scale(1.03);
     -o-transform: scale(1.03);
     transform: scale(1.03);
+  }
+
+  &.social-link__menu {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 
@@ -171,7 +186,7 @@
 
   &.burger-close {
     position: relative;
-    top: 10px;
+    top: 4px;
     & span:nth-child(1) {
       display: none;
     }
@@ -206,7 +221,7 @@
 }
 
 .mobile-menu-content {
-  height: 400px;
+  height: 300px;
   background: rgba(45, 45, 45, 0.97);
   width: 100%;
 }
@@ -225,6 +240,7 @@
       line-height: 44px;
       color: #FFF;
       text-decoration: none;
+      letter-spacing: 4px;
     }
   }
 }
@@ -238,4 +254,20 @@
 
 .mobile-menu-content__nav-links {
   margin-left: 10%;
+}
+
+.mobile-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.mobile-group-header {
+  display: none;
+  align-items: center;
+  gap: 30px;
+
+  @media (max-width: 1250px) {
+    display: flex;
+  }
 }

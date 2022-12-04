@@ -27,6 +27,10 @@
     max-width: 100%;
   }
 
+  picture {
+    max-width: 100%;
+  }
+
   @media (max-width: 1250px) {
     width: 100%;
     padding-bottom: 75%;
@@ -122,6 +126,7 @@
     position: relative;
     text-align: center;
     cursor: pointer;
+    text-transform: uppercase;
 
   &:hover {
     -webkit-transform: scale(1.03);
