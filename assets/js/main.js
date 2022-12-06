@@ -22,32 +22,6 @@ joinWhitelistBtn.forEach((item) => {
     });
 });
 
-// modalWindow.addEventListener('click', function (event) {
-//     let currentElem = event.target;
-//     if (currentElem === closeModalWindow ||currentElem  === modalWindow) {
-//         modalWindow.classList.remove('visible');
-//     }
-// });
-
-// document.addEventListener('keydown', function (event) {
-//     if (event.keyCode === 27) {
-//         modalWindow.classList.remove('visible');
-//     }
-// });
-//
-// openModalWindow.forEach((item) => {
-//     item.addEventListener('click', function () {
-//         modalWindow.classList.add('visible');
-//     });
-// });
-//
-// navLinks.forEach((item) => {
-//     item.addEventListener('click', function () {
-//         menu.classList.toggle('not-visible');
-//     });
-// });
-
-
 openMenu.addEventListener('click', function () {
     menu.classList.toggle('not-visible');
 });
@@ -60,8 +34,12 @@ document.addEventListener('scroll', function () {
     if (window.scrollY > 2000) {
         circleAnimatePurple.classList.add('circle-animate');
     }
-    if (window.scrollY > 2600) {
+    if (window.scrollY > 3200) {
         circleAnimateGreen.classList.add('circle-animate');
+    }
+
+    if (window.scrollY > 2600) {
+        circleAnimateYellow.classList.add('circle-animate');
     }
 });
 

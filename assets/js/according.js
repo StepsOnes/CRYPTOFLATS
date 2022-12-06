@@ -28,15 +28,14 @@ roadmapHeader.forEach((box) => {
     box.addEventListener('click', boxHandler3);
 });
 
-
 function boxHandler3(e){
-    roadmapBody.forEach((item) => {
-        item.style.maxHeight = 0;
-        item.classList.remove('active-body');
-    });
     e.preventDefault();
     let currentBox = e.target.closest('.roadmap-header');
     let currentBody = currentBox.nextElementSibling;
+
+    roadmapBody.forEach((item) => {
+        item.style.maxHeight = 0;
+    });
 
     currentBody.classList.toggle('active-body');
 
@@ -45,4 +44,5 @@ function boxHandler3(e){
     } else {
         currentBody.style.maxHeight = 0;
     }
+
 }
