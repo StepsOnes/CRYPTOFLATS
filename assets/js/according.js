@@ -19,3 +19,30 @@ function boxHandler2(e){
         currentBody.style.maxHeight = 0;
     }
 }
+
+
+const roadmapHeader = Array.from(document.querySelectorAll(".roadmap-header"));
+const roadmapBody = Array.from(document.querySelectorAll('.roadmap-body'));
+
+roadmapHeader.forEach((box) => {
+    box.addEventListener('click', boxHandler3);
+});
+
+
+function boxHandler3(e){
+    roadmapBody.forEach((item) => {
+        item.style.maxHeight = 0;
+        item.classList.remove('active-body');
+    });
+    e.preventDefault();
+    let currentBox = e.target.closest('.roadmap-header');
+    let currentBody = currentBox.nextElementSibling;
+
+    currentBody.classList.toggle('active-body');
+
+    if (currentBody.classList.contains('active-body')) {
+        currentBody.style.maxHeight = (currentBody.scrollHeight) + "px"; // открываем контент
+    } else {
+        currentBody.style.maxHeight = 0;
+    }
+}
