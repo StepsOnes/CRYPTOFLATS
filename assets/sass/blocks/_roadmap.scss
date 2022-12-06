@@ -98,6 +98,7 @@
 
   @media (max-width: 1250px) {
     margin-bottom: 17px;
+    font-size: 17px;
     &::before {
       display: none;
     }
@@ -242,7 +243,7 @@
   padding-left: 150px;
 
   @media (max-width: 1250px) {
-    padding-left: 24px;
+    padding-left: 40px;
   }
 }
 
