@@ -161,9 +161,6 @@
       top: 9px;
       position: absolute;
       border-radius: 50%;
-      @media (max-width: 1250px) {
-        display: none;
-      }
     }
 
     span {
@@ -245,7 +242,7 @@
   padding-left: 150px;
 
   @media (max-width: 1250px) {
-    padding-left: 10px;
+    padding-left: 24px;
   }
 }
 
