@@ -3,14 +3,18 @@ const circleAnimateGreen = document.querySelector('.circle-animate-green');
 const circleAnimateYellow = document.querySelector('.circle-animate-yellow');
 
 const menu = document.getElementById('mobile-menu');
-const closeMenu = document.getElementById('close');
-const openMenu = document.getElementById('open');
-
+const burgerBtn = Array.from(document.querySelectorAll('.burger'));
 const navLinks = document.querySelectorAll('.mobile-nav__item');
-
 const joinWhitelistBtn = Array.from(document.querySelectorAll('.about-product__buy-block__btn'));
-const modalWindow = document.getElementById('modal-window');
-const closeModalWindow = document.querySelector('.close-modal');
+const html = document.body;
+
+
+burgerBtn.forEach((item) => {
+    item.addEventListener('click', function () {
+        html.classList.toggle('no-scroll');
+        menu.classList.toggle('not-visible');
+    })
+})
 
 joinWhitelistBtn.forEach((item) => {
     item.addEventListener('mouseover', function () {
@@ -22,12 +26,11 @@ joinWhitelistBtn.forEach((item) => {
     });
 });
 
-openMenu.addEventListener('click', function () {
-    menu.classList.toggle('not-visible');
-});
-
-closeMenu.addEventListener('click', function () {
-    menu.classList.toggle('not-visible');
+navLinks.forEach((item) => {
+    item.addEventListener('click', function () {
+        html.classList.toggle('no-scroll');
+        menu.classList.toggle('not-visible');
+    });
 });
 
 document.addEventListener('scroll', function () {
@@ -42,6 +45,10 @@ document.addEventListener('scroll', function () {
         circleAnimateYellow.classList.add('circle-animate');
     }
 });
+
+
+
+
 
 
 

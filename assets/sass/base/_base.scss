@@ -3,12 +3,17 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Open Sans';
   font-size: 24px;
   line-height: 33px;
   font-weight: 400;
 }
+
 header.header,
 main.main,
 footer.footer {
@@ -68,3 +73,4 @@ footer.footer {
 .not-visible {
   display: none;
 }
+

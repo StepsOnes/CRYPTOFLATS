@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/owlDots.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!--    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="node_modules/animate.css/animate.compat.css">
     <meta name="google-site-verification" content="Hhf3ISRXwjlZILhTPf2JkySLOcKV4p0Ftmj4plc2zvs" />
 </head>
 <body>
@@ -31,7 +32,7 @@
                 <nav class="header-nav">
                     <ul class="nav-list">
                         <li><a href="#about" class="nav-list__item">ABOUT</a></li>
-                        <li><a href="#story" class="nav-list__item">STORY</a></li>
+                        <li><a href="#roadmap" class="nav-list__item">ROADMAP</a></li>
                         <li><a href="#team" class="nav-list__item">TEAM</a></li>
                         <li><a href="#FAQ" class="nav-list__item">FAQ</a></li>
                     </ul>
@@ -90,7 +91,7 @@
                 <div class="container">
                     <ul class="mobile-nav">
                         <li><a class="mobile-nav__item" href="#about">ABOUT</a></li>
-                        <li><a class="mobile-nav__item" href="#story">STORY</a></li>
+                        <li><a class="mobile-nav__item" href="#roadmap">ROADMAP</a></li>
                         <li><a class="mobile-nav__item" href="#team">TEAM</a></li>
                         <li><a class="mobile-nav__item" href="#FAQ">FAQ</a></li>
                     </ul>
@@ -113,8 +114,6 @@
 
             <div class="about-product__video">
                 <img src="assets/video/animp4.webp" alt="video">
-
-                <video src="assets/video/animp4.mp4" muted="muted" autoplay playsinline loop></video>
             </div>
 
             <div class="about-product__buy-block">
@@ -267,21 +266,21 @@
         <section  id="about" class="about">
             <div class="container">
                 <div class="about-block-text">
-                        <h1 class="about-title" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                        <h1 class="about-title wow fadeInUpBig">
                             ABOUT
                         </h1>
 
-                    <p class="about-subtitle" data-aos="fade-up-right">
+                    <p class="about-subtitle wow fadeInRight">
                         Cryptoflats - is a collection of generated NFT tokens on the Ethereum blockchain. These tokens are isometric rooms with bright design and many detailes. By collecting all of them, you will be able to construct your own Сryptoflat, consisting of 5 types of rooms. First stage is 5555 nft living rooms. The next stages will be 1000 pieces less each.
                     </p>
                 </div>
 
                 <div class="about-block-text m-none">
-                    <h1 class="about-title" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                    <h1 class="about-title wow fadeInUpBig">
                         SPECS
                     </h1>
 
-                    <p class="about-subtitle" data-aos="fade-up-left">
+                    <p class="about-subtitle wow fadeInLeft">
                         Every Cryptoflat room is unique and created from a combination of more than 500+ 3D elements such as walls, floors, furniture, decor, light and cats :) The collection implies the presence of rarity in its components.
                     </p>
                 </div>
@@ -292,7 +291,7 @@
             <div class="container">
                 <div  id="story" class="about-company-block">
                     <div class="group">
-                        <h1 class="about-company__title purple" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                        <h1 class="about-company__title purple wow fadeInUpBig" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                             STORY
                         </h1>
 
@@ -301,7 +300,7 @@
 
                     <div class="about-company__story-block">
                         <div class="about-company__story-block__text">
-                            <p data-aos="fade-left" >
+                            <p class="wow fadeInLeft">
                                 The main source of inspiration was the idea of a virtual development and meta-verse, where each resident will have their own designer apartments with interactive and financial mechanics. We created a lot of graphic prototypes and animations, an interactive interior and even a whole 3D city ​​block.
                                 <br>
                                 <br>
@@ -309,13 +308,13 @@
                             </p>
                         </div>
 
-                        <div class="about-company__story-block__video">
+                        <div class="about-company__story-block__video wow fadeInUp">
                             <img id="story-animate" src="assets/video/1000х1000.webp" alt="">
                         </div>
                     </div>
                 </div>
 
-                <div class="about-product__buy-block__btn about-product__buy-block__btn--margin">
+                <div class="about-product__buy-block__btn about-product__buy-block__btn--margin wow fadeInUp">
                     JOIN WHITELIST
                 </div>
             </div>
@@ -323,24 +322,24 @@
                 <div class="roadmap">
                     <div class="container">
                         <div id="roadmap" class="group">
-                            <h1 class="about-company__title yellow" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                            <h1 class="about-company__title yellow wow fadeInUpBig">
                                 ROADMAP
                             </h1>
 
                             <div class="circle-animate-yellow"></div>
                         </div>
 
-                        <div class="roadmap__cards">
-                            <div class="roadmap__card-wrapper">
-                                <div class="roadmap__card turquoise">
-                                    <div class="roadmap-header">
+                        <div class="roadmap__cards accordion-container">
+                            <div class="roadmap__card-wrapper wow fadeInUp">
+                                <div class="roadmap__card turquoise ac">
+                                    <div class="roadmap-header ac-header">
                                         <div class="roadmap-header__number">20%</div>
                                         <h2 class="roadmap-header__title green">
-                                            CREATING OF 3D CONTENT FOR THE ROOMS
+                                            Creating of isometric rooms
                                         </h2>
                                     </div>
 
-                                    <div class="roadmap-body">
+                                    <div class="roadmap-body ac-panel">
                                         <h2 class="roadmap__card__title turquoise">
                                             Q4 2022 - Q2 2023
                                         </h2>
@@ -356,7 +355,7 @@
                                 </div>
                             </div>
 
-                            <div data-aos="fade-up" class="roadmap__card-wrapper">
+                            <div class="roadmap__card-wrapper wow fadeInUp">
                                 <div class="roadmap__card blue">
                                     <div class="roadmap-header">
                                         <div class="roadmap-header__number">40%</div>
@@ -379,7 +378,7 @@
                                 </div>
                             </div>
 
-                            <div data-aos="fade-up" class="roadmap__card-wrapper">
+                            <div class="roadmap__card-wrapper wow fadeInUp">
                                 <div class="roadmap__card yellow">
 
                                     <div class="roadmap-header">
@@ -404,7 +403,7 @@
                                 </div>
                             </div>
 
-                            <div data-aos="fade-up" class="roadmap__card-wrapper">
+                            <div class="roadmap__card-wrapper wow fadeInUp">
                                 <div class="roadmap__card pink">
 
                                     <div class="roadmap-header">
@@ -429,7 +428,7 @@
                                 </div>
                             </div>
 
-                            <div data-aos="fade-up" class="roadmap__card-wrapper">
+                            <div class="roadmap__card-wrapper wow fadeInUp">
                                 <div class="roadmap__card purple">
 
                                     <div class="roadmap-header">
@@ -463,19 +462,19 @@
             <div class="container">
                 <div class="about-company-block">
                     <div id="team" class="group">
-                        <h1 class="about-company__title green" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                        <h1 class="about-company__title green wow fadeInUpBig">
                             TEAM
                         </h1>
 
                         <div class="circle-animate-green"></div>
                     </div>
 
-                    <p class="about-company__story-block__story__text" data-aos="fade-left">
+                    <p class="about-company__story-block__story__text wow fadeInLeft">
                         Cryptoflats was created by two architects who are passionate about blockchain and NFT technologies. The idea of free creative interpretation and the absence of limiting technical factors made it possible to create a bright and stylish interior collection that includes elements of surrealism and comfort all rolled into one.
                     </p>
 
                     <div class="nft-cards">
-                        <div class="nft-card" data-aos="fade-up">
+                        <div class="nft-card wow fadeInUp">
                             <div class="nft-card__img nft-card__img__01">
                                 <img src="assets/img/nft_cards/card_01.png" alt="">
                             </div>
@@ -490,7 +489,7 @@
                             </div>
                         </div>
 
-                        <div class="nft-card" data-aos="fade-up">
+                        <div class="nft-card wow fadeInUp">
                             <div class="nft-card__img nft-card__img__02">
                                 <img src="assets/img/nft_cards/card_02.png" alt="">
                             </div>
@@ -513,15 +512,15 @@
     <footer class="footer">
         <div class="container">
             <div class="game-block title">
-                <h1 class="game-block__title" data-aos="fade-up-right">
+                <h1 class="game-block__title wow fadeInUpBig">
                     THE GAME
                 </h1>
 
-                <p class="game-block__subtitle" data-aos="fade-up-left">
+                <p class="game-block__subtitle wow fadeInLeft">
                     Our project is about design, entertainment and interaction. We want to unite everyone who liked our project into one big and friendly community. After you put all the rooms together and turn them into a full-fledged apartment, then you can invite your friends to it and interact with each other using avatars.
                 </p>
 
-                <div class="game-place mobile-none ">
+                <div class="game-place mobile-none wow fadeInUp">
                     <img src="assets/img/game_img/game_box.png" alt="">
 
                     <div class="room drop5">
@@ -575,21 +574,21 @@
                     </div>
                 </div>
 
-                <div class="game-animation mobile-active">
+                <div class="game-animation mobile-active wow fadeInUp">
                     <img class="game-animation_img" src="assets/img/game_animation/THE%20GAME%201.png" alt="game">
                 </div>
             </div>
 
-            <div class="about-product__buy-block__btn about-product__buy-block__btn--margin-02">
+            <div class="about-product__buy-block__btn about-product__buy-block__btn--margin-02 wow fadeInUp">
                 JOIN WHITELIST
             </div>
 
             <div id="FAQ" class="FAQ-block">
-                <h1 class="title faq-title">
+                <h1 class="title faq-title wow fadeInUpBig">
                     FAQ
                 </h1>
 
-                <div class="faq__according">
+                <div class="faq__according wow fadeInBottomRight">
 
                     <div class="faq__according__item">
                         <div class="faq__accordion__header">
@@ -686,32 +685,7 @@
                 </div>
             </div>
 
-            <div class="contact-us">
-                <h1 class="contact-us__title title">
-                    CONTACT US
-                </h1>
-
-                <p class="contact-us__subtitle">
-                    We always stay in touch and open to suggestions
-                </p>
-
-                <form method="POST">
-                    <div class="contacts-form">
-                        <div class="form-group">
-                            <label><input class="form-inp" type="text" name="user_name" placeholder="Name"></label>
-                            <label><input class="form-inp" type="text" name="user_email" placeholder="E-mail*"></label>
-                        </div>
-
-                        <div class="form-group__textarea">
-                            <label><textarea class="form-textarea" name="user_message" placeholder="Message..."></textarea></label>
-                        </div>
-                    </div>
-
-                    <input class="submit-form__btn" type="submit" value="Send message">
-                </form>
-            </div>
-
-            <div class="footer-about">
+            <div class="footer-about wow fadeInBottom">
                 <div class="footer-terms">
                     <a href="#">
                         <span>TERMS &</span> CONDITIONS
@@ -730,19 +704,19 @@
             </div>
 
             <div class="footer-about-mobile">
-                <ul class="nav-links">
+                <ul class="nav-links wow fadeInBottom">
                     <li><a target="_blank" href="https://t.me/cryptoflatsnft" class="social-link tg"></a></li>
                     <li><a target="_blank" href="https://twitter.com/CryptoflatsNFT" class="social-link twit"></a></li>
                     <li><a target="_blank" href="#" class="social-link discord"></a></li>
                 </ul>
 
-                <div class="footer-terms">
+                <div class="footer-terms wow fadeInBottom">
                     <a href="#">
                         <span>TERMS &</span> CONDITIONS
                     </a>
                 </div>
 
-                <div class="footer-disclaimer">
+                <div class="footer-disclaimer wow fadeInBottom">
                     <span>© 2022 Cryptoflats</span> All Rights Reserved
                 </div>
             </div>
@@ -750,15 +724,6 @@
         </div>
     </footer>
 
-    <div id="modal-window" class="modal-window">
-        <div class="modal-window__body">
-            <div class="message-box">
-                We really appreciate your interest in our project.
-                Join whitelist function will be avaliable very soon
-                <button class="close-modal"></button>
-            </div>
-        </div>
-    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -767,7 +732,11 @@
     <script src="assets/js/according.js"></script>
     <script src="assets/js/slideShow.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>AOS.init();</script>
+<!--    <script>-->
+<!--        AOS.init();-->
+<!--    </script>-->
+    <script src="node_modules/wowjs/dist/wow.min.js"></script>
+    <script src="assets/js/wowInit.js"></script>
 </body>
 </html>
 
