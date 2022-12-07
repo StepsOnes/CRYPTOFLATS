@@ -22,6 +22,12 @@ joinWhitelistBtn.forEach((item) => {
     });
 });
 
+navLinks.forEach((item) => {
+    item.addEventListener('click', function () {
+        menu.classList.toggle('not-visible');
+    });
+});
+
 openMenu.addEventListener('click', function () {
     menu.classList.toggle('not-visible');
 });
