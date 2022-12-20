@@ -2,7 +2,7 @@
   min-height: 784px;
   width: 100%;
   background: url("../img/about/bc_img.jpg");
-  padding-top: 120px;
+  padding: 120px 0;
   text-align: center;
   background-size: cover;
 }
@@ -177,4 +177,24 @@
     width: 1100px;
   }
 
+}
+
+.animate__animated.circle-animate {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    width: 966px;
+    height: 2px;
+    background: #CA47D6;
+    transform: translateX(-100%);
+
+    @media (max-width: 2560px) {
+      animation: draw-big 0.5s linear forwards;
+    }
+
+    @media (max-width: 1980px) {
+      animation: draw 0.5s linear forwards;
+    }
+  }
 }
