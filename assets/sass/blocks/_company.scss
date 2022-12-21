@@ -27,6 +27,10 @@
     color: rgba(255, 201, 64, 1);
   }
 
+  &.orange {
+    color: #DC572D;
+  }
+
   @media (max-width: 1250px) {
     text-align: center;
     margin-bottom: 40px;
@@ -40,6 +44,10 @@
   @media (max-width: 1250px) {
     flex-direction: column;
   }
+}
+
+.about-company-block {
+  padding-top: 150px;
 }
 
 .about-company__story-block__text {

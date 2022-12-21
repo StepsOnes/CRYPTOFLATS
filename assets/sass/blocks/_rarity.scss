@@ -1,0 +1,76 @@
+.about-rarity {
+  text-align: center;
+  color: #FFF;
+  padding-bottom: 70px;
+}
+
+.about-company__title__rarity {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.about-rarity__subtitle {
+  max-width: 780px;
+  margin: 0 auto 165px auto;
+}
+
+.rarity-tabs__button {
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  color: #FFF;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  cursor: pointer;
+  padding: 8px 18px;
+
+  &.active-tab {
+    color: #F1CF1B;
+    border: 2px solid #FFC940;
+    border-radius: 20px;
+  }
+}
+
+.rarity-block {
+  min-height: 910px;
+  background: url("../img/rarity_img/posters/Gold.jpg");
+  background-size: cover;
+  padding-top: 70px;
+}
+
+.about-flats {
+  padding: 24px 41px;
+  background: rgba(45, 45, 45, 0.9);
+  border-radius: 40px;
+  color: #FFF;
+  max-width: 1110px;
+  margin: 0 auto 150px auto;
+}
+
+.gold-flat {
+  color: $gold;
+  font-weight: 600;
+}
+
+.rarity-block__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.apartment {
+  max-width: 500px;
+  max-height: 500px;
+
+  img {
+    max-width: 100% ;
+  }
+}
+
+.rarity-block__content__flat-information {
+  background: rgba(45, 45, 45, 0.9);
+  border-radius: 40px;
+  padding: 58px 41px;
+}
