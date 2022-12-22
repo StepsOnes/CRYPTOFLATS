@@ -51,7 +51,7 @@ joinWhitelistBtn.forEach((item) => {
     });
 
     item.addEventListener('mouseout', function () {
-        this.textContent = "Join whitelist";
+        this.textContent = "GET NFT PASS";
     });
 });
 

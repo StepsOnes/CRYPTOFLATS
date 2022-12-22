@@ -39,6 +39,12 @@
     margin-top: -4px;
   }
 
+  @media (max-width: 2560px) {
+    video {
+      height: 973px;
+    }
+  }
+
   @media (max-width: 1980px) {
     video {
       height: auto;

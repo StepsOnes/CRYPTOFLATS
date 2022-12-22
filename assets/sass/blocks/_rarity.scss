@@ -50,8 +50,8 @@
   }
 
   &.defBtn {
-    color: $gold;
-    border: 2px solid $gold;
+    color: #FFF;
+    border: 2px solid #FFF;
   }
 
   @media (max-width: 1250px) {
@@ -137,6 +137,7 @@
     gap: 0;
     justify-content: space-between;
     padding: 42px 20px;
+    margin-top: 50px;
   }
 }
 
