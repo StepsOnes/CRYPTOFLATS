@@ -24,7 +24,7 @@
   @media (max-width: 1250px) {
     font-weight: 400;
     font-size: 17px;
-    line-height: 23px;
+    line-height: 28px;
     margin-bottom: 45px;
   }
 }
@@ -124,23 +124,11 @@
   }
 }
 
-//.rarity-block__content__flat-information {
-//  background: rgba(45, 45, 45, 0.9);
-//  border-radius: 40px;
-//  padding: 58px 41px;
-//  display: inline-block;
-//
-//  @media (max-width: 1250px) {
-//    display: block;
-//
-//  }
-//}
 
 .rarity-block__content__flat-information {
   background: rgba(45, 45, 45, 0.9);
   border-radius: 40px;
   padding: 58px 41px;
-  display: inline-block;
   display: flex;
   text-align: left;
   gap: 100px;
