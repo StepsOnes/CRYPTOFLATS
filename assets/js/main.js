@@ -76,6 +76,9 @@ document.addEventListener('scroll', function () {
     }
 });
 
+$(document).ready(function(){
+    $('.autoplay').trigger("play");
+});
 
 
 
