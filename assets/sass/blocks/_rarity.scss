@@ -93,6 +93,10 @@
   color: #FFF;
   max-width: 1110px;
   margin: 0 auto 100px auto;
+
+  @media (max-width: 1250px) {
+    display: none;
+  }
 }
 
 .gold-flat {
@@ -105,6 +109,10 @@
   //justify-content: space-between;
   align-items: center;
   gap: 100px;
+
+  @media (max-width: 1250px) {
+    display: block;
+  }
 }
 
 .apartment {
@@ -116,17 +124,32 @@
   }
 }
 
+//.rarity-block__content__flat-information {
+//  background: rgba(45, 45, 45, 0.9);
+//  border-radius: 40px;
+//  padding: 58px 41px;
+//  display: inline-block;
+//
+//  @media (max-width: 1250px) {
+//    display: block;
+//
+//  }
+//}
+
 .rarity-block__content__flat-information {
   background: rgba(45, 45, 45, 0.9);
   border-radius: 40px;
   padding: 58px 41px;
   display: inline-block;
-}
-
-.rarity-block__content__flat-information {
   display: flex;
   text-align: left;
   gap: 100px;
+
+  @media (max-width: 1250px) {
+    gap: 0;
+    justify-content: space-between;
+    padding: 42px 20px;
+  }
 }
 
 .rarity-information__points {
@@ -143,6 +166,12 @@
       }
     }
   }
+
+  @media (max-width: 1250px) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .rarity-information__about {
@@ -155,6 +184,14 @@
 
     &:last-child {
       margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: 1250px) {
+    li {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
     }
   }
 }
