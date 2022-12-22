@@ -2,16 +2,31 @@
   text-align: center;
   color: #FFF;
   padding-bottom: 70px;
+
+  @media (max-width: 1250px) {
+    padding-bottom: 40px;
+  }
 }
 
 .about-company__title__rarity {
   text-align: center;
   margin-bottom: 45px;
+
+  @media (max-width: 1250px) {
+    margin-bottom: 30px;
+  }
 }
 
 .about-rarity__subtitle {
   max-width: 780px;
   margin: 0 auto 165px auto;
+
+  @media (max-width: 1250px) {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 23px;
+    margin-bottom: 45px;
+  }
 }
 
 .rarity-tabs__button {
@@ -37,6 +52,10 @@
   &.defBtn {
     color: $gold;
     border: 2px solid $gold;
+  }
+
+  @media (max-width: 1250px) {
+    margin-bottom: 10px;
   }
 }
 
