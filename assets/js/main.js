@@ -63,15 +63,15 @@ navLinks.forEach((item) => {
 });
 
 document.addEventListener('scroll', function () {
-    if (window.scrollY > 2000) {
-        circleAnimatePurple.classList.add('circle-animate');
-        console.log(circleAnimatePurple.offset)
-    }
+    console.log(window.scrollY)
     if (window.scrollY > 3200) {
+        circleAnimatePurple.classList.add('circle-animate');
+    }
+    if (window.scrollY > 5100) {
         circleAnimateGreen.classList.add('circle-animate');
     }
 
-    if (window.scrollY > 2600) {
+    if (window.scrollY > 4100) {
         circleAnimateYellow.classList.add('circle-animate');
     }
 });

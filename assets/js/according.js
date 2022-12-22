@@ -34,6 +34,7 @@ function boxHandler3(e){
     let currentBody = currentBox.nextElementSibling;
 
     roadmapBody.forEach((item) => {
+        currentBody.classList.remove('active-body');
         item.style.maxHeight = 0;
     });
 
