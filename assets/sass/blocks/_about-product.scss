@@ -121,6 +121,8 @@
   line-height: 49px;
   margin-bottom: 33px;
   color: #626262;
+  position: relative;
+  z-index: 10;
 
   @media (max-width: 1250px) {
     font-weight: 500;
@@ -203,6 +205,30 @@
 
 .product__buy-block__animate__box {
   position: absolute;
+}
+
+.diamond__card {
+  filter: blur(3px);
+  transform: rotate(-25.54deg);
+  left: -30%;
+  bottom: -90px;
+  z-index: 0;
+
+  img {
+    width: 550.33px;
+    height: 366.89px;
+  }
+}
+
+.gold__card {
+  bottom: 80px;
+  right: -10%;
+  transform: rotate(32.27deg);
+
+  img {
+    width: 320px;
+    height: 289.18px;
+  }
 }
 
 .sofa-animate {
