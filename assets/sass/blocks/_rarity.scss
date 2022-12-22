@@ -26,19 +26,45 @@
   line-height: 25px;
   cursor: pointer;
   padding: 8px 18px;
+  border-radius: 20px;
+  transition: 0.4s;
 
-  &.active-tab {
-    color: #F1CF1B;
-    border: 2px solid #FFC940;
-    border-radius: 20px;
+  &.active-button {
+    color: #FFFF;
+    border: 2px solid #FFF;
+  }
+
+  &.defBtn {
+    color: $gold;
+    border: 2px solid $gold;
   }
 }
 
 .rarity-block {
-  min-height: 910px;
-  background: url("../img/rarity_img/posters/Gold.jpg");
+  min-height: 810px;
   background-size: cover;
   padding-top: 70px;
+  display: none;
+
+  &.active-tab {
+    display: block;
+  }
+
+  &.gold-poster {
+    background: url("../img/rarity_img/posters/Gold.jpg");
+  }
+
+  &.typical-poster {
+    background: url("../img/rarity_img/posters/Typical.jpg");
+  }
+
+  &.silver-poster {
+    background: url("../img/rarity_img/posters/Silver.jpg");
+  }
+
+  &.diamond-poster {
+    background: url("../img/rarity_img/posters/Diamond.jpg");
+  }
 }
 
 .about-flats {
@@ -47,7 +73,7 @@
   border-radius: 40px;
   color: #FFF;
   max-width: 1110px;
-  margin: 0 auto 150px auto;
+  margin: 0 auto 100px auto;
 }
 
 .gold-flat {
@@ -58,6 +84,7 @@
 .rarity-block__content {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .apartment {
@@ -73,4 +100,41 @@
   background: rgba(45, 45, 45, 0.9);
   border-radius: 40px;
   padding: 58px 41px;
+  display: inline-block;
+}
+
+.rarity-block__content__flat-information {
+  display: flex;
+  text-align: left;
+  gap: 100px;
+}
+
+.rarity-information__points {
+  font-size: 20px;
+  line-height: 27px;
+
+  &.gold {
+    li {
+      color: $gold;
+      margin-bottom: 25px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.rarity-information__about {
+  li {
+    color: #FFF;
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: right;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }

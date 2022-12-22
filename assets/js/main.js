@@ -8,6 +8,35 @@ const navLinks = document.querySelectorAll('.mobile-nav__item');
 const joinWhitelistBtn = Array.from(document.querySelectorAll('.about-product__buy-block__btn'));
 const html = document.body;
 
+const tabButtons = Array.from(document.querySelectorAll('.rarity-tabs__button'));
+const rarityBlocks = Array.from(document.querySelectorAll('.rarity-block'));
+
+tabButtons.forEach((item) => {
+    item.addEventListener('click', tabHandler);
+});
+
+function tabHandler(event) {
+    let currentBtn = event.target;
+    let tabId = currentBtn.getAttribute('data-flat');
+    let currentTab = document.querySelector(tabId);
+
+    tabButtons.forEach((tabButton) => {
+        tabButton.style.border = 'none';
+        tabButton.style.color = '#FFFF';
+    });
+
+    rarityBlocks.forEach((rarityBlock) => {
+        rarityBlock.classList.remove('active-tab');
+    });
+
+    currentTab.classList.add('active-tab');
+
+    let currentBtnColor = currentBtn.dataset.color;
+    currentBtn.style.color = currentBtnColor;
+    currentBtn.style.border = `2px solid ${currentBtnColor}`;
+}
+
+
 
 burgerBtn.forEach((item) => {
     item.addEventListener('click', function () {
@@ -36,6 +65,7 @@ navLinks.forEach((item) => {
 document.addEventListener('scroll', function () {
     if (window.scrollY > 2000) {
         circleAnimatePurple.classList.add('circle-animate');
+        console.log(circleAnimatePurple.offset)
     }
     if (window.scrollY > 3200) {
         circleAnimateGreen.classList.add('circle-animate');

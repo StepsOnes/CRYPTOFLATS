@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/owlDots.css">
     <link rel="stylesheet" href="assets/css/animate.compat.css">
-<!--    <link rel="stylesheet" href="assets/css/animate.css">-->
     <meta name="google-site-verification" content="Hhf3ISRXwjlZILhTPf2JkySLOcKV4p0Ftmj4plc2zvs" />
 </head>
 <body>
@@ -113,9 +112,9 @@
         <section class="about-product">
 
             <div class="about-product__video">
-                <video muted="muted" autoplay playsinline loop>
+                <video muted="true" playsinline="true" autoplay loop>
                     <source src="assets/video/Animation%20head%20light.webm" type="video/webm">
-                    Your browser does not support HTML5 video.
+                    <source src="assets/video/appart-build.mp4" type="video/mp4">
                 </video>
 
                 <div class="about-product__video__text-block">
@@ -315,40 +314,153 @@
             <div class="rarity">
                 <div class="about-rarity">
                     <div class="container">
-                        <h1 class="about-company__title about-company__title__rarity orange">
+                        <h1 class="about-company__title about-company__title__rarity orange wow fadeInUpBig">
                             RARITY PROPERTIES
                         </h1>
 
-                        <p class="about-rarity__subtitle">
+                        <p class="about-rarity__subtitle wow fadeInLeft">
                             Each class of Nfs has a different probability of being minted. There will be 5555 GEN 1 NFTs in which: NFT RARITIES & MINTING
                         </p>
 
-                        <div class="rarity-tabs__buttons">
-                            <button class="rarity-tabs__button">STANDART FLATS #70%</button>
-                            <button class="rarity-tabs__button">SILVER FLATS #15%</button>
-                            <button class="rarity-tabs__button active-tab">GOLD FLATS #10%</button>
-                            <button class="rarity-tabs__button">DIAMOND FLATS #5%</button>
+                        <div class="rarity-tabs__buttons wow fadeInRight">
+                            <button data-flat="#standard" data-color="#FFF" class="rarity-tabs__button">STANDART FLATS #70%</button>
+                            <button data-flat="#silver" data-color="#D5D5D5" class="rarity-tabs__button">SILVER FLATS #15%</button>
+                            <button data-flat="#gold" data-color="#F1CF1B" class="rarity-tabs__button active-btn defBtn">GOLD FLATS #10%</button>
+                            <button data-flat="#diamond" data-color="#0F6EB2" class="rarity-tabs__button">DIAMOND FLATS #5%</button>
                         </div>
                     </div>
                 </div>
 
-                <div class="rarity-block">
-                    <div class="container">
-                        <div class="about-flats">
-                            Gold rarity NFT has a bright goldish background with a signing <span class="gold-flat">GOLD RARITY</span> on its side wall
-                        </div>
-
-                        <div class="rarity-block__content">
-                            <div class="apartment">
-                                <img src="assets/img/rarity_img/int/25.png" alt="">
+                <div class="rarity__tab-content">
+                    <div id="gold" class="rarity-block gold-poster active-tab">
+                        <div class="container">
+                            <div class="about-flats">
+                                Gold rarity NFT has a bright goldish background with a signing <span class="gold-flat">GOLD RARITY</span> on its side wall
                             </div>
 
-                            <div class="rarity-block__content__flat-information">
-                                
+                            <div class="rarity-block__content">
+                                <div class="apartment">
+                                    <img src="assets/img/rarity_img/int/25.png" alt="">
+                                </div>
+
+                                <div class="rarity-block__content__flat-information">
+                                    <ul class="rarity-information__points gold">
+                                        <li>Income per day (Staking)</li>
+                                        <li>Unstaking claim</li>
+                                        <li>Token claim</li>
+                                        <li>Token distribution</li>
+                                        <li>Next gen# opening</li>
+                                    </ul>
+
+                                    <ul class="rarity-information__about">
+                                        <li>350 CFLAT</li>
+                                        <li>1500 CFLAT on balance</li>
+                                        <li>85% to wallet</li>
+                                        <li>15% to participants</li>
+                                        <li>50% discount</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="standard" class="rarity-block typical-poster">
+                        <div class="container">
+                            <div class="about-flats">
+                                The most popular rarity with huge variety of backgrounds in different colors and shapes
+                            </div>
+
+                            <div class="rarity-block__content">
+                                <div class="apartment">
+                                    <img src="assets/img/rarity_img/int/25.png" alt="">
+                                </div>
+
+                                <div class="rarity-block__content__flat-information">
+                                    <ul class="rarity-information__points gold">
+                                        <li>Income per day (Staking)</li>
+                                        <li>Unstaking claim</li>
+                                        <li>Token claim</li>
+                                        <li>Token distribution</li>
+                                        <li>Next gen# opening</li>
+                                    </ul>
+
+                                    <ul class="rarity-information__about">
+                                        <li>350 CFLAT</li>
+                                        <li>1500 CFLAT on balance</li>
+                                        <li>85% to wallet</li>
+                                        <li>15% to participants</li>
+                                        <li>50% discount</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="silver" class="rarity-block silver-poster">
+                        <div class="container">
+                            <div class="about-flats">
+                                It has a cold grey metal background with a signing SILVER RARITY on a side of wall
+                            </div>
+
+                            <div class="rarity-block__content">
+                                <div class="apartment">
+                                    <img src="assets/img/rarity_img/int/25.png" alt="">
+                                </div>
+
+                                <div class="rarity-block__content__flat-information">
+                                    <ul class="rarity-information__points gold">
+                                        <li>Income per day (Staking)</li>
+                                        <li>Unstaking claim</li>
+                                        <li>Token claim</li>
+                                        <li>Token distribution</li>
+                                        <li>Next gen# opening</li>
+                                    </ul>
+
+                                    <ul class="rarity-information__about">
+                                        <li>350 CFLAT</li>
+                                        <li>1500 CFLAT on balance</li>
+                                        <li>85% to wallet</li>
+                                        <li>15% to participants</li>
+                                        <li>50% discount</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="diamond" class="rarity-block diamond-poster">
+                        <div class="container">
+                            <div class="about-flats">
+                                It has a brilliant looking background with a signing DIAMOND RARITY on a side of wall
+                            </div>
+
+                            <div class="rarity-block__content">
+                                <div class="apartment">
+                                    <img src="assets/img/rarity_img/int/25.png" alt="">
+                                </div>
+
+                                <div class="rarity-block__content__flat-information">
+                                    <ul class="rarity-information__points gold">
+                                        <li>Income per day (Staking)</li>
+                                        <li>Unstaking claim</li>
+                                        <li>Token claim</li>
+                                        <li>Token distribution</li>
+                                        <li>Next gen# opening</li>
+                                    </ul>
+
+                                    <ul class="rarity-information__about">
+                                        <li>350 CFLAT</li>
+                                        <li>1500 CFLAT on balance</li>
+                                        <li>85% to wallet</li>
+                                        <li>15% to participants</li>
+                                        <li>50% discount</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
 
             <div class="container">
@@ -373,7 +485,11 @@
 
                         <div class="about-company__story-block__video wow fadeInUp">
                             <img id="story-animate" src="assets/video/1000х1000.webp" alt="">
+<!--                            <video muted="true" playsinline="true" autoplay loop>-->
+<!--                                <source src="assets/video/interior.webm" type="video/webm">-->
+<!--                            </video>-->
                         </div>
+
                     </div>
                 </div>
 
