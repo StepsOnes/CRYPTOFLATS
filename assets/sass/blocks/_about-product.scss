@@ -239,6 +239,30 @@
       height: calc(366px - 20%);
     }
   }
+
+  @media (max-width: 1500px) {
+    img {
+      width: calc(550px - 50%);
+      height: calc(366px - 20%);
+    }
+    left: -35%;
+  }
+
+  @media (max-width: 700px) {
+      img {
+        width: calc(550px - 60%);
+        height: calc(366px - 20%);
+      }
+      left: -40%;
+  }
+
+  @media (max-width: 500px) {
+    img {
+      width: calc(550px - 60%);
+      height: calc(366px - 30%);
+    }
+    left: -70%;
+  }
 }
 
 .gold__card {
@@ -262,11 +286,31 @@
   }
 
   @media (max-width: 1700px) {
-
     img {
       width: calc(320px - 10%);
       height: calc(289.18px - 10%);
     }
+  }
+
+  @media (max-width: 1500px) {
+    img {
+      width: calc(320px - 20%);
+      height: calc(289.18px - 20%);
+    }
+    right: -35%;
+  }
+
+  @media (max-width: 700px) {
+    img {
+      width: calc(320px - 30%);
+      height: calc(289.18px - 30%);
+    }
+    right: -40%;
+  }
+
+  @media (max-width: 500px) {
+    right: -60%;
+    bottom: -30px;
   }
 }
 
