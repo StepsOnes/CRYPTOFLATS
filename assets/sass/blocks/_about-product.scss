@@ -41,7 +41,7 @@
 
   @media (max-width: 2560px) {
     video {
-      height: 1050px;
+      height: 1061px;
     }
   }
 
@@ -214,12 +214,18 @@
   bottom: -90px;
   z-index: 0;
   position: absolute;
+  transition: 1s;
+
+  img {
+    transition: 1s;
+  }
 
   @media (max-width: 2560px) {
     img {
-      width: 550.33px;
-      height: 366.89px;
+      width: 650.33px;
+      height: 466.89px;
     }
+    left: -20%;
   }
 
   @media (max-width: 1980px) {
@@ -269,11 +275,16 @@
   bottom: 80px;
   right: -10%;
   transform: rotate(32.27deg);
+  transition: 1s;
+
+  img {
+    transition: 1s;
+  }
 
   @media (max-width: 2560px) {
     img {
-      width: 320px;
-      height: 289.18px;
+      width: 420px;
+      height: 389.18px;
     }
   }
 
@@ -520,47 +531,6 @@
   }
 }
 
-//@keyframes fade-top {
-//  from {
-//    top: -200px;
-//  }
-//
-//  to {
-//    top: 0px;
-//  }
-//}
-//
-//@keyframes fade-left {
-//  from {
-//    right: -100%;
-//  }
-//
-//  to {
-//    right: 17%;
-//  }
-//}
-//
-//@keyframes fade-right  {
-//  from {
-//    left: -200%;
-//  }
-//
-//  to {
-//    left: -10%;
-//
-//  }
-//}
-//
-//@keyframes fade-bottom {
-//  from {
-//    bottom: -200px;
-//  }
-//
-//  to {
-//    bottom: 20%;
-//  }
-//}
-
 @keyframes fade-move1 {
  0% {
    transform: rotate(10deg);
@@ -674,8 +644,8 @@
     }
 
     &.sofa img {
-      width: 265px;
-      height: 221px;
+      width: 365px;
+      height: 321px;
     }
 
     &.table img {
@@ -696,6 +666,13 @@
     &.table-around img {
       width: 126px;
       height: 158px;
+    }
+  }
+
+  @media (max-width: 1440px) {
+    &.sofa img {
+      width: 265px;
+      height: 221px;
     }
   }
 

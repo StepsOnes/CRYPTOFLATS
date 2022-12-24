@@ -63,7 +63,6 @@ navLinks.forEach((item) => {
 });
 
 document.addEventListener('scroll', function () {
-    console.log(window.scrollY)
     if (window.scrollY > 3200) {
         circleAnimatePurple.classList.add('circle-animate');
     }
