@@ -72,11 +72,11 @@
       transform: translateX(-100%);
 
       @media (max-width: 2560px) {
-        animation: draw-big 0.5s linear forwards;
+        animation: draw-big 0.4s linear forwards;
       }
 
       @media (max-width: 1980px) {
-        animation: draw 0.5s linear forwards;
+        animation: draw 0.4s linear forwards;
       }
     }
   }
@@ -107,11 +107,11 @@
       transform: translateX(-100%);
 
       @media (max-width: 2560px) {
-        animation: draw-big 0.5s linear forwards;
+        animation: draw-big 0.4s linear forwards;
       }
 
       @media (max-width: 1980px) {
-        animation: draw 0.5s linear forwards;
+        animation: draw 0.4s linear forwards;
       }
     }
   }
@@ -143,11 +143,11 @@
       transform: translateX(-100%);
 
       @media (max-width: 2560px) {
-        animation: draw-big 0.5s linear forwards;
+        animation: draw-big 0.4s linear forwards;
       }
 
       @media (max-width: 1980px) {
-        animation: draw 0.5s linear forwards;
+        animation: draw 0.4s linear forwards;
       }
     }
   }
@@ -190,11 +190,11 @@
     transform: translateX(-100%);
 
     @media (max-width: 2560px) {
-      animation: draw-big 0.5s linear forwards;
+      animation: draw-big 0.4s linear forwards;
     }
 
     @media (max-width: 1980px) {
-      animation: draw 0.5s linear forwards;
+      animation: draw 0.4s linear forwards;
     }
   }
 }
